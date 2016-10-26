@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/p.css">
+    <link rel="stylesheet" href="../css/Marina-hotle.css">
+    <script src="../lib/jquery.js"></script>
+</head>
+<body>
+<header class="header scroll-to-fixed-fixed"
+        style="">
+    <div class="wrap yahei clearfix">
+        <div class="logo left">
+            <a href="" title="出国去旅行网">
+                <img src="http://www.chuguoqu.com/images/header-logo.png" alt="">
+            </a>
+        </div>
+        <!--导航栏部分-->
+        <nav class=" nav left">
+            <ul id="navList" class="relative clearfix">
+                <li id="home" class="nav-item selected">
+                    <a href="../home.html" style="color: rgb(255,255,255)">
+                        首页
+                    </a>
+                </li>
+                <li id="destination" class="nav-item">
+                    <a href="../country/Italy.html" style="color: rgb(102,102,102)">
+                        目的地
+                    </a>
+                </li>
+                <li id="hotels" class="nav-item">
+                    <a href="../hotle.html" style="color: rgb(102,102,102)">
+                        酒店
+                    </a>
+                </li>
+                <li id="shop" class="nav-item">
+                    <a href="../shop.html" style="color: rgb(102,102,102)">
+                        购物车
+                    </a>
+                </li>
+                <li id="appInfo" class="nav-item">
+                    <a href="../app.html" target="_blank" style="color: rgb(102,102,102)">
+                        App下载
+                    </a>
+                </li>
+                <li class="nav-bar-bg" style="left: 0px;"></li>
+            </ul>
+
+        </nav>
+        <div class="header-right right">
+            <p class="login-box">
+                <a href="../login.html" class="login-btn">登陆</a>
+                <a href="../country/register.html" class="register-btn">注册</a>
+            </p>
+            <div class="login-after relative left" style="display: none">
+                <div class="photo-box left">
+                    <div class="photo-cover"></div>
+                    <img src="http://img.chuguoqu.com/g1/M00/00/27/06B0tVNUyECAaXwPAABYZnxFUPk563.jpg" alt="">
+                </div>
+                <p class="user-name-box left">
+                </p>
+                <div class="user-control-box" style="display:none;">
+                    <i class="user-top-arrow"></i>
+                    <ul class="user-control-list">
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">常用游客</a></li>
+                        <li><a href="">常用联系人</a></li>
+                        <li><a href="">账号设置</a></li>
+                        <li><a id="Sign-out">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="header-search-box right hide">
+            <input id="search" type="text" class="header-search-ipt" value placeholder="搜索">
+            <a onclick="" href="" class="head-search-btn">搜索</a>
+        </div>
+        <div class=""></div>
+    </div>
+</header>
+<!--将顶端空出80px-->
+<!--<div style="display: block; width: 1349px; height: 80px; float: none;"></div>-->
+<!--目的地的显示隐藏部分-->
+<div class="country-pop-box hide "
+     style=" display: none; height: 261px; padding-top: 40px; margin-top: 0px; padding-bottom: 50px; margin-bottom: 0px;">
+    <div class="country-pop-bg  "></div>
+    <div class="wrap ">
+        <i class="destination-box-arrow ha"></i>
+        <ul class="destination-list../ clearfix">
+            <li class="destination-list-item">
+                <strong>欧洲</strong>
+                <a href="../country/Italy.html">意大利</a>
+                <a href="../country/France.html">法国</a>
+                <a href="../country/Britain.html">英国</a>
+                <a href="../country/Portugal.html">葡萄牙</a>
+                <a href="../country/Spain.html">西班牙</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>中国港澳台</strong>
+                <a href="">中国台湾</a>
+                <a href="../country/Macao.html">中国澳门</a>
+                <a href="../country/HongKong.html">中国香港</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>大洋洲</strong>
+                <a href="">澳大利亚</a>
+                <a href="../country/NewZealang.html">新西兰</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>东亚</strong>
+                <a href="../country/Japan.html">日本</a>
+                <a href="../country/Korea.html">韩国</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>东南亚</strong>
+                <a href="">泰国</a>
+                <a href="../country/Singapore.html">新加坡</a>
+                <a href="../country/Bali.html">巴厘岛</a>
+                <a href="../country/Nepal.html">尼泊尔</a>
+                <a href="../country/Cambodia.html">柬埔寨</a>
+                <a href="../country/Malaysia.html">马来西亚</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>南亚</strong>
+                <a href="../country/Srilanka.html">斯里兰卡</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>北美洲</strong>
+                <a href="../country/America.html">美国</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="hotle">
+        <div class="hotle-img">
+            <img src="http://img.chuguoqu.com/g1/M00/02/DC/Cqjzm1dyL3GAGtBHAAZ5V5EZ-jo419.jpg" alt="">
+        </div>
+        <div class="experience">
+            <div class="line-first"></div>
+            <div class="text">奢华体验·低至7折</div>
+        </div>
+        <div class="experience-text">
+            <p>由建筑大师MosheSafdie主刀设计的滨海湾金沙酒店（Marina Bay Sands），位于57层的无边泳池更是对于酒店来说，更是灵魂一般的存在。</p>
+            <p>30%来新加坡的旅行者会选择至少住上一晚，基本也是冲着泳池的无边美景而来。</p>
+            <p>出国君特别策划“一泊二日”之金沙酒店及周边。用2天时间以低至当地价7折的价格，玩遍金沙酒店周边美景美食，直接拿去玩吧！</p>
+        </div>
+        <div class="line"></div>
+        <div class="other-play">
+            <ul>
+                <li >
+                    <div>
+                        <div class="other-play-img">
+                            <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnPPeAY8s9AACj2ceEupA824.jpg" alt="">
+                        </div>
+                        <div class="show">
+                            <p><a href="http://www.chuguoqu.com/sg/product-13605/">新加坡机场送机（丰田、现代、7座、10-12座）</a></p>
+                        </div>
+                        <div class="price">
+                            <span class="nowprice">￥212</span>
+                            <span class="lastprice">￥255</span>
+                            <span class="place">新加坡</span>
+
+                        </div>
+                    </div>
+
+                </li>
+                <li >
+                    <div>
+                        <div class="other-play-img">
+                            <img src="http://img.chuguoqu.com/g1/M00/01/FD/eSl1sVUTtpmAXNhSAAEqYN7I5mI046.jpg" alt="">
+                        </div>
+                        <div class="show">
+                            <p><a href="http://www.chuguoqu.com/sg/product-12928/">新加坡滨海湾金沙酒店空中花园门票（电子票）</a></p>
+                        </div>
+                        <div class="price">
+                            <span class="nowprice">￥113</span>
+                            <span class="lastprice">￥113</span>
+                            <span class="place">新加坡</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li >
+                    <div>
+                        <div class="other-play-img">
+                            <img src="http://img.chuguoqu.com/g1/M00/02/5F/eSl1sVW6z-yAHFNkAABaP1D240Q950.jpg" alt="">
+                        </div>
+                        <div class="show">
+                            <p><a href="http://hotels.chuguoqu.com/hotel/sg/marina-bay-sands.zh-cn.html?sid=b35467d541210f1980bd8e66b444f9f3;dcid=1;checkin=2016-06-28;checkout=2016-06-29;ucfs=1;highlighted_blocks=24588124_91468653_2_0_0;room1=A,A;hpos=1;dest_type=city;dest_id=-73635;srfid=680bb941775098e60a88e0f156f2d41a5c6a9503X1;hptv=do">新加坡滨海湾金沙酒店1晚（含无边泳池)</a></p>
+                        </div>
+                        <div class="price">
+                            <span class="nowprice">￥1700起</span>
+                            <span class="lastprice">￥2333</span>
+                            <span class="place">新加坡</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li >
+                    <div>
+                        <div class="other-play-img">
+                            <img src="http://img.chuguoqu.com/g1/M00/02/DC/Cqjzm1dyJZqAVdS1AADt3wm4r7A059.jpg" alt="">
+                        </div>
+                        <div>
+                            <p><a href="http://www.chuguoqu.com/sg/product-14086/">新加坡观景摩天轮游览票（电子票、无需预约时间段、机场换票）</a></p>
+                        </div>
+                        <div class="price">
+                            <span class="nowprice">￥133</span>
+                            <span class="lastprice">￥155</span>
+                            <span class="place">新加坡</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li >
+                    <div>
+                        <div class="other-play-img">
+                            <img src="http://img.chuguoqu.com/g1/M00/00/23/06B0tVNQ1cqAfv9eAADNwLS0ntU872.jpg" alt="">
+                        </div>
+                        <div>
+                            <p><a href="promotion-link journey-list-title font14">新加坡鸭子船船长探索号水陆两栖观光船船票（实体票）</a></p>
+                        </div>
+                        <div class="price">
+                            <span class="nowprice">￥98</span>
+                            <span class="lastprice">￥157</span>
+                            <span class="place">新加坡</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li >
+                    <div>
+                        <div class="other-play-img">
+                            <img src="http://img.chuguoqu.com/g1/M00/01/A6/eSl1sVTQGcWAPk2YAADtetqd6uo708.jpg" alt="">
+                        </div>
+                        <div>
+                            <p><a href="http://www.chuguoqu.com/sg/product-12804/">新加坡机场送机（丰田、现代、7座、10-12座）</a></p>
+                        </div>
+                        <div class="price">
+                            <span class="nowprice">￥333</span>
+                            <span class="lastprice">￥335</span>
+                            <span class="place">新加坡</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li >
+                    <div>
+                        <div class="other-play-img">
+                            <img src="http://img.chuguoqu.com/g1/M00/01/E1/eSl1sVT3y6OAayc7AADpWxDsc0g630.jpg" alt="">
+                        </div>
+                        <div class="show">
+                            <p><a href="http://www.chuguoqu.com/sg/product-12839/">滨海湾花园（双馆）参观门票（电子票）</a></p>
+                        </div>
+                        <div class="price">
+                            <span class="nowprice">￥103</span>
+                            <span class="lastprice">￥138</span>
+                            <span class="place">新加坡</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li >
+                    <div>
+                        <div class="other-play-img">
+                            <img src="http://img.chuguoqu.com/g1/M00/02/A8/eSl1sVZvaZaAUgwlAAHdZByvZo8871.jpg" alt="">
+                        </div>
+                        <div>
+                            <p><a href="http://www.chuguoqu.com/sg/product-13531/">新加坡滨海湾花园空中走廊OCBC SKYWAY门票（实体票）</a></p>
+                        </div>
+                        <div class="price">
+                            <span class="nowprice">￥22</span>
+                            <span class="lastprice">￥25</span>
+                            <span class="place">新加坡</span>
+                        </div>
+                    </div>
+
+                </li>
+
+
+
+
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class="footer other-footer">
+        <div class="wrap yahei relative">
+            <div class="footer-top">
+                <div class="footer-top-wrap">
+                    <p class="footer-contact">400-812-5161</p>
+                    <p>周一至周日：08:00-23:00 节假日：08:00-20:00</p>
+                </div>
+            </div>
+            <div class="footer-con">
+                <ul class="footer-site-map clearfix">
+                    <li>
+                        <a target="_blank" href="http://www.chuguoqu.com/aboutus.html">关于出国去</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.chuguoqu.com/conviction.html">加入我们</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.chuguoqu.com/contactus.html">联系我们</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.chuguoqu.com/help.html">帮助中心</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.chuguoqu.com/declare.html">法律声明</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="http://www.chuguoqu.com/link.html">友情链接</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.chuguoqu.com/feedback.html">意见反馈</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.chuguoqu.com/business.html">Business Cooperation</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.chuguoqu.com/sitemap.html">网站地图</a>
+                    </li>
+                    <li class="b2b-link">
+                        <a target="_blank" href="http://www.chuguoqu.com/distributor/apply/view/">分销合作</a>
+                    </li>
+                </ul>
+                <p class="mb8">出国去网站独家内容运营商：厦门博游旅行社有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唯一指定的境外旅游服务策供商：厦门博游旅行社有限公司</p>
+                <p class="mb20">Copyright © 2013-2016 出国去chuguoqu.com All rights reserved 厦门博游旅行社有限公司 闽ICP备12023338号-1</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="../js/shop.js"></script>
+</body>
+</html>

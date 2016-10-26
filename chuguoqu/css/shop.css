@@ -170,9 +170,7 @@
 }
 .shopCar{
     width: 1180px;
-    height: 835px;
     margin: 0 auto;
-    background: pink;
 }
 .prebook-step-bar .step-item {
     float: left;
@@ -183,12 +181,6 @@
 .prebook-step-bar .step-first {
     width: 352px;
 }
-.step-first div {
-    padding-left: 220px;
-    background-position: 1px 0;
-    color: #fff;
-    text-align: left;
-}
 .step-item div {
     height: 40px;
     line-height: 40px;
@@ -198,6 +190,95 @@
     color: #999;
     text-align: center;
 }
+.step-first div {
+    padding-left: 220px;
+    background-position: 1px 0;
+    color: #fff;
+    text-align: left;
+}
+.prebook-step-bar .step-last {
+    width: 328px;
+}
+.step-last div {
+    padding-left: 120px;
+    background-position: -99px -122px;
+    text-align: left;
+}
+.prebook-step-bar {
+    margin-bottom: 120px;
+    padding-top: 25px;
+}
+.login{
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.login a{
+    color: #dc244b;
+    text-decoration: underline;
+}
+.cart-table-th {
+    height: 45px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.th-chk-inner, .td-chk-inner {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin: 14px auto 0;
+    overflow: hidden;
+}
+.th-chk-inner label, .td-chk-inner label {
+    float: left;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background: url(http://www.chuguoqu.com/images/prebookIcon2.png) 0 0 no-repeat;
+}
+.th-check, .td-check {
+    width: 60px;
+}
+.th {
+    float: left;
+    height: 45px;
+}
+.th-item, .td-item {
+    width: 350px;
+}
+.th-info, .td-info {
+    width: 200px;
+    margin-right: 42px;
+}
+.th-price, .td-price {
+    width: 194px;
+}
+.th-amount, .td-amount {
+    width: 140px;
+}
+.th-sum, .td-sum {
+    width: 122px;
+}
+.th-operate, .td-operate {
+    width: 70px;
+}
+.cart-list-null {
+    width: 200px;
+    min-height: 200px;
+    margin: 182px auto 0;
+    padding: 16px 0 182px 135px;
+    background: url(http://www.chuguoqu.com/images/shoppingCartNull.png) 0 0 no-repeat;
+}
+.cart-list-null a{
+    color:#dc244b ;
+}
+
+
 .other-footer {
     padding-bottom: 40px;
     padding-top:140px;

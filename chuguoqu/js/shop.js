@@ -109,3 +109,16 @@ $li2.siblings().on({
         }
     }
 });
+var label=0;
+$(".th-chk-inner label").click(function () {
+    label++;
+    if(label==1){
+        $(".th-chk-inner label").css({"background-position": "-25px 0"})
+    }
+    if(label==2){
+        $(".th-chk-inner label").css({"background-position": "0px 0"})
+        label=0
+    }
+
+
+})

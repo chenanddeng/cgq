@@ -168,3 +168,110 @@
 .container{
 
 }
+.shopCar{
+    width: 1180px;
+    height: 835px;
+    margin: 0 auto;
+    background: pink;
+}
+.prebook-step-bar .step-item {
+    float: left;
+    width: 250px;
+    font-size: 14px;
+    color: #999;
+}
+.prebook-step-bar .step-first {
+    width: 352px;
+}
+.step-first div {
+    padding-left: 220px;
+    background-position: 1px 0;
+    color: #fff;
+    text-align: left;
+}
+.step-item div {
+    height: 40px;
+    line-height: 40px;
+    background: url(http://www.chuguoqu.com/images/stepBar.png) -99px -41px no-repeat;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999;
+    text-align: center;
+}
+.other-footer {
+    padding-bottom: 40px;
+    padding-top:140px;
+    clear: both;
+}
+.other-footer .wrap {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 12px;
+    border-top: 4px solid #dc284b;
+}
+.other-footer .clearfix {
+    height: 20px;
+}
+.yahei {
+    font-family: 微软雅黑;
+}
+.other-footer .relative {
+    position: relative;
+}
+.other-footer .footer-top {
+    margin: 0 0 20px;
+    padding: 0;
+    clear: both;
+}
+.other-footer .footer-top-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.footer-top-wrap p {
+    padding-left: 60px;
+
+}
+.footer-contact {
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+    background: url("http://www.chuguoqu.com/images/icon-common.png") 0 0 no-repeat;
+    line-height: 50px;
+}
+.footer-con {
+    color: #c4c4c4;
+    overflow: hidden;
+}
+.other-footer .footer-site-map {
+    margin-bottom: 8px;
+}
+.footer-site-map {
+    margin-left: -12px;
+}
+.footer-site-map li {
+    float: left;
+    padding: 0 12px;
+    height: 14px;
+    line-height: 14px;
+    border-left: solid 1px #c4c4c4;
+}
+.footer-site-map a {
+    color: #c4c4c4;
+}
+:link, :visited, ins {
+    text-decoration: none;
+}
+.mb8 {
+    margin-bottom: 8px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+._blank{
+    color: red;
+}
+.b2b-link a{
+    color: red;
+}

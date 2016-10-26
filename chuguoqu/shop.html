@@ -9,52 +9,71 @@
     <script src="lib/jquery-ui.js"></script>
 </head>
 <body>
-<header class="header scroll-to-fixed-fixed other-header"
-        style="z-index: 3; position:relative; top: 0px; margin-left: 0px; width: 100%; left: 0px;">
+<header class="header scroll-to-fixed-fixed"
+        style="">
     <div class="wrap yahei clearfix">
         <div class="logo left">
             <a href="" title="出国去旅行网">
                 <img src="http://www.chuguoqu.com/images/header-logo.png" alt="">
             </a>
-
         </div>
         <!--导航栏部分-->
         <nav class=" nav left">
             <ul id="navList" class="relative clearfix">
                 <li id="home" class="nav-item selected">
-                    <a href="" style="color: rgb(102,102,102)">
+                    <a href="" style="color: rgb(255,255,255)">
                         首页
                     </a>
                 </li>
                 <li id="destination" class="nav-item">
-                    <a href="" style="color: rgb(102,102,102)">
+                    <a href="country/Italy.html" style="color: rgb(102,102,102)">
                         目的地
                     </a>
                 </li>
                 <li id="hotels" class="nav-item">
-                    <a href="" style="color: rgb(102,102,102)">
+                    <a href="hotle.html" style="color: rgb(102,102,102)">
                         酒店
                     </a>
                 </li>
                 <li id="shop" class="nav-item">
-                    <a href="" style="color: rgb(255,255,255)">
+                    <a href="shop.html" style="color: rgb(102,102,102)">
                         购物车
                     </a>
                 </li>
                 <li id="appInfo" class="nav-item">
-                    <a href="" target="_blank" style="color: rgb(102,102,102)">
+                    <a href="app.html" target="_blank" style="color: rgb(102,102,102)">
                         App下载
                     </a>
                 </li>
-                <li class="nav-bar-bg" style="left: 330px;"></li>
+                <li class="nav-bar-bg" style="left: 0px;"></li>
             </ul>
 
         </nav>
         <div class="header-right right">
             <p class="login-box">
-                <a href="" class="login-btn">登陆</a>
-                <a href="" class="register-btn">注册</a>
+                <a href="login.html" class="login-btn">登陆</a>
+                <a href="country/register.html" class="register-btn">注册</a>
             </p>
+            <div class="login-after relative left" style="display: none">
+                <div class="photo-box left">
+                    <div class="photo-cover"></div>
+                    <img src="http://img.chuguoqu.com/g1/M00/00/27/06B0tVNUyECAaXwPAABYZnxFUPk563.jpg" alt="">
+                </div>
+                <p class="user-name-box left">
+                </p>
+                <div class="user-control-box" style="display:none;">
+                    <i class="user-top-arrow"></i>
+                    <ul class="user-control-list">
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">常用游客</a></li>
+                        <li><a href="">常用联系人</a></li>
+                        <li><a href="">账号设置</a></li>
+                        <li><a id="Sign-out">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
         <div class="header-search-box right hide">
             <input id="search" type="text" class="header-search-ipt" value placeholder="搜索">

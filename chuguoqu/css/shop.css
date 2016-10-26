@@ -178,6 +178,19 @@
     font-size: 14px;
     color: #999;
 }
+.step-item p {
+    padding-top: 5px;
+    text-align: center;
+}
+.step-first p {
+    padding-left: 96px;
+    color: #666;
+}
+.step-last p {
+    padding-left: 96px;
+    color: #999;
+    text-align: left;
+}
 .prebook-step-bar .step-first {
     width: 352px;
 }
@@ -281,7 +294,7 @@
 
 .other-footer {
     padding-bottom: 40px;
-    padding-top:140px;
+    padding-top:20px;
     clear: both;
 }
 .other-footer .wrap {

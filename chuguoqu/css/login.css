@@ -1,0 +1,219 @@
+/*登录框*/
+.popuups-mask{
+    position: absolute;
+    background-color: black;
+    opacity: .5;
+}
+.login-popups-wrap {
+    width: 902px;
+    height: 389px;
+}
+.login-popups-wrap .basis-iframe-content {
+    background-color: transparent;
+}
+.basis-iframe-content {
+    background-color: #fff;
+}
+.loading-popups {
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font: 14px/20px \5FAE\8F6F\96C5\9ED1;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+    background: #fff url(http://www.chuguoqu.com/images/loading.gif) 50% 50% no-repeat;
+}
+.loading-popups span {
+    padding-left: 90px;
+}
+
+
+
+
+
+
+
+
+/*登陆html的css*/
+.transparent{
+    background-color: transparent;
+    font: 12px/1.5 \5FAE\8F6F\96C5\9ED1,Helvetica,\5b8b\4f53,Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+.popups-login-container{
+    height: 340px;
+    background: #fff;
+    border-radius: 4px;
+}
+.popups-login-top{
+    height: 50px;
+    margin-bottom:40px;
+    padding-left: 40px;
+    line-height: 50px;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    color: #333;
+}
+.popups-login-box{
+    width: 460px;
+    height: 226px;
+    padding-left: 67px;
+    padding-top: 4px;
+}
+.popups-login-name, .popups-login-pw {
+    padding-bottom: 44px;
+    margin-bottom: 30px;
+}
+.popups-login-name .popups-login-input{
+    background-position: 0 -80px;
+}
+.popups-login-input{
+    padding: 2px 2px 2px 48px;
+    background: url(http://www.chuguoqu.com/images/loginPopupsImg.png) #fff no-repeat;
+    border-radius: 2px;
+    border:  1px solid #ccc;
+    width: 256px;
+}
+.popups-login-input input{
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    padding: 8px 0 8px 8px;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    width: 248px;
+    color: #999;
+}
+.popups-login-pw .popups-login-input{
+    background-position: 0 -160px;
+}
+.password-value-tip {
+    background: url(http://www.chuguoqu.com/images/loginPopupsImg.png) #fff 6px -389px no-repeat;
+}
+.popups-login-submit-btn{
+    font: 18px/50px \5FAE\8F6F\96C5\9ED1;
+    color: #fff;
+    background-color: #dc244b;
+    text-shadow: 1px 1px #858585;
+    text-align: center;
+    height: 50px;
+    width: 160px;
+    border-radius: 4px;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+.popups-login-forgot{
+    font-size: 18px;
+    margin-left: 24px;
+    color: #999;
+    height: 50px;
+    line-height: 50px;
+}
+
+.popups-login-forgot:hover,.popups-login-no-account a{
+    color: #dc244b;
+    text-decoration: underline;
+}
+.popups-login-right{
+    font-size: 18px;
+    color: #999;
+    padding-left: 50px;
+    border-left:1px solid #ccc;
+}
+.popups-login-no-account{
+    margin: 0;
+}
+.popups-login-no-account a {
+    margin-left: 31px;
+    text-decoration: none;
+}
+.popups-login-quicklogin{
+    padding-top: 68px;
+}
+.popups-login-quicklogin p{
+    margin: 0;
+}
+.popups-login-quicklogin-btn {
+    padding-top: 20px;
+}
+.popups-login-quicklogin-qq, .popups-login-quicklogin-weibo {
+    width: 120px;
+    height: 48px;
+    display: block;
+    float: left;
+    text-indent: -9999em;
+    background: url(http://www.chuguoqu.com/images/loginPopupsImg.png) 0 -240px no-repeat;
+}
+.popups-login-quicklogin-weibo {
+    background-position: 0 -320px;
+    margin-left: 20px;
+}
+.popups-login-submit-btn:hover {
+    background-color: #cd1f44;
+    text-decoration: none;
+}
+.basis-close-btn {
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: 17px;
+    cursor: pointer;
+    background: url(http://www.chuguoqu.com/images/loginCloseBtn.png) no-repeat;
+}
+.popups-login-prompt-msg {
+    width: 119px;
+    height: 44px;
+    line-height: 44px;
+    color: #dc244b;
+    padding-left: 18px;
+    margin-left: 8px;
+    background: url(http://www.chuguoqu.com/images/loginPopupsImg.png) no-repeat;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.login-after {
+    max-width: 115px;
+    margin-top: 26px;
+    padding-bottom: 10px;
+    z-index: 2;
+}
+.photo-box {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.photo-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url(http://www.chuguoqu.com/images/photo-cover.png);
+    z-index: 2;
+}
+.photo-box img {
+    width: 30px;
+    height: 30px;
+}
+.user-name-box {
+    max-width: 80px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+}
+.user-name-box a {
+    font-size: 12px;
+    color: #666;
+    line-height: 30px;
+}

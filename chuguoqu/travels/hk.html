@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/p.css">
+    <link rel="stylesheet" href="../css/hongkongC.css">
+    <link rel="stylesheet" href="../lib/swiper/swiper.css">
+    <script src="../lib/jquery.js"></script>
+</head>
+<body>
+<header class="header scroll-to-fixed-fixed"
+        style="z-index: 3;">
+    <div class="wrap yahei clearfix">
+        <div class="logo left">
+            <a href="" title="出国去旅行网">
+                <img src="http://www.chuguoqu.com/images/header-logo.png" alt="">
+            </a>
+        </div>
+        <!--导航栏部分-->
+        <nav class=" nav left">
+            <ul id="navList" class="relative clearfix">
+                <li id="home" class="nav-item selected">
+                    <a href="" style="color: rgb(102,102,102)">
+                        首页
+                    </a>
+                </li>
+                <li id="destination" class="nav-item">
+                    <a href="" style="color: rgb(255,255,255)">
+                        目的地
+                    </a>
+                </li>
+                <li id="hotels" class="nav-item">
+                    <a href="" style="color: rgb(102,102,102)">
+                        酒店
+                    </a>
+                </li>
+                <li id="shop" class="nav-item">
+                    <a href="" style="color: rgb(102,102,102)">
+                        购物车
+                    </a>
+                </li>
+                <li id="appInfo" class="nav-item">
+                    <a href="" target="_blank" style="color: rgb(102,102,102)">
+                        App下载
+                    </a>
+                </li>
+                <li class="nav-bar-bg" style="left: 110px;"></li>
+            </ul>
+
+        </nav>
+        <div class="header-right right">
+            <p class="login-box">
+                <a href="javascript:;" class="login-btn">登陆</a>
+                <a href="" class="register-btn">注册</a>
+            </p>
+            <div class="login-after relative left" style="display: none">
+                <div class="photo-box left">
+                    <div class="photo-cover"></div>
+                    <img src="http://img.chuguoqu.com/g1/M00/00/27/06B0tVNUyECAaXwPAABYZnxFUPk563.jpg" alt="">
+                </div>
+                <p class="user-name-box left">
+                </p>
+                <div class="user-control-box" style="display:none;">
+                    <i class="user-top-arrow"></i>
+                    <ul class="user-control-list">
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">常用游客</a></li>
+                        <li><a href="">常用联系人</a></li>
+                        <li><a href="">账号设置</a></li>
+                        <li><a id="Sign-out">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="header-search-box right " style="display: block">
+            <input id="search" type="text" class="header-search-ipt" value placeholder="搜索">
+            <a onclick="" href="" class="head-search-btn">搜索</a>
+        </div>
+        <div class=""></div>
+    </div>
+</header>
+<!--目的地的显示隐藏部分-->
+<div class="country-pop-box hide "
+     style=" display: none; height: 261px; padding-top: 40px; margin-top: 0px; padding-bottom: 50px; margin-bottom: 0px;">
+    <div class="country-pop-bg  "></div>
+    <div class="wrap ">
+        <i class="destination-box-arrow ha"></i>
+        <ul class="destination-list clearfix">
+            <li class="destination-list-item">
+                <strong>欧洲</strong>
+                <a href="">意大利</a>
+                <a href="">法国</a>
+                <a href="">英国</a>
+                <a href="">葡萄牙</a>
+                <a href="">西班牙</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>中国港澳台</strong>
+                <a href="">中国台湾</a>
+                <a href="">中国澳门</a>
+                <a href="">中国香港</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>大洋洲</strong>
+                <a href="">澳大利亚</a>
+                <a href="">新西兰</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>东亚</strong>
+                <a href="">日本</a>
+                <a href="">韩国</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>东南亚</strong>
+                <a href="">泰国</a>
+                <a href="">新加坡</a>
+                <a href="">巴厘岛</a>
+                <a href="">尼泊尔</a>
+                <a href="">柬埔寨</a>
+                <a href="">马来西亚</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>南亚</strong>
+                <a href="">斯里兰卡</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>北美洲</strong>
+                <a href="">美国</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--内容-->
+
+
+
+<div class="container">
+    <div class="wrapp yahei">
+        <ul class="beradcrumbs">
+            <li><a href="">首页</a><span> > </span></li>
+            <li><a href="">目的地</a><span> > </span></li>
+            <li><a href="">中国香港</a></li>
+        </ul>
+        <div class="pdp-top clearfix">
+            <div class="pdp-banner-left left">
+                <div class="pdp-title-info">
+                    <h1 class="pdp-name">香港大屿山昂坪360缆车票（水晶/普通车厢）</h1>
+                    <h2 class="pdp-sub-info">腾云驾雾，透明缆车车厢里无障碍鸟瞰香港第一大岛</h2>
+                </div>
+                <div class="pdp-img-box">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="http://img.chuguoqu.com/g1/M00/02/F3/Cqjzm1gIiPiAO-DiAAFeOmCotNE306.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="http://img.chuguoqu.com/g1/M00/02/D7/Cqjzm1dID0CAS2pzAAMzyrkGNmo817.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="http://img.chuguoqu.com/g1/M00/02/B5/eSl1sVaPKiOAGXZYAADozVs-rqM462.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="http://img.chuguoqu.com/g1/M00/02/D2/Cqjzm1coZAuAXRhDAAJ_G26Al3o061.jpg" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <script src="../lib/swiper/swiper.min.js"></script>
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiper = new Swiper('.swiper-container', {
+                            pagination: '.swiper-pagination',
+                            nextButton: '.swiper-button-next',
+                            prevButton: '.swiper-button-prev',
+                            paginationClickable: true,
+                            spaceBetween: 30,
+                            centeredSlides: true,
+                            autoplay: 2500,
+                            autoplayDisableOnInteraction: false
+                        });
+                    </script>
+            </div>
+        </div>
+        <div class="pdp-option-wrap right " style="display: inline-block">
+            <div class="pdp-price-box">
+                <p class="promotion-price">
+                    <label>成人</label><strong class="PDP-sales-price">￥113</strong>
+                    <label>儿童</label><strong class="PDP-sales-price">￥72</strong>
+                </p>
+                <p class="sales-price">
+                    <label>当地价：</label>
+                    <span class="PDP-counter-price">成人￥162</span>
+                    <span class="PDP-counter-price">儿童￥￥84</span>
+                </p>
+            </div>
+            <div class="option-item time-option">
+                <p class="option-item-title">出游日期：</p>
+                <div class="select-box">
+                    <i class="select-icon"></i>
+                    <input type="text" class="input-control" placeholder="请选择出游日期" >
+                    <i class="select-arrow"></i>
+                </div>
+            </div>
+            <div class="option-item people-option">
+                <p class="option-item-title">数量选择：</p>
+                <div class="select-box">
+                    <i class="select-icon"></i>
+                    <input id="num" type="text" class="input-control" placeholder="请选择数量">
+                    <i class="select-arrow"></i>
+                    <div id="peopleNumPop" class=" select-pop" style="display: none" >
+                        <div class="select-pop-con">
+                            <div class="select-pop-item clearfix">
+                                <label class="left">成人</label>
+                                <p class="left">
+                                    <a id="A-reduce" href="javascript:" class="PDP-radius-left">-</a>
+                                    <input id="adult" type="text" class="PDP-number-input heiti" value="1">
+                                    <a id="A-add" href="javascript:" class="PDP-radius-right">+</a>
+                                </p>
+                            </div>
+                            <div class="select-pop-item clearfix" style="position: relative;top:15px">
+                                <label class="left">儿童</label>
+                                <p class="left">
+                                    <a id="B-reduce" href="javascript:" class="PDP-radius-left">-</a>
+                                    <input id="Baby" type="text" class="PDP-number-input heiti" value="0">
+                                    <a id="B-add" href="javascript:" class="PDP-radius-right">+</a>
+                                </p>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="num-sure-btn" style="clear: both;position: relative;top: 50px;">确&nbsp;&nbsp;定</a>
+                    </div>
+                </div>
+            </div>
+            <div class="option-item">
+                <p class="option-item-title">套餐选择</p>
+                <div class="property-select-box">
+                    <dl class="property-select-item ">
+                        <dt>套餐</dt>
+                        <dd><a href="javascript:;">水晶车厢</a></dd>
+                        <dd><a href="javascript:;">标准车厢</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="btn-box clearfix">
+                <a class="add-to-store left" href="javascript:;">加入购物车</a>
+                <a class="add-to-book right" href="javascript:;">加入收藏夹</a>
+            </div>
+            <div class="app-tip relative" style="clear: both;top:20px">
+                <div class="app-tip-pop" style="display: none">
+                    <canvas width="110px"  height="120px"></canvas>
+                </div>
+                下载APP购买更便宜
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pdp-nav-wrap" style="z-index:1000; clear: both;">
+    <ul class="wrapp yaheiclearfix">
+        <li><a href="#pdpIntro">产品介绍</a></li>
+        <li><a href="#pdpMap">地&nbsp;&nbsp;图</a></li>
+        <li><a href="#pdpPerbook">预定须知</a></li>
+    </ul>
+</div>
+    <div style="height: 60px    "></div>
+<div id="#pdpIntro" class="pdp-part relative"  style="height: 761px">
+    <div class="wrapp yahei">
+        <h2>产品介绍</h2>
+        <div class="pdp-intro-wrap">
+            <a href="javascript:;" class="pdp-intro-prev"></a>
+            <a href="javascript:;" class="pdp-intro-next"></a>
+            <div class="caroufredsel_wrapper"
+                 style="display: block;
+                 text-align: start; float: none;
+                 top: auto; right: auto; bottom: auto;
+                 left: auto; z-index: auto; margin: 0px; overflow: hidden;
+                 position: relative; width: 760px; height: 400px;">
+
+                <ul id="pdpIntroList" class="clearfix"
+                style="text-align: left; float: none; position: absolute;
+                top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px;
+                width: 6840px; height: 400px;">
+                    <li class="pdp-intro-item" style="width: 760px">
+                        <img src="http://img.chuguoqu.com/g1/M00/02/B5/eSl1sVaPKiOAGXZYAADozVs-rqM462.jpg" alt="">
+                    </li>
+                    <li class="pdp-intro-item" style="width: 760px">
+                        <img src="http://img.chuguoqu.com/g1/M00/02/D2/Cqjzm1coZAuAXRhDAAJ_G26Al3o061.jpg" alt="">
+                    </li>
+                    <li class="pdp-intro-item" style="width: 760px">
+                        <img src="http://img.chuguoqu.com/g1/M00/02/F3/Cqjzm1gIiPiAO-DiAAFeOmCotNE306.jpg" alt="">
+                    </li>
+                    <li class="pdp-intro-item" style="width: 760px">
+                        <img src="http://img.chuguoqu.com/g1/M00/02/D7/Cqjzm1dID0CAS2pzAAMzyrkGNmo817.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="pdp-intro-control-wrap">
+                <div class="pdp-intro-control clearfix" style="display: block">
+                    <a href="javascript:;" class="selected"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                </div>
+            </div>
+            <div class="caroufredsel_wrapper"
+                         style="display: block; text-align: start;
+                         float: none; top: auto; right: auto; bottom: auto;
+                          left: auto; z-index: auto; margin: 0px; overflow: hidden;
+                           position: relative; width: 760px; height: 250px;">
+                <ul id="#pdpDescriList" class="pdp-descri-list clearfix"
+                style="text-align: left; float: none; position: absolute;
+                top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px;
+                width: 6840px; height: 250px;">
+                    <li class="pdp-descri-item" style="width: 760px">
+                        <p class="descri-title" style="margin-top: 50px">大屿山</p>
+                        <ul><li>大屿山是香港境内最大的岛屿，面积比香港岛大近一倍。其独特的天然景致、
+                            丰富的生态环境、朴素的渔村风情、古迹等，如大澳、梅窝、分流海岸及昂坪宝莲寺，
+                            吸引了许多香港人在周末或者节假日来大屿山游玩、休息。</li></ul>
+                        <ul><li>这里海岸线漫长曲折，港湾与沙滩、高山与流水，自然景观和历史古迹交相辉映。
+                            岛上半数以上地方属于郊野公园范围，环境清幽，青葱翠绿，是远足胜地。</li></ul>
+                        <ul><li>大屿山上的天坛大佛前就是《无间道》里众影帝飙戏，群山浩荡，大佛威严之地。</li></ul>
+                    </li>
+                    <li class="pdp-descri-item" style="width: 760px">
+                        <p class="descri-title" style="margin-top: 50px">水晶车厢里欣赏震撼人心的翠山碧海</p>
+                        昂坪360，因其可以360°欣赏风景而得名。<br>
+                        “Crystal Cabin水晶车”的透明车底设计，让无际碧海、翠绿山峦，在脚下震撼呈现，让你如同飞鸟般在云端展翅翱翔。
+                        香港国际机场的现代气息、大屿山的山光水色、天坛大佛及昂坪高原360度的秀丽全景都将一览无遗。
+                        <span>鸟瞰全无遮挡的360度广阔无限景致，令这昂坪缆车的旅程增添新鲜体验。</span><br>
+                        如果你有恐高症，也可以选择乘坐非透明的普通车厢，途中的时间大约半个小时，一旦上去了，如果不适应，中途是没办法下来的。
+                    </li>
+                    <li class="pdp-descri-item" style="width: 760px">
+                       <p class="descri-title" style="margin-top: 50px">昂坪360缆车路线</p>
+                        昂坪360缆车，是香港第三个缆车系统，连接大屿山东涌及昂坪。完工后成为世界上规模最大的吊车系统。<br>
+                        东涌缆车站-机场岛转向站-弥勒山转向站-昂坪缆车终点站。长度：5.7公里。单程：20-25分钟。<br>
+                        景区提供免费WiFi和手机充电点（充电线需租赁）。<br>
+                    </li>
+                    <li></li>
+                </ul>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer other-footer" style="position: relative;top: 280px;clear: both">
+    <div class="wrap yahei relative">
+        <div class="footer-top">
+            <div class="footer-top-wrap">
+                <p class="footer-contact" style="margin: 0;position: relative;top: 15px;">400-812-5161</p>
+                <p>周一至周日：08:00-23:00 节假日：08:00-20:00</p>
+            </div>
+        </div>
+        <div class="footer-con">
+            <ul class="footer-site-map clearfix">
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/aboutus.html">关于出国去</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/conviction.html">加入我们</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/contactus.html">联系我们</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/help.html">帮助中心</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/declare.html">法律声明</a>
+                </li>
+
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/link.html">友情链接</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/feedback.html">意见反馈</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/business.html">Business Cooperation</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/sitemap.html">网站地图</a>
+                </li>
+                <li class="b2b-link">
+                    <a target="_blank" href="http://www.chuguoqu.com/distributor/apply/view/">分销合作</a>
+                </li>
+            </ul>
+            <p class="mb8">出国去网站独家内容运营商：厦门博游旅行社有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唯一指定的境外旅游服务策供商：厦门博游旅行社有限公司</p>
+            <p class="mb20">Copyright © 2013-2016 出国去chuguoqu.com All rights reserved 厦门博游旅行社有限公司 闽ICP备12023338号-1</p>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="../js/hongkongJ.js"></script>
+
+</body>
+
+</html>

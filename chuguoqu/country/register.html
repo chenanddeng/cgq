@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/Italy.css">
+    <link rel="stylesheet" href="../css/p.css">
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/artTemplate.js"></script>
+    <script src="../js/Italy.js"></script>
+</head>
+<body>
+<div class="new-html">
+    <div class="html-top">
+        <a >X</a>
+    </div>
+    <iframe id="basis-popup-iframe" border="0" scrolling="no" allowtransparency="true"
+            src="http://www.chuguoqu.com/agreementContent.html" class=""
+            classname="" height="400px" frameborder="0" width="600px">
+
+    </iframe>
+</div>
+<div class="shield"></div>
+<div class="Italy">
+    <header class="header scroll-to-fixed-fixed"
+            style=" margin-left: 0px; width: 100%; left: 0px;">
+        <div class="wrap yahei clearfix">
+            <div class="logo left">
+                <a href="" title="出国去旅行网">
+                    <img src="http://www.chuguoqu.com/images/header-logo.png" alt="">
+                </a>
+
+            </div>
+            <!--导航栏部分-->
+            <nav class=" nav left">
+                <ul id="navList" class="relative clearfix">
+                    <li id="home" class="nav-item selected">
+                        <a href="../home.html" style="color: rgb(255,255,255)">
+                            首页
+                        </a>
+                    </li>
+                    <li id="destination" class="nav-item">
+                        <a href="" style="color: rgb(102,102,102)">
+                            目的地
+                        </a>
+                    </li>
+                    <li id="hotels" class="nav-item">
+                        <a href="../hotle.html" style="color: rgb(102,102,102)">
+                            酒店
+                        </a>
+                    </li>
+                    <li id="shop" class="nav-item">
+                        <a href="../shop.html" style="color: rgb(102,102,102)">
+                            购物车
+                        </a>
+                    </li>
+                    <li id="appInfo" class="nav-item">
+                        <a href="../app.html" target="_blank" style="color: rgb(102,102,102)">
+                            App下载
+                        </a>
+                    </li>
+                    <li class="nav-bar-bg" style="left: 0px;"></li>
+                </ul>
+
+            </nav>
+            <div class="header-right right">
+                <p class="login-box">
+                    <a href="../login.html" class="login-btn">登陆</a>
+                    <a href="register.html" class="register-btn">注册</a>
+                </p>
+            </div>
+            <div class="header-search-box right " style="display: block">
+                <input id="search" type="text" class="header-search-ipt" value placeholder="搜索">
+                <a onclick="" href="" class="head-search-btn">搜索</a>
+            </div>
+            <div class=""></div>
+        </div>
+    </header>
+    <!--目的地的显示隐藏部分-->
+    <div class="country-pop-box hide "
+         style=" display: none; height: 261px; padding-top: 40px; margin-top: 0px; padding-bottom: 50px; margin-bottom: 0px;">
+        <div class="country-pop-bg  "></div>
+        <div class="wrap ">
+            <i class="destination-box-arrow ha"></i>
+            <ul class="destination-list clearfix">
+                <li class="destination-list-item">
+                    <strong>欧洲</strong>
+                    <a href="Italy.html">意大利</a>
+                    <a href="France.html">法国</a>
+                    <a href="Britain.html">英国</a>
+                    <a href="Portugal.html">葡萄牙</a>
+                    <a href="Singapore.html">西班牙</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>中国港澳台</strong>
+                    <a href="Taiwan">中国台湾</a>
+                    <a href="Macao.html">中国澳门</a>
+                    <a href="HongKong.html">中国香港</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>大洋洲</strong>
+                    <a href="Australia.html">澳大利亚</a>
+                    <a href="NewZealang.html">新西兰</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>东亚</strong>
+                    <a href="Japan.html">日本</a>
+                    <a href="Korea.html">韩国</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>东南亚</strong>
+                    <a href="Thailand.html">泰国</a>
+                    <a href="Singapore.html">新加坡</a>
+                    <a href="Bali.html">巴厘岛</a>
+                    <a href="Nepal.html">尼泊尔</a>
+                    <a href="Cambodia.html">柬埔寨</a>
+                    <a href="Malaysia.html">马来西亚</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>南亚</strong>
+                    <a href="Srilanka.html">斯里兰卡</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>北美洲</strong>
+                    <a href="America.html">美国</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="register">
+            <div class="register-wrap">
+                <p >30秒快速注册出国去账号</p>
+            </div>
+            <div class="Interface">
+                <div class="Interface-left">
+                    <form >
+                        <p class="clear">*账号</p>
+                        <div class="a">
+                            <input type="text" class="Account" placeholder="邮箱/手机号">
+                            <div class="form-succeed"></div>
+                            <div class="Account-alert">
+                                <span class="left"></span>
+                                <p class="left"> 请填写邮箱或手机号</p>
+                            </div>
+                        </div>
+                        <p class="clear">*密码</p>
+                        <div class="clear b">
+                            <input type="password" class="passwork" placeholder="6-20字符">
+                            <div class="form-succeed"></div>
+                            <div class="passwork-alert">
+                                <span class="left"></span>
+                                <p class="left">请输入密码</p>
+                            </div>
+                        </div>
+                        <p class="clear ">*昵称</p>
+                        <div class="clear c">
+                            <input type="text" class="nickname" placeholder="20字符以内，支持中英数字下划线">
+                            <div class="form-succeed"></div>
+                            <div class="nickname-alert">
+                                <span class="left"></span>
+                                <p class="left">请设定昵称</p>
+                            </div>
+                        </div>
+                        <p class="clear ">*验证码</p>
+                        <div class="clear d">
+                            <input type="text" class="Verification" placeholder="请输入验证码" id="inputCode">
+                            <div class="table">
+                                <div class="code" id="checkCode" onclick="createCode()" ></div>
+                                看不清?<a href="javascript:;" onclick="createCode()">换一张</a>
+                            </div>
+                            <div class="form-succeed"></div>
+                            <div class="Verification-alert">
+                                <span class="left"></span>
+                                <p class="left">请输入验证码</p>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="clear">
+                        <div class="submit">
+                            <a >立即注册</a>
+                        </div>
+                        <div class="change">
+                            <span><input type="checkbox" value=""  class="checkbox"></span>
+                            <span>我已阅读并同意 <a class="agreement">出国去协议</a></span>
+                            <div class="checkbox-alert">
+                                <span class="left"></span>
+                                <span >请勾选协议</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Interface-right left">
+                    <p>已有出国去账号？ <a href="javascript:;">点击登录</a></p>
+                    <div class="quicklogon">
+                        <p>快速登录</p>
+                        <div class="way">
+                            <a href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=100573337&redirect_uri=http://www.chuguoqu.com/login/loginByQQ/&response_type=code&state=b133289939f7e88541b122e61528bac0&scope=get_user_info,add_topic,add_one_blog,add_album,upload_pic,list_album,add_share,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idollist,add_idol,del_ido,get_tenpay_addr" class="QQ"></a>
+                            <a href="https://api.weibo.com/oauth2/authorize?client_id=1284827376&redirect_uri=http://www.chuguoqu.com/login/loginBySinaWeibo&response_type=code&state=null&scope=all" class="sina"></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer other-footer">
+            <div class="wrap yahei relative">
+                <div class="footer-top">
+                    <div class="footer-top-wrap">
+                        <p class="footer-contact">400-812-5161</p>
+                        <p>周一至周日：08:00-23:00 节假日：08:00-20:00</p>
+                    </div>
+                </div>
+                <div class="footer-con">
+                    <ul class="footer-site-map clearfix">
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/aboutus.html">关于出国去</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/conviction.html">加入我们</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/contactus.html">联系我们</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/help.html">帮助中心</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/declare.html">法律声明</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/link.html">友情链接</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/feedback.html">意见反馈</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/business.html">Business Cooperation</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/sitemap.html">网站地图</a>
+                        </li>
+                        <li class="b2b-link">
+                            <a target="_blank" href="http://www.chuguoqu.com/distributor/apply/view/">分销合作</a>
+                        </li>
+                    </ul>
+                    <p class="mb8">出国去网站独家内容运营商：厦门博游旅行社有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唯一指定的境外旅游服务策供商：厦门博游旅行社有限公司</p>
+                    <p class="mb20">Copyright © 2013-2016 出国去chuguoqu.com All rights reserved 厦门博游旅行社有限公司 闽ICP备12023338号-1</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="../js/register.js"></script>
+<script src="../js/Italy.js"></script>
+
+
+</body>
+</html>

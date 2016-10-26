@@ -1,0 +1,81 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+button, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-size:100%; }  
+h2, h3 { font-size:14px; }
+button, input, select, textarea, label { vertical-align:middle; outline:none; }
+ul, ol { list-style:none; }
+a { text-decoration:none;  vertical-align:baseline; cursor:pointer; }
+table { border-collapse:collapse; border-spacing:0; }
+body { word-wrap:break-word; word-break:break-all; height:100%; font-family:"Hiragino Sans GB",STHeiti,"微软雅黑","Microsoft YaHei",Helvetica,Arial,serif}
+i {text-decoration:none;color:white;}
+input{border:0px;}
+img{border: 0; vertical-align: middle;}
+.bar-noLogin .bar-add, .bar-noLogin .bar-link, .bar-noLogin .bar-login, .bar-noLogin .bar-sign{
+    display: block;
+}
+.left{
+    float: left;
+}
+.right {
+    float: right;
+}
+.relative {
+    position: relative;
+}
+.clearfix {
+    zoom: 1;
+}
+p {
+    display: block;
+    margin-top:1em ;
+}
+.login-box a {
+    float: left;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #666;
+    line-height: 14px;
+}
+.login-btn {
+    border-right: 1px solid #b1b1b1;
+}
+.register-btn {
+    border-left: 1px solid #7f7f7f;
+}
+input, img {
+    vertical-align: middle;
+}
+fieldset, img {
+    border: 0;
+}
+input, button, textarea, select, optgroup, option {
+    font-size: 100%;
+}
+input, textarea, select {
+    color: #666;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.relative {
+    position: relative;
+}
+.yahei {
+    font-family: \5FAE\8F6F\96C5\9ED1;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+.bold{
+    font-weight: bold;
+}
+.nav-bar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 30px;
+    background-color: #dc284b;
+    border-radius: 15px;
+    z-index: 0;
+}

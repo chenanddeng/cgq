@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/homeStyle.css">
+    <link rel="stylesheet" href="css/p.css">
+    <script src="lib/jquery.js"></script>
+</head>
+<body class="transparent">
+<div id="loginDiv" class="popups-login-container clearfix">
+    <div class="popups-login-top yahei ">
+        账号登录
+    </div>
+    <form id="login-form" class="popups-login-box left" action="">
+        <fieldset>
+            <div class="popups-login-name clearfix">
+                <div class="popups-login-input left">
+                    <input type="text" id="username" name="username" class="yahei" placeholder="邮箱或手机号">
+                </div>
+                <div id="errorUserName" style="display: none">
+                    <p class="popups-login-prompt-msg left">用户名密码不正确</p>
+                </div>
+            </div>
+            <div class="popups-login-pw relative clearfix">
+                <div class="popups-login-input left">
+                    <input type="password" id="password" name="password" class="yahei password-value-tip">
+                </div>
+            </div>
+            <div class="clearfix">
+                <a  class="popups-login-submit-btn left">登&nbsp;&nbsp;录</a>
+                <a href="" class="popups-login-forgot yahei left">忘记密码？</a>
+            </div>
+        </fieldset>
+    </form>
+    <div class="popups-login-right yahei left">
+        <p class="popups-login-no-account">
+            还没有出国去账号？
+            <a href="" class="yahei">立即注册</a></p>
+        <div class="popups-login-quicklogin">
+            <p>快速登录:</p>
+            <p class="popups-login-quicklogin-btn clearfix">
+                <a href="" class="popups-login-quicklogin-qq">腾讯QQ</a>
+                <a href="" class="popups-login-quicklogin-weibo">新浪微博</a>
+            </p>
+        </div>
+
+    </div>
+</div>
+<script src="js/login.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

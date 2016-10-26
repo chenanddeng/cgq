@@ -1,0 +1,1028 @@
+*{margin: 0;padding: 0;}
+body{
+    position: relative;
+}
+/*home首页*/
+.header{
+    min-width: 1180px;
+    height: 80px;
+    box-shadow: 0 1px 2px #f2f2f2;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.wrap {
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+    background: #fff;
+
+}
+.yahei {
+    font-family: \5FAE\8F6F\96C5\9ED1;
+}
+
+.logo{
+    display: inline-block;
+}
+.logo img {
+    width: 210px;
+}
+.nav {
+    padding-left: 105px;
+}
+#navList {
+    width: 550px;
+    height: 30px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+.nav-item {
+    float: left;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.nav-item a {
+    display: block;
+    height: 30px;
+    font-size: 16px;
+    /*color: #666;*/
+    line-height: 30px;
+    font-weight: bold;
+}
+.nav-bar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 30px;
+    background-color: #dc284b;
+    border-radius: 15px;
+    z-index: 0;
+}
+.header-right {
+    margin-left: 30px;
+    padding-right: 8px;
+}
+
+.login-box {
+    margin-top: 35px;
+}
+.header-search-box {
+    position: relative;
+    width: 155px;
+    height: 32px;
+    margin-top: 25px;
+    overflow: hidden;
+    display: none;
+}
+.header-search-ipt {
+    width: 133px;
+    height: 16px;
+    padding: 7px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    outline: 0;
+    font-family: "Microsoft Yahei";
+    line-height: 16px;
+}
+.head-search-btn {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #dc284b url(http://www.chuguoqu.com/images/icon-common.png) 7px -234px no-repeat;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.country-pop-box {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    padding: 40px 0 50px;
+    border-top: 24px solid transparent;
+    font-family: "Microsoft Yahei";
+    z-index: 9;
+}
+.country-pop-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    opacity: .98;
+    z-index: 0;
+}
+.country-pop-box .wrap {
+    position: relative;
+    z-index: 1;
+}
+.wrap {
+    width: 1180px;
+    margin: 0 auto;
+    background: transparent;
+}
+.destination-box-arrow {
+    position: absolute;
+    top: -68px;
+    left: 466px;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-bottom-color: #ededed;
+}
+.destination-list {
+    margin-right: -95px;
+    /*position: relative;*/
+    /*top: 40px;*/
+}
+.destination-list-item {
+    float: left;
+    margin-right: 80px;
+}
+.destination-list-item strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #666;
+}
+.destination-list-item a {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #666;
+}
+.destination-list-item a:hover{
+    text-decoration: underline;
+}
+
+/*头部CSS*/
+li{list-style: none}
+.shield{
+    width: 100%;
+    height:924px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background: black;
+    z-index: 15;
+    opacity: 0.3;
+    display: none;
+}
+.new-html{
+    width:600px;
+    height: 470px;
+    background: white;
+    position: fixed;top: 120px;left: 372px;
+    opacity: 1;
+    border-radius: 5px;
+    z-index: 20;
+    display: none;
+}
+.html-top{
+    box-sizing: border-box;
+    width: 100%;
+    height: 46px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.html-top a{
+    font-size: 16px;
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: #999999;
+    padding: 5px;
+    border-radius: 50%;
+    text-align:center;
+    color: #cccccc;
+    position: absolute;
+    right: 10px;
+}
+
+
+.Italy{
+    width:1349px;
+    margin: 0 auto;
+}
+header{
+    width: 1349px;
+    height: 84px;
+    background: pink;
+}
+/*内容*/
+.container{
+    width: 100%;
+    border-top:4px solid #dc284b ;
+}
+.wrap{
+    width: 1180px;
+    margin: 0 auto;
+}
+.wrap>ul{
+    width: 1180px;
+    height: 52px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.wrap>ul li{
+    float: left;
+    font-size: 12px;
+    color: #7c7c7c;
+}
+.country-container{
+    clear: both;
+    width: 1180px;
+    height: 215px;
+}
+.product-property-box {
+    margin-bottom: 30px;
+    padding: 30px 30px 10px;
+    border: 1px solid #ededed;
+    background-color: #f9f9f9;
+}
+.product-property-list li {
+    float: left;
+    margin-bottom: 20px;
+}
+.country-container h2 {
+    margin-bottom: 40px;
+    font-size: 22px;
+    color: #dc284b;
+    text-align: center;
+    font-weight: bold;
+}
+.product-property-box {
+    margin-bottom: 30px;
+    padding: 30px 30px 10px;
+    border: 1px solid #ededed;
+    background-color: #f9f9f9;
+}
+.product-property-box dt {
+    float: left;
+    width: 64px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    text-align: right;
+}
+.product-property-box dt {
+    float: left;
+    width: 70px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    text-align: right;
+}
+.product-property-box dd {
+    float: left;
+    width: 1000px;
+}
+.product-property-list {
+    padding-left: -70px;
+}
+.product-property-list .product-property-all {
+    margin-left: -70px;
+}
+.product-property-list li {
+    float: left;
+    margin-bottom: 20px;
+}
+.product-property-list li.select a {
+    border-color: #dc284b;
+    background-color: #dc284b;
+    color: #fff;
+}
+.clearfix{
+    height: 50px;
+    clear: both;
+}
+.product-property-list li a {
+    display: block;
+    padding: 0 15px;
+    line-height: 28px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+}
+:link, :visited, ins {
+    text-decoration: none;
+}
+.select{
+    border-radius: 50%;
+    background: #dc284b;
+}
+.select:hover{
+    background: #b41738;
+}
+.product-list-item {
+    position: relative;
+    float: left;
+    width: 280px;
+    margin-bottom: 10px;
+    padding: 10px 10px 0;
+    padding: 9px 9px 0 9px;
+    border: 1px solid transparent;
+    border-shadow:0px 0px 0px gainsboro;
+}
+.product-list-item:hover{
+    border:1px solid gainsboro;
+    box-shadow:5px 5px 5px gainsboro;
+    transition:box-shadow 0.5s ;
+}
+.con-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.product-img-box {
+    display: block;
+    width: 280px;
+    height: 280px;
+}
+.product-img-box img {
+    width: 100%;
+}
+.product-list-intro {
+    height: 75px;
+    padding: 8px 10px;
+    border-bottom: 1px solid #efefef;
+}
+.product-list-name {
+    display: block;
+    height: 42px;
+    font-size: 14px;
+    color: #333;
+}
+.product-list-name:hover{
+    text-decoration: underline ;
+}
+.product-list-price {
+    font-size: 24px;
+    color: #dc284b;
+}
+.product-list-price strong {
+    margin-left: -6px;
+    font-weight: normal;
+}
+.product-list-price span {
+    font-size: 14px;
+    color: #999;
+}
+.product-list-area {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.right {
+    float: right;
+}
+.country-product-list {
+    margin: 0 -20px 50px;
+}
+.product-list-pagination {
+    margin-bottom: 100px;
+    clear: both;
+}
+.pagination-list li {
+    float: left;
+    padding-left: 10px;
+}
+.pagination-list .selected a {
+    border-color: #dc284b;
+    color: #fff;
+    background-color: #dc284b;
+}
+.pagination-list a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: solid 1px #9b9b9b;
+    color: #9b9b9b;
+    font-size: 14px;
+    font-family: arial;
+    border-radius: 50%;
+}
+.result-list .clearfix
+{
+    height: 0px;
+}
+.next{
+    position: relative;
+}
+.before{
+    position: relative;
+}
+.before a{
+    background-color: #dc284b;
+    color:  #dc284b !important;
+}
+.next a{
+    background-color: #dc284b;
+    color: #dc284b !important;
+}
+.pagination-list  span{
+    position: absolute;
+    left: 22px;
+    top: 11px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    display: block;
+    border-top: 5px solid transparent;
+    /*border-left: 8px solid #fff;*/
+    border-bottom: 5px solid transparent;
+    vertical-align: middle;
+}
+.pagination-list-next  {
+    border-left: 8px solid #fff;
+}
+.pagination-list-befor{
+    border-right: 8px solid #fff;
+
+}
+
+.result-none {
+    padding-top: 100px;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+.result-none i {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 8px -4px 0;
+    background: url(../images/peopleIcon.png) 0 -120px no-repeat;
+}
+.result-none span {
+    color: #dc284b;
+}
+.find-list {
+    margin-bottom: 120px;
+}
+.find-list h2 {
+    margin-bottom: 35px;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.stay-list {
+    margin: 0 -40px 20px -10px;
+}
+.stay-list-item {
+    float: left;
+    position: relative;
+    width: 280px;
+    margin: 0;
+    padding: 10px 10px 0;
+    padding: 9px 9px 0\9;
+    border: 1px solid transparent;
+}
+.stay-list-item:hover{
+    box-shadow: 5px 5px 5px gainsboro;
+
+}
+.con-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.stay-list-item img {
+    width: 280px;
+    height: 190px;
+}
+.stay-info {
+    height: 70px;
+    padding: 10px 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    border-top: 0;
+}
+.stay-info a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.heart-mid-wrapper {
+    margin-top: 15px;
+    height: 16px;
+}
+.stay-info .tips {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+.heart-mid-wrapper .heart-mid-half {
+    background-position: 0 -170px;
+}
+.heart-mid-wrapper .heart-mid-zero {
+    background-position: -20px -150px;
+}
+.heart-mid-wrapper i {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background: url(http://www.chuguoqu.com/images/heart-icon.png) 0 -150px no-repeat;
+}
+.stay-info .right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.stay-info .left {
+    float: left;
+}
+.more-place{
+    color: black;
+    float: right;
+    font-size: 13px;
+}
+.other-footer {
+    padding-bottom: 40px;
+    padding-top:140px;
+    clear: both;
+}
+.other-footer .wrap {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 12px;
+    border-top: 4px solid #dc284b;
+}
+.other-footer .clearfix {
+    height: 20px;
+}
+.yahei {
+    font-family: 微软雅黑;
+}
+.other-footer .relative {
+    position: relative;
+}
+.other-footer .footer-top {
+    margin: 0 0 20px;
+    padding: 0;
+    clear: both;
+}
+.other-footer .footer-top-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.footer-top-wrap p {
+    padding-left: 60px;
+
+}
+.footer-contact {
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+    background: url("http://www.chuguoqu.com/images/icon-common.png") 0 0 no-repeat;
+    line-height: 50px;
+}
+.footer-con {
+    color: #c4c4c4;
+    overflow: hidden;
+}
+.other-footer .footer-site-map {
+    margin-bottom: 8px;
+}
+.footer-site-map {
+    margin-left: -12px;
+}
+.footer-site-map li {
+    float: left;
+    padding: 0 12px;
+    height: 14px;
+    line-height: 14px;
+    border-left: solid 1px #c4c4c4;
+}
+.footer-site-map a {
+    color: #c4c4c4;
+}
+:link, :visited, ins {
+    text-decoration: none;
+}
+.mb8 {
+    margin-bottom: 8px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+._blank{
+    color: red;
+}
+.b2b-link a{
+    color: red;
+}
+.cart-bar-container{
+    width: 280px;
+    min-height: 520px;
+    height: 100%;
+    position: fixed;right: -240px;top: 0px;
+    z-index: 2;
+    background: #f2f2f2;
+    font-size: 12px;
+}
+.cart-bar-nav{
+    width: 40px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #ccc;
+    position: relative;
+
+}
+.cartB-product-box{
+    width: 230px;
+    height: 100%;
+    float: left;
+    position: relative;
+    font-size: 14px;
+}
+.shopping-cart-menu {
+    position: absolute; top:30%; left: 0;
+    width: 100%;
+    height: 110px;
+    padding-top: 20px;
+    background: #f2f2f2;
+    /*background: #dc244b;*/
+    clear: both;
+    color: #dc244b;
+}
+.shopping-cart-menu:hover{
+    background:#dc244b ;
+}
+
+
+.shopping-cart-menu i {
+    display: block;
+    width: 100%;
+    height: 20px;
+    background: url("http://www.chuguoqu.com/images/cartBar.png") 8px 0px no-repeat;
+}
+.shopping-cart-menu:hover i{
+    background-position:8px -30px ;
+}
+.shopping-cart-menu p {
+    width: 14px;
+    margin: 2px auto 0;
+    line-height: 14px;
+    color: #dc244b;
+}
+.shopping-cart-menu:hover p{
+    color: white;
+}
+.shopping-cart-menu span {
+    display: block;
+    width: 20px;
+    margin: 8px auto 0;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: #dc244b;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+.shopping-cart-menu:hover span{
+    background-color: white;
+    color:#dc244b ;
+}
+.cartB-other-menu {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+}
+
+.cartB-other-menu-con{
+    position: relative;
+    width: 40px;
+    height: 120px;
+}
+.cartB-other-menu-con div{
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.app-text{
+    background:#dc244b ;
+    box-sizing: border-box;
+    padding: 5px;
+    position: absolute;top: 0px;
+    display: none;
+}
+.app-text a{
+    color: white;
+}
+.app-img{
+    background: url("http://www.chuguoqu.com/images/cartBar.png") 8px -340px no-repeat;
+    position: absolute;top: 0px;
+
+}
+.opinion-text{
+    padding: 5px;
+    background:#dc244b ;
+    box-sizing: border-box;
+    position: absolute;top: 40px;
+    display: none;
+}
+.opinion-text a{
+    color: white;
+}
+.opinion-img{
+    background: url("http://www.chuguoqu.com/images/cartBar.png") 8px -130px no-repeat;
+    position: absolute;top: 40px;
+}
+.goTop{
+    background: url("http://www.chuguoqu.com/images/cartBar.png") 8px -210px no-repeat;
+    position: absolute;top: 80px;
+}
+.goTop a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.qr-code{
+    position: absolute;top: -70px;left: -150px;
+    display: none;
+}
+.qr-code img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid gainsboro;
+}
+.qr-code i {
+    position: absolute;
+    top: 89px;
+    right: -117px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+     border-left: 6px solid #fff;
+
+}
+.null{
+    position: absolute;top:30%;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #666;
+}
+.null p:nth-of-type(1){
+    margin-bottom: 20px;
+}
+.null p:nth-of-type(2){
+    margin-bottom: 5px;
+}
+.null p a{
+    color: #dc244b;
+}
+.cartB-product-box-footer{
+    width: 100%;
+    position: absolute;bottom: 0px;
+}
+.cartB-product-box-footer .sum p:nth-of-type(1){
+    float: left;
+}
+.cartB-product-box-footer .sum p:nth-of-type(2){
+    float: right;
+}
+.cartB-product-box-footer .sum p:nth-of-type(2) span{
+    color:#dc244b ;
+    font-weight: 700;
+}
+.ok{
+    clear: both;
+    width: 100%;
+    height:37px;
+    background:#dc244b ;
+    color: white;
+    display: block;
+}
+.ok p {
+    color: white;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 37px;
+}
+/*注册表的样式*/
+.register{
+    padding-top: 30px;
+}
+.register-wrap{
+    width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+
+}
+.register-wrap p{
+    padding-left: 67px;
+    font-size: 28px;
+    color:#999;
+}
+.Interface{
+    width: 1182px;
+    height: 492px;
+    margin: 0 auto;
+    padding: 20px 0 20px 67px;
+    border: solid 1px #cfcfcf;
+    box-sizing: border-box;
+}
+.Interface-left{
+    width: 625px;
+    height: 100%;
+    float: left;
+    border-right:1px solid gainsboro;
+}
+.Interface-left form{
+    padding-bottom: 20px;
+    width: 625px;
+}
+.Interface-left p{
+    font-size: 16px;
+    color: #737373;
+    padding: 10px 0 2px 0;
+}
+.Interface-left form div>input{
+    width: 280px;
+    height: 16px;
+    line-height: 16px;
+    padding: 13px 10px;
+    color: #bab9b9;
+    border: solid 1px #cfcfcf;
+    float: left;
+    font-size: 14px;
+}
+.Interface-left form div>div{
+    float: left;
+    padding-left: 24px;
+    display: none;
+}
+.Interface-left form div .table {
+    display: block;
+    font-size: 13px;
+}
+.Interface-left form div .table a{
+    line-height: 32px;
+    padding-left: 10px;
+    color: #dc244b ;
+
+}
+.code {
+    box-sizing: border-box;
+    height: 42px;
+    display: block !important;
+    background: bisque;
+    font-family: Arial;
+    font-style: italic;
+    color: blue;
+    text-align: center;
+    line-height: 32px;
+    padding: 5px 5px 0px 5px !important;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.Interface-left form div div p{
+    color:#dc244b ;
+    padding: 10px 5px;
+    font-size: 12px;
+    border: 1px solid #dc244b;
+}
+.Interface-left form div div span{
+    width: 8px;
+    height: 9px;
+    display: block;
+    position: relative;
+    top: 12px;
+    left: 1px;
+    background: url(http://www.chuguoqu.com/images/login.gif) 1px -400px;
+}
+.clear{
+    clear: both;
+}
+
+.Interface-left .Verification{
+    width: 174px;
+}
+.submit{
+    padding-top: 24px;
+    float: left;
+}
+
+.submit a {
+    width: 142px;
+    padding-right: 28px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    background: url(http://www.chuguoqu.com/images/login.png) no-repeat;
+}
+.change{
+    width: 300px;
+    padding-left: 24px;
+    padding-top:48px;
+    float: left;
+    font-size: 13px;
+    padding-right: 1px;
+    box-sizing: border-box;
+}
+.change a{
+    color: #dc244b;
+}
+.change a:hover{
+    text-decoration: underline;
+}
+.Interface-right{
+    height: 420px;
+    font-size: 18px;
+    color: #787878;
+    border-left: solid 1px #c4c4c4;
+    margin-top: 32px;
+    padding-left: 67px;
+}
+.Interface-right a{
+    color:#dc244b ;
+}
+.quicklogon{
+    padding-top: 60px;
+}
+.quicklogon .way{
+    padding-top: 60px;
+}
+.quicklogon a{
+    width: 60px;
+    height: 60px;
+    background: url(http://www.chuguoqu.com/images/login.png) 0 -320px no-repeat;
+    display: inline-block;
+    margin-right: 30px;
+}
+.quicklogon .sina{
+    background: url(http://www.chuguoqu.com/images/login.png) -80px -320px no-repeat;
+}
+.Interface-left form div .form-succeed {
+    width: 16px;
+    height: 16px;
+    background: url(http://www.chuguoqu.com/images/login.png) -80px -400px no-repeat;
+    margin: 12px 0 0 11px;
+    float: left;
+    display: none;
+}
+.checkbox-alert{
+    color: #dc244b;
+    display: block;
+    float: right;
+    border: 1px solid #dc244b;
+    display: none;
+}
+.change  .left {
+    width: 8px;
+    height: 9px;
+    display: block;
+    position: relative;
+    top: 6px;
+    left:-8px;
+    background: url(http://www.chuguoqu.com/images/login.gif) 1px -400px;
+}
+
+
+
+
+
+
+
+
+

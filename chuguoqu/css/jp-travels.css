@@ -1,0 +1,540 @@
+.header{
+    min-width: 1180px;
+    height: 80px;
+    /*background-color: orange;*/
+    box-shadow: 0 1px 2px #f2f2f2;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.wrap {
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+    background: #fff;
+
+}
+.yahei {
+    font-family: \5FAE\8F6F\96C5\9ED1;
+}
+
+.logo{
+    display: inline-block;
+}
+.logo img {
+    width: 210px;
+}
+.nav {
+
+    padding-left: 105px;
+
+}
+#navList {
+    width: 550px;
+    height: 30px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+.nav-item {
+    float: left;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.nav-item a {
+    display: block;
+    height: 30px;
+    font-size: 16px;
+    /*color: #666;*/
+    line-height: 30px;
+    font-weight: bold;
+}
+.nav-bar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 30px;
+    background-color: #dc284b;
+    border-radius: 15px;
+    z-index: 0;
+}
+.header-right {
+    margin-left: 30px;
+    padding-right: 8px;
+}
+
+.login-box {
+    margin-top: 35px;
+}
+.header-search-box {
+    position: relative;
+    width: 155px;
+    height: 32px;
+    margin-top: 25px;
+    overflow: hidden;
+    display: none;
+}
+.header-search-ipt {
+    width: 133px;
+    height: 16px;
+    padding: 7px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    outline: 0;
+    font-family: "Microsoft Yahei";
+    line-height: 16px;
+}
+.head-search-btn {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #dc284b url(http://www.chuguoqu.com/images/icon-common.png) 7px -234px no-repeat;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.country-pop-box {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    padding: 40px 0 50px;
+    border-top: 24px solid transparent;
+    font-family: "Microsoft Yahei";
+    z-index: 9;
+}
+.country-pop-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    opacity: .98;
+    z-index: 0;
+}
+.country-pop-box .wrap {
+    position: relative;
+    z-index: 1;
+}
+.wrap {
+    width: 1180px;
+    margin: 0 auto;
+    background: transparent;
+}
+.destination-box-arrow {
+    position: absolute;
+    top: -68px;
+    left: 466px;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-bottom-color: #ededed;
+}
+.destination-list {
+    margin-right: -95px;
+    /*position: relative;*/
+    /*top: 40px;*/
+}
+.destination-list-item {
+    float: left;
+    margin-right: 80px;
+}
+.destination-list-item strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #666;
+}
+.destination-list-item a {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #666;
+}
+.destination-list-item a:hover{
+    text-decoration: underline;
+}
+/*内容css*/
+.container {
+    min-width: 1180px;
+    background-color: #fff;
+}
+.notes-banner{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+.notes-banner img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+.notes-head-title{
+    margin-top: 63px;
+    padding-left: 120px;
+}
+.notes-head-title h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 1px 2px 2px #4b4b4b,-1px 2px #4b4b4b;
+}
+.notes-head-title h3{
+    width: 690px;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(6,6,6,.2);
+}
+.notes-head-title h3 div{
+    margin-bottom: 2px;
+}
+
+.content-wrap {
+    position: relative;
+    width: 820px;
+    margin-top: -50px;
+    font-size: 14px;
+    color: #333;
+    float: left;
+}
+
+.user-intro-box{
+    margin-bottom: 70px;
+    height: 126px;
+}
+.user-intro-box dt{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    text-align: center;
+}
+.user-intro-box dt img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+}
+.user-intro-box p{
+    margin: 0;
+}
+.user-intro-box dd{
+    float: left;
+    width: 700px;
+    padding-top: 70px;
+}
+.day-top{
+    position: relative;
+    margin-bottom: 40px;
+    padding: 0 0 30px 120px;
+    border-bottom: 1px solid #ccc;
+}
+.day-top span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 64px;
+    height: 30px;
+    padding-left: 16px;
+    margin-top: -30px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    background:  url("http://www.chuguoqu.com/images/travel-note.png") 0 -100px no-repeat;
+}
+.intro-info{
+    padding-left: 120px;
+}
+.intro-title{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+.intro-title i{
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 20px;
+    height: 26px;
+    background: url("http://www.chuguoqu.com/images/travel-note.png") 0 -140px no-repeat;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.intro-img-list{
+    margin-bottom: 40px;
+}
+.intro-img{
+    width: 700px;
+    height: 370px;
+    margin-bottom: 20px;
+}
+.prebook-table-box{
+    margin-bottom: 40px;
+}
+.prebook-table-box table{
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+.prebook-head-td{
+    width: 98px;
+    padding: 0 !important;
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center !important;
+    border: 1px solid #e3e3e3;
+    vertical-align: middle;
+}
+.prebook-table-box td {
+    padding: 15px 28px;
+    border: 1px solid #e3e3e3;
+    vertical-align: middle;
+    text-align: left;
+}
+.stay-recommend{
+    margin-bottom: 40px;
+    padding-left: 120px;
+}
+.stay-recommend .intro-title i {
+    width: 20px;
+    height: 26px;
+    background-position: -60px -140px;
+}
+.stay-list{
+    margin-right: -20px;
+}
+.stay-list-item{
+    float: left;
+    width: 340px;
+    margin: 0 20px 20px 0;
+}
+.stay-info{
+    height: 60px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top:0 ;
+}
+.stay-info a{
+    display: block;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.heart-mid-wrapper{
+    margin-top: 15px;
+    height: 16px;
+}
+.heart-mid-wrapper i{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background: url("http://www.chuguoqu.com/images/heart-icon.png") 0 -150px no-repeat;
+}
+.heart-mid-wrapper .heart-mid-half {
+    background-position: 0 -170px;
+}
+.heart-mid-wrapper .heart-mid-zero {
+    background-position: -20px -150px;
+}
+.stay-info .tips {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+.stay-list-item img {
+    width: 340px;
+    height: 180px;
+}
+.traffic-info{
+    position: relative;
+    min-height: 22px;
+    margin-bottom: 40px;
+    padding: 18px 18px 18px 120px;
+    border: 1px solid #ccc;
+}
+.traffic-info i{
+    position: absolute;
+    top: 50%;
+    left: 78px;
+    width: 22px;
+    height: 12px;
+    margin-top: -6px;
+    background: url(http://www.chuguoqu.com/images/travel-note.png) -30px -140px no-repeat;
+}
+.sidebar-box{
+    width: 240px;
+    height: 570px;
+    margin-top: 50px;
+    background: transparent;
+}
+.sidebar-wrap{
+    width: 240px;
+    height: 470px;
+    background-color: #fff;
+    z-index: 999;
+    overflow-y: auto;
+}
+.sidebar-con{
+    margin: 20px 0 0 5px;
+    padding-left: 34px;
+    border-left: 2px solid #ccc;
+    font-size: 14px;
+    color: #333;
+}
+.sidebar-con li {
+    padding-bottom: 25px;
+}
+.side-day-title:hover, .current .side-day-title {
+    color: #fff;
+    background-position: 0 0;
+    text-decoration: none;
+}
+.side-day-title{
+    display: block;
+    position: relative;
+    top: -20px;
+    left: -41px;
+    width: 70px;
+    height: 40px;
+    padding-left: 60px;
+    background: url(http://www.chuguoqu.com/images/travel-note.png) 0 -50px no-repeat;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+.sidebar-con div{
+    margin-bottom: 10px;
+}
+.sidebar-con div p{
+    margin: 0;
+}
+.city-list{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.recommend-btn{
+    display: block;
+    height: 60px;
+    margin-top: 30px;
+    line-height: 60px;
+    background-color: #dc244b;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.other-footer {
+    padding-bottom: 40px;
+    padding-top:50px;
+    clear: both;
+}
+.other-footer .wrap {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 12px;
+    border-top: 4px solid #dc284b;
+}
+.other-footer .clearfix {
+    height: 20px;
+}
+.yahei {
+    font-family: 微软雅黑;
+}
+.other-footer{
+    padding-bottom: 40px;
+    padding-top: 140px !important;
+    clear: both;
+}
+.other-footer .relative {
+    position: relative;
+}
+.other-footer .footer-top {
+    margin: 0 0 20px;
+    padding: 0;
+    clear: both;
+}
+.other-footer .footer-top-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.footer-top-wrap p {
+    padding-left: 60px;
+
+}
+.footer-contact {
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+    background: url("http://www.chuguoqu.com/images/icon-common.png") 0 0 no-repeat;
+    line-height: 50px;
+}
+.footer-con {
+    color: #c4c4c4;
+    overflow: hidden;
+}
+.other-footer .footer-site-map {
+    margin-bottom: 8px;
+}
+.footer-site-map {
+    margin-left: -12px;
+}
+.footer-site-map li {
+    float: left;
+    padding: 0 12px;
+    height: 14px;
+    line-height: 14px;
+    border-left: solid 1px #c4c4c4;
+}
+.footer-site-map a {
+    color: #c4c4c4;
+}
+:link, :visited, ins {
+    text-decoration: none;
+}
+.mb8 {
+    margin-bottom: 8px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+._blank{
+    color: red;
+}
+.b2b-link a{
+    color: red;
+}

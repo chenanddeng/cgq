@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="save" content="history">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/p.css">
+    <link rel="stylesheet" href="css/homeStyle.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="lib/swiper/swiper.min.css">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+</head>
+<body onload="login()">
+<header class="header scroll-to-fixed-fixed"
+        style="z-index: 3; position: fixed; top: 0px; margin-left: 0px; width: 100%; left: 0px;">
+    <div class="wrap yahei clearfix">
+        <div class="logo left">
+            <a href="" title="出国去旅行网">
+                <img src="http://www.chuguoqu.com/images/header-logo.png" alt="">
+            </a>
+        </div>
+        <!--导航栏部分-->
+        <nav class=" nav left">
+            <ul id="navList" class="relative clearfix">
+                <li id="home" class="nav-item selected">
+                    <a href="" style="color: rgb(255,255,255)">
+                        首页
+                    </a>
+                </li>
+                <li id="destination" class="nav-item">
+                    <a href="country/Italy.html" style="color: rgb(102,102,102)">
+                        目的地
+                    </a>
+                </li>
+                <li id="hotels" class="nav-item">
+                    <a href="hotle.html" style="color: rgb(102,102,102)">
+                        酒店
+                    </a>
+                </li>
+                <li id="shop" class="nav-item">
+                    <a href="" style="color: rgb(102,102,102)">
+                        购物车
+                    </a>
+                </li>
+                <li id="appInfo" class="nav-item">
+                    <a href="app.html" target="_blank" style="color: rgb(102,102,102)">
+                        App下载
+                    </a>
+                </li>
+                <li class="nav-bar-bg" style="left: 0px;"></li>
+            </ul>
+
+        </nav>
+        <div class="header-right right">
+            <p class="login-box">
+                <a href="javascript:;" class="login-btn">登陆</a>
+                <a href="country/register.html" class="register-btn">注册</a>
+            </p>
+            <div class="login-after relative left" style="display: none">
+                <div class="photo-box left">
+                    <div class="photo-cover"></div>
+                    <img src="http://img.chuguoqu.com/g1/M00/00/27/06B0tVNUyECAaXwPAABYZnxFUPk563.jpg" alt="">
+                </div>
+                <p class="user-name-box left">
+                </p>
+                <div class="user-control-box" style="display:none;">
+                    <i class="user-top-arrow"></i>
+                    <ul class="user-control-list">
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">常用游客</a></li>
+                        <li><a href="">常用联系人</a></li>
+                        <li><a href="">账号设置</a></li>
+                        <li><a id="Sign-out">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="header-search-box right hide">
+            <input id="search" type="text" class="header-search-ipt" value placeholder="搜索">
+            <a onclick="" href="" class="head-search-btn">搜索</a>
+        </div>
+        <div class=""></div>
+    </div>
+</header>
+<!--将顶端空出80px-->
+<div style="display: block; width: 1349px; height: 80px; float: none;"></div>
+<!--目的地的显示隐藏部分-->
+<div class="country-pop-box hide "
+     style=" display: none; height: 261px; padding-top: 40px; margin-top: 0px; padding-bottom: 50px; margin-bottom: 0px;">
+    <div class="country-pop-bg  "></div>
+    <div class="wrap ">
+        <i class="destination-box-arrow ha"></i>
+        <ul class="destination-list clearfix">
+            <li class="destination-list-item">
+                <strong>欧洲</strong>
+                <a href="country/Italy.html">意大利</a>
+                <a href="country/France.html">法国</a>
+                <a href="country/Britain.html">英国</a>
+                <a href="country/Portugal.html">葡萄牙</a>
+                <a href="country/Spain.html">西班牙</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>中国港澳台</strong>
+                <a href="">中国台湾</a>
+                <a href="country/Macao.html">中国澳门</a>
+                <a href="country/HongKong.html">中国香港</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>大洋洲</strong>
+                <a href="">澳大利亚</a>
+                <a href="country/NewZealang.html">新西兰</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>东亚</strong>
+                <a href="country/Japan.html">日本</a>
+                <a href="country/Korea.html">韩国</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>东南亚</strong>
+                <a href="">泰国</a>
+                <a href="country/Singapore.html">新加坡</a>
+                <a href="country/Bali.html">巴厘岛</a>
+                <a href="country/Nepal.html">尼泊尔</a>
+                <a href="country/Cambodia.html">柬埔寨</a>
+                <a href="country/Malaysia.html">马来西亚</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>南亚</strong>
+                <a href="country/Srilanka.html">斯里兰卡</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>北美洲</strong>
+                <a href="country/America.html">美国</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--中间内容轮播部分-->
+<div class="container" id="select-tab" data-selected-tab="home">
+    <div class="banner">
+        <div class="bannerto">
+            <ul class="bannerto-in">
+
+                <li><a href=""><img src="http://img.chuguoqu.com/g1/M00/02/DD/Cqjzm1d1ySyAdse8AAJNE-invvc087.jpg"
+                                    alt=""/></a></li>
+                <li><a href=""><img src="http://img.chuguoqu.com/g1/M00/02/DC/Cqjzm1dyL0WAZoKJAAZ5V5EZ-jo517.jpg"
+                                    alt=""/></a></li>
+                <li><a href=""><img src="http://img.chuguoqu.com/g1/M00/02/EE/Cqjzm1fiNZOAPyHzAAQXTh2VWHY200.jpg"
+                                    alt=""/></a></li>
+            </ul>
+
+        </div>
+        <div class="btn">
+            <a href="javascript:;" class="leftBtn"></a>
+            <a href="javascript:;" class="rightBtn"></a>
+        </div>
+    </div>
+    <!--搜索条input部分-->
+    <div class="search-box relative">
+        <div class="wrapp">
+            <div class="search-wrapper">
+                <input type="hidden" id="tempCountry2">
+                <input type="text" class="search-ipt" id="search2" value placeholder="请输入目的地或者产品名称，例如：香港">
+                <a href="" class="search-btn left">搜索</a>
+            </div>
+        </div>
+    </div>
+    <!--中间内容国家部分-->
+    <div class="explore-world">
+        <div class="wrapp yahei">
+            <h2 class="section-title">探索世界</h2>
+            <p class="sub-title">如果用心感受，世界每个角落都如此精彩</p>
+            <div class="country-list-wap">
+                <ul class="country-list clearfix">
+                    <li class="country-item">
+                        <div class="con-box">
+                            <a href="" target="_blank" title="澳大利亚 Australia">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnGjiAbzWgAAC88zrrw_U8668243"
+                                     alt="澳大利亚 Australia" class="lazy-img small-img">
+                                <div class="country-name">
+                                    <p>澳大利亚</p>
+                                    <span>Australia</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shadow-box " style="display: none;"></div>
+                    </li>
+                    <li class="country-item">
+                        <div class="con-box">
+                            <a href="country/Japan.html" target="_blank" title="日本 Japan">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnGmaATE4GAADQsppcwp82545404"
+                                     alt="日本 Japan" class="lazy-img small-img">
+                                <div class="country-name">
+                                    <p>日本</p>
+                                    <span>Japan</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shadow-box hide" style="display: none"></div>
+                    </li>
+                    <li class="country-item">
+                        <div class="con-box">
+                            <a href="country/Singapore.html" target="_blank" title="新加坡 Singapore">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnGWCAJHBjAADdaHAOHe08814982"
+                                     alt="新加坡 Singapore" class="lazy-img big-img">
+                                <div class="country-name">
+                                    <p>新加坡</p>
+                                    <span>Singapore</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shadow-box hide" style="display: none"></div>
+                    </li>
+                    <li class="country-item">
+                        <div class="con-box">
+                            <a href="" target="_blank" title="泰国 Thailand">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnGUyAd-2kAAEY8HNDH_I7036070"
+                                     alt="泰国 Thailand" class="lazy-img big-img">
+                                <div class="country-name">
+                                    <p>泰国</p>
+                                    <span>Thailand</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shadow-box hide" style="display: none"></div>
+                    </li>
+                    <li class="country-item">
+                        <div class="con-box">
+                            <a href="country/HongKong.html" target="_blank" title="中国香港 Hongkong">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnGcSAH-ZdAAD8Ic6PYYE7454878"
+                                     alt="中国香港 Hongkong" class="lazy-img small-img">
+                                <div class="country-name">
+                                    <p>中国香港</p>
+                                    <span>Hongkong</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shadow-box hide" style="display: none"></div>
+                    </li>
+                    <li class="country-item">
+                        <div class="con-box">
+                            <a href="" target="_blank" title="中国台湾 Taiwan">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnGd6AVerkAADHep2X71A1350463"
+                                     alt="中国台湾 Taiwan" class="lazy-img small-img">
+                                <div class="country-name">
+                                    <p>中国台湾</p>
+                                    <span>Taiwan</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shadow-box hide" style="display: none"></div>
+                    </li>
+                    <li class="country-item">
+                        <div class="con-box">
+                            <a href="country/Macao.html" target="_blank" title="中国澳门 Macao">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnGdCAcqFkAAEZ3cSUK880210242"
+                                     alt="中国澳门 Macao" class="lazy-img small-img">
+                                <div class="country-name">
+                                    <p>中国澳门</p>
+                                    <span>Macao</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shadow-box hide" style="display: none"></div>
+                    </li>
+                    <li class="country-item">
+                        <div class="con-box">
+                            <a href="country/Korea.html" target="_blank" title="韩国 korea">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnGlSAFibDAAEBuKtpMeI6622295"
+                                     alt="韩国 korea" class="lazy-img small-img">
+                                <div class="country-name">
+                                    <p>韩国</p>
+                                    <span>korea</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shadow-box hide" style="display: none"></div>
+                    </li>
+                    <li class="country-item">
+                        <div class="con-box">
+                            <a href="country/America.html" target="_blank" title="美国 United States">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnK4mAF5ZaAADHZCEaU_M3380115"
+                                     alt="美国 United States" class="lazy-img big-img">
+                                <div class="country-name">
+                                    <p>美国</p>
+                                    <span>United States</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="shadow-box hide" style="display: none"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--花花世界很精彩部分-->
+    <div class="flower-world">
+        <div class="wrapp yahei">
+            <h2 class="section-title">花花世界</h2>
+            <p class="sub-title">世界精彩在于你看待世界的角度</p>
+            <ul class="recommend-list clearfix">
+                <li class="recommend-item">
+                    <div class="con-box">
+                        <a href="country/wordFriend.html" target="_blank">
+                            <img class="lazy-img"
+                                 src="http://img.chuguoqu.com/g1/M00/02/92/eSl1sVYnXHmAcZLZAADn6_sw9h0175.jpg" alt="">
+                            <div class="recommend-title">跟朋友一起疯</div>
+                        </a>
+                    </div>
+                    <div class="shadow-box hide" style="display: none"></div>
+                </li>
+                <li class="recommend-item">
+                    <div class="con-box">
+                        <a href="country/wordAndshe.html" target="_blank">
+                            <img class="lazy-img"
+                                 src="http://img.chuguoqu.com/g1/M00/02/90/eSl1sVYmFMqAfv6NAAFJGWAszRc664.jpg" alt="">
+                            <div class="recommend-title">和他（她）的小世界</div>
+                        </a>
+                    </div>
+                    <div class="shadow-box hide" style="display: none"></div>
+                </li>
+                <li class="recommend-item">
+                    <div class="con-box">
+                        <a href="country/wordParent.html" target="_blank">
+                            <img class="lazy-img"
+                                 src="http://img.chuguoqu.com/g1/M00/02/90/eSl1sVYmFROAZTBGAAD8tQoCFGg465.jpg" alt="">
+                            <div class="recommend-title">通长辈慢旅行</div>
+                        </a>
+                    </div>
+                    <div class="shadow-box hide" style="display: none"></div>
+                </li>
+                <li class="recommend-item">
+                    <div class="con-box">
+                        <a href="country/wordBaby.html" target="_blank">
+                            <img class="lazy-img"
+                                 src="http://img.chuguoqu.com/g1/M00/02/90/eSl1sVYmFUeAMbJVAAC2IGGjokA912.jpg" alt="">
+                            <div class="recommend-title">带宝宝去看童话</div>
+                        </a>
+                    </div>
+                    <div class="shadow-box hide" style="display: none"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--路由感受经验部分-->
+    <div class="experience-part">
+        <div class="wrapp yahei">
+            <h2 class="section-title">环球体验家</h2>
+            <p class="sub-title">借你的眼睛，让后来者看到世界的精彩</p>
+            <div>
+                <ul id="experienceList" class="experience-list clearfix masonry" style="position: relative;height: 888px">
+                 <li class="experience-item masonry-brick" style="position: absolute;top: 0;left: 0">
+                     <div class="con-box">
+                         <a href="" target="_blank" title="开心萌游昂坪360">
+                             <img src="http://img.chuguoqu.com/g1/M00/02/AB/eSl1sVZ3tMWABo1MAAFYV3tOe24076.jpg" class="lazy-img-masonry" alt="">
+                         </a>
+                         <div class="experience-info">
+                             <a href="" class="experience-title" title="开心萌游昂坪360">开心萌游昂坪360</a>
+                             <p>
+                                 Hello Kitty第一次登上昂坪缆车，就爱上大屿山优美景色和大澳的地道文化，
+                                 还邀请了她的家人一齐来玩！昂坪市集12月周末及节日将有多场精彩表演，想与萌爆的Hello Kitty
+                                 同游大屿山？还不快来昂坪360玩！
+                             </p>
+                         </div>
+                     </div>
+                     <div class="shadow-box hide" style=" display: none; opacity: 1"></div>
+                 </li>
+                    <li class="experience-item masonry-brick" style="position: absolute;top: 0;left: 300px">
+                        <div class="con-box">
+                            <a href="travels/tg-travels.html" target="_blank" title="泰国9日经典游">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/90/eSl1sVYmEHaAG2uAAAEskrraQDc744.jpg" class="lazy-img-masonry" alt="">
+                            </a>
+                            <div class="experience-info">
+                                <a href="" class="experience-title" title="泰国9日经典游">泰国9日经典游</a>
+                                <p>
+
+                                    曼谷2日，芭提雅2日，美莎岛1日，清迈4日。9天里集合了古庙，海滩，美食，SPA。基本上把曼谷周边以及泰北全部经典景点全部覆盖。
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="shadow-box hide" style="display: none; opacity: 1"></div>
+                    </li>
+                    <li class="experience-item masonry-brick" style="position: absolute;top: 0;left: 600px">
+                        <div class="con-box">
+                            <a href="travels/pj.travels.html" target="_blank" title="普吉7日家庭游">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/90/eSl1sVYmEO-AQ_C7AADWjdtMOaM043.jpg" class="lazy-img-masonry" alt="">
+                            </a>
+                            <div class="experience-info">
+                                <a href="" class="experience-title" title="普吉7日家庭游">普吉7日家庭游</a>
+                                <p>
+
+                                    适合带老人孩子的休闲路线，选择一些交通方便的住处，度假型的酒店，行程会安排比较松，避免过于刺激危险性的项目。
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="shadow-box hide" style="display: none; opacity: 1"></div>
+                    </li>
+                    <li class="experience-item masonry-brick" style="position: absolute;top: 0;left: 900px">
+                        <div class="con-box">
+                            <a href="travels/adly-travels.html" target="_blank" title="澳大利亚12日自驾游">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/90/eSl1sVYmER6AI1uJAAEJ0-shEvA820.jpg" class="lazy-img-masonry" alt="">
+                            </a>
+                            <div class="experience-info">
+                                <a href="" class="experience-title" title="澳大利亚12日自驾游">澳大利亚12日自驾游</a>
+                                <p>
+
+                                    这条路线倾向于自驾游+城市地标+城市周边（适合首次澳洲游，热爱自驾，时间有限的人士）。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="shadow-box hide" style="display: none; opacity: 1"></div>
+                    </li>
+                    <li class="experience-item masonry-brick" style="position: absolute;top: 460px;left: 600px">
+                        <div class="con-box">
+                            <a href="travels/jp-travels.html" target="_blank" title="日本秋季9日游">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/90/eSl1sVYmEymABfH3AAFDDAT5Yog112.jpg" class="lazy-img-masonry" alt="">
+                            </a>
+                            <div class="experience-info">
+                                <a href="" class="experience-title" title="日本秋季9日游">日本秋季9日游</a>
+                                <p>
+                                    本番行程一气呵成，从东京入境到大阪出境，最合理的赏秋路线。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="shadow-box hide" style="display: none; opacity: 1"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--底部footer部分-->
+    <footer class="footer">
+        <div class="wrapp yahei">
+            <div class="footer-top">
+              <div class="footer-top-warp">
+                  <p class="footer-contact">400-812-5161</p>
+                  <p>周一至周日：08:00-23:00 节假日：08:00-<br>20:00</p>
+                  <ul class="other-contact-list clearfix">
+                      <li class="other-contact-sina">
+                          <a href="http://e.weibo.com/u/3203657513" target="_blank" title="关注出国去新浪微博">新浪微博</a>
+                      </li>
+                      <li class="other-contact-wx">
+                          <a href="">微信公众号</a>
+                          <img src="http://www.chuguoqu.com/images/wx-pop.png" class="wx-img-pop" alt="">
+                      </li>
+                  </ul>
+              </div>
+            </div>
+            <div class="footer-con">
+                <ul class="footer-site-map mb20 clearfix" style="font-size: 12px">
+                    <li><a href="" target="_blank">出国去</a></li>
+                    <li><a href="" target="_blank">加入我们</a></li>
+                    <li><a href="" target="_blank">联系我们</a></li>
+                    <li><a href="" target="_blank">帮助中心</a></li>
+                    <li><a href="" target="_blank">法律声明</a></li>
+                    <li><a href="" target="_blank">友情链接</a></li>
+                    <li><a href="" target="_blank">意见反馈</a></li>
+                    <li><a href="" target="_blank">Business Cooperation</a></li>
+                    <li><a href="" target="_blank">网站地图</a></li>
+                    <li><a href="" target="_blank" class="b2b-link">分销合作</a></li>
+                </ul>
+                <p class="mb20" style="font-size: 12px; position:relative; top:17px">出国去网站独家内容运营商：厦门博游旅行社有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 唯一指定的境外旅游服务策供商：厦门博游旅行社有限公司</p>
+                <dl class="friendly-link mb20" style="font-size: 12px;position: relative;top: 17px; ">
+                    <dt class="left">出境旅游：</dt>
+                    <dd><a href="" target="_blank">澳大利亚旅游</a></dd>
+                    <dd><a href="" target="_blank">新西兰</a></dd>
+                    <dd><a href="" target="_blank">泰国旅游</a></dd>
+                    <dd><a href="" target="_blank">美国旅游</a></dd>
+                    <dd><a href="" target="_blank">法国旅游</a></dd>
+                    <dd><a href="" target="_blank">英国旅游</a></dd>
+                    <dd><a href="" target="_blank">韩国旅游</a></dd>
+                    <dd><a href="" target="_blank">新加坡</a></dd>
+                    <dd><a href="" target="_blank">中国香港</a></dd>
+                    <dd><a href="" target="_blank">中国澳门</a></dd>
+                    <dd><a href="" target="_blank">英国旅游</a></dd>
+                    <dd><a href="" target="_blank">韩国旅游</a></dd>
+                    <dd><a href="" target="_blank">法国旅游</a></dd>
+                    <dd><a href="" target="_blank">英国旅游</a></dd>
+                    <dd><a href="" target="_blank">韩国旅游</a></dd>
+                    <dd><a href="" target="_blank">新加坡</a></dd>
+                    <dd><a href="" target="_blank">中国香港</a></dd>
+                    <dd><a href="" target="_blank">中国澳门</a></dd>
+                    <dd><a href="" target="_blank">英国旅游</a></dd>
+                    <dd><a href="" target="_blank">韩国旅游</a></dd>
+                </dl>
+                <dl class="friendly-link mb20" style="font-size: 12px; position: relative;top: 50px; ">
+                    <dt class="left bold" style="clear: both;">友情链接：</dt>
+                    <dd>
+                        <a href="http://www.ctcnn.com/" target="_blank">劲旅网</a>
+                        <a href=" http://www.xialv.com/beijing" target="_blank">北京周边游</a>
+                        <a href="http://ce-air.jipiao.kuxun.cn/" target="_blank">东方航空</a>
+                        <a href="http://sh.uzai.com" target="_blank">上海旅游网</a>
+                        <a href="http://www.lulutrip.com/" target="_blank">路路行</a>
+                        <a href="http://www.hanyouwang.com/" target="_blank">韩游网</a>
+                        <a href="http://www.xtx6.com/" target="_blank">行天下旅行网</a>
+                        <a href="http://www.wuhcits.cn/" target="_blank">武汉中国国旅</a>
+                        <a href="http://www.zhelun.com/" target="_blank">宁波旅行社</a>
+                        <a href="http://www.mdvoo.com/" target="_blank">马尔代夫旅游报价</a>
+                        <a href="http://www.meadin.com/" target="_blank">迈点网</a>
+                        <a href="http://www.penglaiu.com/" target="_blank">蓬莱旅游</a>
+                        <a href="http://www.lvtour.cn/" target="_blank">神舟国旅</a>
+                        <a href="http://dibiao.zhuna.cn/" target="_blank">住哪网</a>
+                        <a href="http://www.517huwai.com/" target="_blank">517旅行</a>
+                        <a href="http://fuwu.huangye88.com/" target="_blank">商务服务网</a>
+                        <a href="http://wenda.gaotie.cn/" target="_blank">铁路客户服务中心</a>
+                        <a href="http://www.7192.com/" target="_blank">影楼网</a>
+                        <a href="http://www.liebiao.com/lvyou/" target="_blank">旅游</a>
+                        <a href="http://chengqu.365jilin.com/" target="_blank">长春旅游网</a>
+                        <a href="http://www.ctsnj.cn" target="_blank">南京旅行社</a>
+                        <a href="http://rizhao.focus.cn/" target="_blank">日照房产网</a>
+                        <a href="http://www.thyoo.com/" target="_blank">南湖国旅</a>
+                        <a href="http://www.alxw.com/" target="_blank">北京中国旅行社</a>
+                        <a href="http://www.jryghq.com/" target="_blank">私人定制旅游</a>
+                        <a href="http://qingdao.lotour.com/" target="_blank">青岛旅游</a>
+                        <a href="http://www.jinzl.com/" target="_blank">南京市中国旅行社</a>
+                        <a href="http://xiamen.tianqi.com/" target="_blank">厦门天气</a>
+                        <a href="http://fuwu.huangye88.com/" target="_blank">商务服务网</a>
+                        <a href="http://www.guolv.com/yuenan/" target="_blank">越南旅游线路</a>
+                        <a href="http://www.lijiang-tour.cn" target="_blank">宜昌九畹溪漂流</a>
+                        <a href="http://www.dlbyg.com/" target="_blank">冰峪沟</a>
+                        <a href="http://www.517ee.com" target="_blank">成都青年旅行社</a>
+                        <a href="http://www.airjipiao.com/" target="_blank">逸行机票网</a>
+                        <a href="http://www.niuwan.com/" target="_blank">牛丸旅游网</a>
+                        <a href="http://www.fhlyou.com/" target="_blank">凤凰古城</a>
+                        <a href="http://www.boyouwang.com/" target="_blank">博游网</a>
+                        <a href="http://www.omegatravel.net/" target="_blank">旅游网</a>
+                        <a href="http://www.21pw.com" target="_blank">品味旅游网</a>
+                        <a href="http://www.hwtrip.com/" target="_blank">爱旅</a>
+                        <a href="http://www.2dx.net/" target="_blank">电子商务</a>
+                        <a href="http://www.balijieji.com" target="_blank">巴黎接机</a>
+                        <a href="http://www.guilin.cm" target="_blank">桂林旅游网</a>
+                        <a href="http://www.117go.com/" target="_blank">淘在路上</a>
+                        <a href="http://d.lotour.com/" target="_blank">酒店预订</a>
+                        <a href="http://www.wannar.com/" target="_blank">美国旅游</a>
+                        <a href="http://36.la/" target="_blank">合肥旅行社</a>
+                        <a href="http://cn.toursforfun.com/ " target="_blank">途风网</a>
+                    </dd>
+                </dl>
+                <p class="text-center" style="font-size: 12px;clear: both"> Copyright © 2013-2016 出国去chuguoqu.com All rights reserved 厦门博游旅行社有限公司 闽ICP备12023338号-1</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--登录框-->
+<link rel="stylesheet" href="css/login.css">
+<span id="9" style="display: none">
+    <div class="basis-popups login-popups-wrap"
+         style="position: absolute;
+         z-index: 8;width: 903px;
+         top: 293px;left: 223px;">
+        <div class="basis-popup-content">
+            <div class="basis-iframe-content">
+                <div class="loading-popups">
+                    <span>&nbsp;&nbsp;加载中...</span>
+                </div>
+                <iframe id="basis-popup-iframe" frameborder="0" border="0" scrolling="no"
+                allowtransparency="true"  width="903px" height="340px"></iframe>
+            </div>
+            <div class="basis-close-btn"></div>
+        </div>
+    </div>
+</span>
+<span id="8" style="display: none">
+    <div class="popuups-mask"
+         style="width: 100%;
+         height: 650%;z-index: 7;
+         display: block;
+         left: 0px;top: 0px"></div>
+</span>
+</body>
+<script src="js/home.js"></script>
+<script src="lib/lunbo.js"></script>
+<script src="js/login.js"></script>
+</html>

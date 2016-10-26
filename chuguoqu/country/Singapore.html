@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/Italy.css">
+    <link rel="stylesheet" href="../css/p.css">
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/artTemplate.js"></script>
+</head>
+<body>
+<div class="Italy">
+    <header class="header scroll-to-fixed-fixed"
+            style=" margin-left: 0px; width: 100%; left: 0px;">
+        <div class="wrap yahei clearfix">
+            <div class="logo left">
+                <a href="" title="出国去旅行网">
+                    <img src="http://www.chuguoqu.com/images/header-logo.png" alt="">
+                </a>
+
+            </div>
+            <!--导航栏部分-->
+            <nav class=" nav left">
+                <ul id="navList" class="relative clearfix">
+                    <li id="home" class="nav-item selected">
+                        <a href="../home.html" style="color: rgb(255,255,255)">
+                            首页
+                        </a>
+                    </li>
+                    <li id="destination" class="nav-item">
+                        <a href="" style="color: rgb(102,102,102)">
+                            目的地
+                        </a>
+                    </li>
+                    <li id="hotels" class="nav-item">
+                        <a href="../hotle.html" style="color: rgb(102,102,102)">
+                            酒店
+                        </a>
+                    </li>
+                    <li id="shop" class="nav-item">
+                        <a href="../shop.html" style="color: rgb(102,102,102)">
+                            购物车
+                        </a>
+                    </li>
+                    <li id="appInfo" class="nav-item">
+                        <a href="../app.html" target="_blank" style="color: rgb(102,102,102)">
+                            App下载
+                        </a>
+                    </li>
+                    <li class="nav-bar-bg" style="left: 0px;"></li>
+                </ul>
+
+            </nav>
+            <div class="header-right right">
+                <p class="login-box">
+                    <a href="../login.html" class="login-btn">登陆</a>
+                    <a href="register.html" class="register-btn">注册</a>
+                </p>
+            </div>
+            <div class="header-search-box right " style="display: block">
+                <input id="search" type="text" class="header-search-ipt" value placeholder="搜索">
+                <a onclick="" href="" class="head-search-btn">搜索</a>
+            </div>
+            <div class=""></div>
+        </div>
+    </header>
+    <!--将顶端空出80px-->
+    <div style="display: block; width: 1349px; height: 80px; float: none;"></div>
+    <!--目的地的显示隐藏部分-->
+    <div class="country-pop-box hide "
+         style=" display: none; height: 261px; padding-top: 40px; margin-top: 0px; padding-bottom: 50px; margin-bottom: 0px;">
+        <div class="country-pop-bg  "></div>
+        <div class="wrap ">
+            <i class="destination-box-arrow ha"></i>
+            <ul class="destination-list clearfix">
+                <li class="destination-list-item">
+                    <strong>欧洲</strong>
+                    <a href="Italy.html">意大利</a>
+                    <a href="France.html">法国</a>
+                    <a href="Britain.html">英国</a>
+                    <a href="Portugal.html">葡萄牙</a>
+                    <a href="Singapore.html">西班牙</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>中国港澳台</strong>
+                    <a href="Taiwan">中国台湾</a>
+                    <a href="Macao.html">中国澳门</a>
+                    <a href="HongKong.html">中国香港</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>大洋洲</strong>
+                    <a href="Australia.html">澳大利亚</a>
+                    <a href="NewZealang.html">新西兰</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>东亚</strong>
+                    <a href="Japan.html">日本</a>
+                    <a href="Korea.html">韩国</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>东南亚</strong>
+                    <a href="Thailand.html">泰国</a>
+                    <a href="Singapore.html">新加坡</a>
+                    <a href="Bali.html">巴厘岛</a>
+                    <a href="Nepal.html">尼泊尔</a>
+                    <a href="Cambodia.html">柬埔寨</a>
+                    <a href="Malaysia.html">马来西亚</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>南亚</strong>
+                    <a href="Srilanka.html">斯里兰卡</a>
+                </li>
+                <li class="destination-list-item">
+                    <strong>北美洲</strong>
+                    <a href="America.html">美国</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrap yahei">
+            <ul class="breadcrumbs">
+                <li>目的地></li>
+                <li>新加坡</li>
+            </ul>
+            <div class="country-container">
+                <h2>更多自由行选择</h2>
+                <div class="product-property-box">
+                    <dl class="clearfix">
+                        <dt>目 的 地：</dt>
+                        <dd>
+                            <ul class="product-property-list clearfix place">
+                                <li><a a href="javascript:;" class="select">全部</a></li>
+                                <li ><a href="javascript:;">新加坡</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>产品类型：</dt>
+                        <dd>
+                            <ul class="product-property-list clearfix product">
+                                <li><a  href="javascript:;" class="select">全部</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="result-list">
+                <ul class="country-product-list clearfix">
+                    <p class="result-none hide" style="display: none;">
+                        <i></i>
+                        共有0项关于“<span id="noResultMsg"></span>”的记录
+                    </p>
+                </ul>
+            </div>
+            <div class="product-list-pagination clearfix">
+                <div class="right" id="pager">
+                    <ul class="pagination-list left"></ul>
+                </div>
+
+            </div>
+            <div class="find-list ">
+                <h2>发现好趣处</h2>
+                <ul class="stay-list clearfix">
+                    <li class="stay-list-item">
+                        <div class="con-box">
+                            <a href="http://www.chuguoqu.com/poi/poi-136/" target="_blank">
+                                <img src="http://img.chuguoqu.com/g1/M00/00/03/yqWx5FMwHYGAe7gPAAFeUl_NSgM376.jpg" alt="威尼斯">
+                            </a>
+
+                            <div class="stay-info">
+                                <a href="http://www.chuguoqu.com/poi/poi-136/" target="_blank">新加坡环球影城</a>
+                                <a href="http://www.chuguoqu.com/poi/poi-136/" target="_blank">Universal Studios Singapore</a>
+
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                </div>
+                                <p class="tips right">新加坡</p>
+                            </div>
+                        </div>
+                        <div class="shadow-box hide" style="display: none; opacity: 1;"></div>
+                    </li>
+                    <li class="stay-list-item">
+                        <div class="con-box">
+                            <a href="http://www.chuguoqu.com/poi/poi-555/" target="_blank">
+                                <img src="http://img.chuguoqu.com/g1/M00/00/22/06B0tVNQn9mACQrGAAFxM1cb3ws700.jpg" alt="罗马">
+                            </a>
+
+                            <div class="stay-info">
+                                <a href="http://www.chuguoqu.com/poi/poi-555/" target="_blank"> 新加坡海底世界</a>
+                                <a href="http://www.chuguoqu.com/poi/poi-555/" target="_blank">Underwater World Singapore</a>
+
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-half"></i>
+                                </div>
+                                <p class="tips right">新加坡</p>
+                            </div>
+                        </div>
+                        <div class="shadow-box hide" style="display: none; opacity: 1;"></div>
+                    </li>
+                    <li class="stay-list-item">
+                        <div class="con-box">
+                            <a href="http://www.chuguoqu.com/poi/poi-251/" target="_blank">
+                                <img src="http://img.chuguoqu.com/g1/M00/00/24/06B0tVNQ-NqANnyLAAGCd6Nv9ZE885.jpg" alt="马拉内罗">
+                            </a>
+
+                            <div class="stay-info">
+                                <a href="http://www.chuguoqu.com/poi/poi-251/" target="_blank">滨海湾花园</a>
+                                <a href="http://www.chuguoqu.com/poi/poi-251/" target="_blank">Gardens by the Bay</a>
+
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-half"></i>
+                                </div>
+                                <p class="tips right">香港</p>
+                            </div>
+                        </div>
+                        <div class="shadow-box hide" style="display: none; opacity: 1;"></div>
+                    </li>
+                    <li class="stay-list-item">
+                        <div class="con-box">
+                            <a href="http://www.chuguoqu.com/poi/poi-132/" target="_blank">
+                                <img src="http://img.chuguoqu.com/g1/M00/00/03/yqWx5FMv6QmADr92AAF3vDZAKUk346.jpg" alt="圣马可大教堂">
+                            </a>
+
+                            <div class="stay-info">
+                                <a href="http://www.chuguoqu.com/poi/poi-132/" target="_blank">新加坡夜间野生动物园</a>
+                                <a href="http://www.chuguoqu.com/poi/poi-132/" target="_blank">Night Safari</a>
+
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-half"></i>
+                                </div>
+                                <p class="tips right">新加坡</p>
+                            </div>
+                        </div>
+                        <div class="shadow-box hide" style="display: none; opacity: 1;"></div>
+                    </li>
+
+                </ul>
+                <a class="more-place" href="http://www.chuguoqu.com/poi/sg/" target="_blank">更多新加坡好趣处</a>
+            </div>
+        </div>
+        <footer class="footer other-footer">
+            <div class="wrap yahei relative">
+                <div class="footer-top">
+                    <div class="footer-top-wrap">
+                        <p class="footer-contact">400-812-5161</p>
+                        <p>周一至周日：08:00-23:00 节假日：08:00-20:00</p>
+                    </div>
+                </div>
+                <div class="footer-con">
+                    <ul class="footer-site-map clearfix">
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/aboutus.html">关于出国去</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/conviction.html">加入我们</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/contactus.html">联系我们</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/help.html">帮助中心</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/declare.html">法律声明</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/link.html">友情链接</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/feedback.html">意见反馈</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/business.html">Business Cooperation</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuguoqu.com/sitemap.html">网站地图</a>
+                        </li>
+                        <li class="b2b-link">
+                            <a target="_blank" href="http://www.chuguoqu.com/distributor/apply/view/">分销合作</a>
+                        </li>
+                    </ul>
+                    <p class="mb8">出国去网站独家内容运营商：厦门博游旅行社有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唯一指定的境外旅游服务策供商：厦门博游旅行社有限公司</p>
+                    <p class="mb20">Copyright © 2013-2016 出国去chuguoqu.com All rights reserved 厦门博游旅行社有限公司 闽ICP备12023338号-1</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="cart-bar-container">
+        <div class="cart-bar-nav">
+            <div class="shopping-cart-menu">
+                <i></i>
+                <p>购物车</p>
+                <span>0</span>
+            </div>
+            <div class="cartB-other-menu">
+                <div class="cartB-other-menu-con">
+                    <div class="app-img"></div>
+                    <div class="app-text"><a href="http://www.chuguoqu.com/app2-1.html"><p>App下载</p></a></div>
+                    <div class="opinion-img"></div>
+                    <div class="opinion-text"><a href="http://www.chuguoqu.com/feedback.html">意见反馈</a></div>
+                    <div class="goTop"><a href="#"></a></div>
+                    <div class="qr-code">
+                        <i></i>
+                        <img src="http://www.chuguoqu.com/images/app-info/QR.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="cartB-product-box">
+            <div class="null">
+                <p>购物车空空如也</p>
+                <p>如您已添加过商品</p>
+                <p>可 <a href="../login.html">登录</a>后查看</p>
+            </div>
+            <div class="cartB-product-box-footer">
+                <div class="sum">
+                    <p>共 <span>0</span>件商品</p>
+                    <p>总计：<span>￥0</span></p>
+                </div>
+                <a href="http://www.chuguoqu.com/shopping/cart/my/" class="ok"><p>结账</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/Singapore.js"></script>
+
+<script id="detailList" type="text/html">
+    <li class="product-list-item">
+        <div class="con-box">
+            <a class="product-img-box">
+                <img src="{{imageUrl}}" alt="{{imageAlt}}">
+            </a>
+            <div class="product-list-intro">
+                <a class="product-list-name" href="http://www.chuguoqu.com/{{itemUri}}" target="_blank" title="">{{itemTitle}}</a>
+                <p class="product-list-price left">
+                    <strong>￥{{adultPrice}}{{itemPrice}}</strong>
+                                     <span class="line-through">
+                                         {{counterPrice}}
+                                     </span>
+                </p>
+                <span class="product-list-area right">{{cityName}}</span>
+            </div>
+        </div>
+    </li>
+</script>
+<script id="categoryList" type="text/html">
+    <li ><a  href="javascript:;">{{name}}</a></li>
+
+</script>
+
+</body>
+</html>

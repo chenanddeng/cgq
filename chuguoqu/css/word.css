@@ -1,0 +1,386 @@
+*{margin: 0;padding: 0;}
+body{
+    position: relative;
+}
+/*home首页*/
+.header{
+    min-width: 1180px;
+    height: 80px;
+    box-shadow: 0 1px 2px #f2f2f2;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.wrap {
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+    background: #fff;
+
+}
+.yahei {
+    font-family: \5FAE\8F6F\96C5\9ED1;
+}
+
+.logo{
+    display: inline-block;
+}
+.logo img {
+    width: 210px;
+}
+.nav {
+    padding-left: 105px;
+}
+#navList {
+    width: 550px;
+    height: 30px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+.nav-item {
+    float: left;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.nav-item a {
+    display: block;
+    height: 30px;
+    font-size: 16px;
+    /*color: #666;*/
+    line-height: 30px;
+    font-weight: bold;
+}
+.nav-bar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 30px;
+    background-color: #dc284b;
+    border-radius: 15px;
+    z-index: 0;
+}
+.header-right {
+    margin-left: 30px;
+    padding-right: 8px;
+}
+
+.login-box {
+    margin-top: 35px;
+}
+.header-search-box {
+    position: relative;
+    width: 155px;
+    height: 32px;
+    margin-top: 25px;
+    overflow: hidden;
+    display: none;
+}
+.header-search-ipt {
+    width: 133px;
+    height: 16px;
+    padding: 7px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    outline: 0;
+    font-family: "Microsoft Yahei";
+    line-height: 16px;
+}
+.head-search-btn {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #dc284b url(http://www.chuguoqu.com/images/icon-common.png) 7px -234px no-repeat;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.country-pop-box {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    padding: 40px 0 50px;
+    border-top: 24px solid transparent;
+    font-family: "Microsoft Yahei";
+    z-index: 9;
+}
+.country-pop-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    opacity: .98;
+    z-index: 0;
+}
+.country-pop-box .wrap {
+    position: relative;
+    z-index: 1;
+}
+.wrap {
+    width: 1180px;
+    margin: 0 auto;
+    background: transparent;
+}
+.destination-box-arrow {
+    position: absolute;
+    top: -68px;
+    left: 466px;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-bottom-color: #ededed;
+}
+.destination-list {
+    margin-right: -95px;
+    /*position: relative;*/
+    /*top: 40px;*/
+}
+.destination-list-item {
+    float: left;
+    margin-right: 80px;
+}
+.destination-list-item strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #666;
+}
+.destination-list-item a {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #666;
+}
+.destination-list-item a:hover{
+    text-decoration: underline;
+}
+
+/*头部CSS*/
+li{list-style: none}
+.Italy{
+    width:1349px;
+    margin: 0 auto;
+}
+header{
+    width: 1349px;
+    height: 84px;
+    background: pink;
+}
+/*内容*/
+.container{
+    width: 100%;
+
+}
+
+.banner-top{
+    /*overflow: hidden;*/
+}
+.banner-top img{
+    position: relative;left: 50%;
+    transform:translate(-50%,0);
+}
+.wrap{
+    width: 1190px;
+    margin: 0 auto;
+}
+.con-top{
+    margin-bottom: 75px;
+    padding-top: 100px;
+    font-size: 14px;
+    color: #999;
+}
+.con-top h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
+.recommend-menu-wrap {
+    height: 30px;
+    margin-bottom: 20px;
+    clear: both;
+}
+.recommend-menu-list{
+    float: left;
+    height: 100%;
+    position: relative;left:50%;
+    transform:translate(-50%,0);
+    margin-bottom: 10px;
+}
+.fixed{
+    background:#dc284b ;
+    color: white!important;
+}
+.recommend-menu-list li{
+    float: left;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #999999;
+    padding: 0 18px;
+    margin-right: 10px;
+}
+.recommend-menu-list li:hover{
+    background: #dc284b;
+}
+.show-list{
+    width: 100%;
+    clear: both;
+    display: none;
+}
+.show-list:nth-of-type(1){
+    display: block;
+}
+.show-item{
+    width: 25%;
+    height:392px;
+    float: left;
+    box-sizing: border-box;
+    padding: 6px;
+}
+.show-item:hover{
+    border: 1px solid gainsboro;
+    box-shadow: 5px 4px 5px gainsboro;
+}
+.show-item img{
+    width: 280px;
+    height: 280px;
+}
+.journey-list-content{
+    height: 90px;
+    position: relative;
+    margin-top:5px ;
+}
+.journey-list-content a{
+    font-size: 13px;
+    color: black;
+    display: block;
+    padding-top: 10px;
+}
+.journey-list-content a:hover{
+    text-decoration: underline;
+    text-decoration: underline;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.price{
+    width: 100%;
+    clear: both;
+    position: absolute;bottom:0px;
+    box-sizing: border-box;
+    color: #999999;
+    font-size: 14px;
+}
+.place{
+    padding-top: 10px;
+}
+.agoprice{
+    padding-top: 10px;
+    text-decoration: line-through;
+}
+.nowprice{
+    font-size: 24px;
+    color:#dc284b ;
+}
+.other-footer {
+    padding-bottom: 40px;
+    padding-top:50px;
+    clear: both;
+}
+.other-footer .wrap {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 12px;
+    border-top: 4px solid #dc284b;
+}
+.other-footer .clearfix {
+    height: 20px;
+}
+.yahei {
+    font-family: 微软雅黑;
+}
+.other-footer .relative {
+    position: relative;
+}
+.other-footer .footer-top {
+    margin: 0 0 20px;
+    padding: 0;
+    clear: both;
+}
+.other-footer .footer-top-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.footer-top-wrap p {
+    padding-left: 60px;
+
+}
+.footer-contact {
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+    background: url("http://www.chuguoqu.com/images/icon-common.png") 0 0 no-repeat;
+    line-height: 50px;
+}
+.footer-con {
+    color: #c4c4c4;
+    overflow: hidden;
+}
+.other-footer .footer-site-map {
+    margin-bottom: 8px;
+}
+.footer-site-map {
+    margin-left: -12px;
+}
+.footer-site-map li {
+    float: left;
+    padding: 0 12px;
+    height: 14px;
+    line-height: 14px;
+    border-left: solid 1px #c4c4c4;
+}
+.footer-site-map a {
+    color: #c4c4c4;
+}
+:link, :visited, ins {
+    text-decoration: none;
+}
+.mb8 {
+    margin-bottom: 8px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+._blank{
+    color: red;
+}
+.b2b-link a{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+

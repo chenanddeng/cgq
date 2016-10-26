@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/jquery-ui.css">
+    <link rel="stylesheet" href="css/p.css">
+    <link rel="stylesheet" href="css/hotleStyle.css">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<!--顶端部分-->
+<div class="partner_header_wrapper hybrid-header">
+    <div id="affiliate_top">
+        <div id="partner_branding3">
+            <div class="hybrid_affiliates">
+                <header class="header">
+                    <div class="wrap yahei clearfix">
+                        <div class="logo left">
+                            <a href="">
+                                <img src="http://r-cc.bstatic.com/data/sp_aff/962867/header-logo.png" alt="">
+                            </a>
+                        </div>
+                        <nav class="nav left">
+                            <ul id="navList" class="relative clearfix" style="width: 550px">
+                                <li id="home" class="nav-item">
+                                    <a href="home.html">首页</a>
+                                </li>
+                                <li id="destination" class="nav-item">
+                                    <a href="country/Italy.html">目的地</a>
+                                </li>
+                                <li id="hotle" class="nav-item">
+                                    <a href="" style="color: white">酒店</a>
+                                </li>
+                                <li id="shop" class="nav-item">
+                                    <a href="">购物车</a>
+                                </li>
+                                <li id="appIfo" class="nav-item">
+                                    <a href="app.html">App下载</a>
+                                </li>
+                                <li class="nav-bar-bg"></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div id="aff_personal_form">
+            <div class="aff_select_wrap currency_select_button">
+                <div class="aff_select_box aff_currency_full aff_current_currency">
+                    <span class="symbol ">元</span>
+                    <span class="description ">人民币</span>
+                </div>
+            </div>
+            <div class="aff_select_wrap language_select_button">
+                <div class="aff_select_box aff_language_full aff_current_language">
+                      <span class="symbol">
+                          <img src="http://r-cc.bstatic.com/static/img/flags/24/cn/b50a28ad0218953c0c5daed6a7efa724475c3ec3.png">
+                      </span>
+                    <span class="description">简体中文</span>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--主体内容部分-->
+<div id="bodyConstraint">
+    <div id="bodyConstraint-inner">
+        <div class="lp_flexible_layout_content_wrapper">
+            <div id="subheader-wrap">
+                <br>
+            </div>
+            <div data-block-id="header_survey"></div>
+            <div id="basiclayout" role="main">
+                <div class="leftwide rilt-left">
+                    <!--表单部分没写完-->
+                    <div class="sb-searchbox__outer" id="searchboxInc">
+                        <!--表单部分-->
+                        <form
+                                id="frm"
+                                method="get"
+                                action="/searchresults.zh-cn.html"
+                                role="search"
+                                class="sb-searchboxsb-searchbox--painted-has-emk-subscribe-bar-belowjs--sb-searchboxb-searchbox b-form-subtitle"
+                                data-component="search/searchbox/searchbox"
+                                data-sb-id="main"
+                                data-sb-flags=" AEJPAcBacPONDcFGHT:0 PVSfHFBddQSBLcDHET:0 sticky"
+                                data-is-first-visible="1"
+                                target="_blank" style="height: 182px">
+                            <div class="sb-searchbox__row u-clearfix -title">
+                                <h3 class="sb-searchbox__row u-clearfix -title">
+                                    <i class="b-sprite sb_border_gradient"></i>
+                                    <span class="sb-searchbox__title-text">时刻准备去旅行</span>
+                                </h3>
+                                <div class="sb-searchbox__subtitle-text">无论去哪里，无论工作或休闲，最佳住宿都在等您发现</div>
+                            </div>
+                            <div class="sb-searchbox__row u-clearfix">
+                                <label class="sb-searchbox__lable -main">目的地、住宿名称或地址</label>
+                            </div>
+                            <!--输入栏-->
+                            <div id="find" class="sb-searchbox__row u-clearfix" style="margin-top: -10px">
+                                <div class="c-autocomplete sb-destination">
+                                    <input type="search" name="ss" id="ss"
+                                           class="c-autocomplete__input sb-searchbox__input sb-destination__input"
+                                           placeholder="世界这么大，总有你还没到过的地方，开始新的旅程吧！" style="">
+                                    <div id="ii" class="searchbox_clickable_search js-searchbox_clickable_search"
+                                         style="display:none;">
+                                        <i class="searchbox_clickable_search__close bicon-aclose"><img src="img/关闭.png"
+                                                                                                       alt=""></i>
+                                        <ul class="searchbox_clickable_search__navigation">
+                                            <li class="searchbox_clickable_search__navigation__item">
+                                                <a href="#"
+                                                   class="searchbox_clickable_search__navigation__item__link
+                                                   js-searchbox_clickable_search__navigation__item__link
+                                                   searchbox_clickable_search__navigation__item__link--selected">
+                                                    热门
+                                                </a>
+                                            </li>
+                                            <li class="searchbox_clickable_search__navigation__item">
+                                                <a href="#"
+                                                   class="searchbox_clickable_search__navigation__item__link
+                                                   js-searchbox_clickable_search__navigation__item__link">
+                                                    亚洲
+                                                </a>
+                                            </li>
+                                            <li class="searchbox_clickable_search__navigation__item">
+                                                <a href="#"
+                                                   class="searchbox_clickable_search__navigation__item__link
+                                                   js-searchbox_clickable_search__navigation__item__link">
+                                                    欧洲
+                                                </a>
+                                            </li>
+                                            <li class="searchbox_clickable_search__navigation__item">
+                                                <a href="#"
+                                                   class="searchbox_clickable_search__navigation__item__link
+                                                   js-searchbox_clickable_search__navigation__item__link">
+                                                    美洲
+                                                </a>
+                                            </li>
+                                            <li class="searchbox_clickable_search__navigation__item">
+                                                <a href="#"
+                                                   class="searchbox_clickable_search__navigation__item__link
+                                                   js-searchbox_clickable_search__navigation__item__link">
+                                                    大洋洲
+                                                </a>
+                                            </li>
+                                            <li class="searchbox_clickable_search__navigation__item">
+                                                <a href="#"
+                                                   class="searchbox_clickable_search__navigation__item__link
+                                                   js-searchbox_clickable_search__navigation__item__link">
+                                                    非洲
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div id="1" class="searchbox_clickable_search__tab
+                                        js-searchbox_clickable_search__tab">
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="香港，香港特别行政区">
+                                                香港
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="东京，东京都，日本">
+                                                东京
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="大阪，大阪府，日本">
+                                                大阪
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="曼谷，曼谷，泰国">
+                                                曼谷
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="清迈，清迈府，泰国">
+                                                清迈
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="京都，京都府，日本">
+                                                京都
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="台北，台北地区，台北">
+                                                台北
+                                            </a>
+
+
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="新加坡，新加坡">
+                                                新加坡
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="巴黎，法兰西大区，巴黎">
+                                                巴黎
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="首尔，韩国">
+                                                首尔
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="上海，上海市，中国">
+                                                上海
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="北京，北京市，中国">
+                                                北京
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="伦敦，伦敦及周边地区，英国">
+                                                伦敦
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="三亚，海南省，中国">
+                                                三亚
+                                            </a>
+
+
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="芭东海滩，普吉岛，泰国">
+                                                芭东海滩
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="洛杉矶，加利福尼亚，美国">
+                                                洛杉矶
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="罗马，拉齐奥大区，意大利">
+                                                罗马
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="广州，广东省，中国">
+                                                广州
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="纽约，纽约州，美国">
+                                                纽约
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="杭州，浙江省，中国">
+                                                杭州
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="旧金山，加利福尼亚，美国">
+                                                旧金山
+                                            </a>
+                                        </div>
+                                        <div id="2" class="searchbox_clickable_search__tab
+                                        js-searchbox_clickable_search__tab" style="display: none">
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="香港，香港特别行政区">
+                                                香港
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="东京，东京都，日本">
+                                                东京
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="大阪，大阪府，日本">
+                                                大阪
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="曼谷，曼谷，泰国">
+                                                曼谷
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="清迈，清迈府，泰国">
+                                                清迈
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="京都，京都府，日本">
+                                                京都
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="台北，台北地区，台北">
+                                                台北
+                                            </a>
+
+
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="新加坡，新加坡">
+                                                新加坡
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="首尔，韩国">
+                                                首尔
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="上海，上海市，中国">
+                                                上海
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="北京，北京市，中国">
+                                                北京
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="三亚，海南省，中国">
+                                                三亚
+                                            </a>
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="芭东海滩，普吉岛，泰国">
+                                                芭东海滩
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="广州，广东省，中国">
+                                                广州
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="杭州，浙江省，中国">
+                                                杭州
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="澳门, 澳门特别行政区">
+                                                澳门
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="厦门, 福建省，中国">
+                                                厦门
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="成都, 四川省，中国">
+                                                成都
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="深圳, 广东省，中国">
+                                                深圳
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="澳门, 澳门特别行政区">
+                                                澳门
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="箱根, 神奈川县，日本">
+                                                箱根
+                                            </a>
+                                        </div>
+                                        <div id="3" class="searchbox_clickable_search__tab
+                                        js-searchbox_clickable_search__tab bigLi" style="display: none">
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="巴黎，法兰西岛大区">
+                                                巴黎
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="伦敦，伦敦及其周边地区，英国">
+                                                伦敦
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="罗马，拉齐奥大区，意大利">
+                                                罗马
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="米兰，伦巴第大区，意大利">
+                                                米兰
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="巴塞罗那，加泰罗尼亚，西班牙">
+                                                巴塞罗那
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="佛罗伦萨，托斯卡纳大区，意大利">
+                                                佛罗伦萨
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="威尼斯，威尼托大区，意大利">
+                                                威尼斯
+                                            </a>
+
+
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="慕尼黑，巴伐利亚自由州，德国">
+                                                慕尼黑
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="布拉格，捷克">
+                                                布拉格
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="马德里，马德里，西班牙">
+                                                马德里
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="阿姆斯特丹，北荷兰省，荷兰">
+                                                阿姆斯特丹
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="维也纳，维也纳州，奥地利">
+                                                维也纳
+                                            </a>
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="尼斯，威尼托大区，意大利">
+                                                尼斯
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="爱丁堡，英国">
+                                                爱丁堡
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="雅典，希腊">
+                                                雅典
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="莫斯科, 俄罗斯">
+                                                莫斯科
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="苏黎世, 苏黎世州, 瑞士">
+                                                苏黎世
+                                            </a>
+                                        </div>
+                                        <div id="4" class="searchbox_clickable_search__tab
+                                        js-searchbox_clickable_search__tab bigLi" style="display: none">
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="洛杉矶, 加利福尼亚州, 美国">
+                                                洛杉矶
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="纽约, 纽约州, 美国">
+                                                纽约
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="旧金山, 加利福尼亚州, 美国">
+                                                旧金山
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="拉斯维加斯, 内华达州, 美国">
+                                                拉斯维加斯
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="华盛顿, 哥伦比亚特区, 美国">
+                                                华盛顿
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="波士顿, 马萨诸塞州, 美国">
+                                                波士顿
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="圣地亚哥, 加利福尼亚州, 美国">
+                                                圣地亚哥
+                                            </a>
+
+
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="檀香山, 夏威夷, 美国">
+                                                檀香山
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="温哥华, 不列颠哥伦比亚省, 加拿大">
+                                                温哥华
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="奥兰多, 佛罗里达州, 美国">
+                                                奥兰多
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="多伦多, 安大略省, 加拿大">
+                                                多伦多
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="西雅图, 华盛顿州, 美国">
+                                                西雅图
+                                            </a>
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="芝加哥, 伊利诺伊州, 美国">
+                                                芝加哥
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="迈阿密, 佛罗里达州, 美国">
+                                                迈阿密
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="蒙特雷, 加利福尼亚州, 美国">
+                                                蒙特雷
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="蒙特利尔, 魁北克省, 加拿大">
+                                                蒙特利尔
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="休斯顿, 得克萨斯州, 美国">
+                                                休斯顿
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="西黄石, 蒙大拿州, 美国">
+                                                西黄石
+                                            </a>
+                                        </div>
+                                        <div id="5" class="searchbox_clickable_search__tab
+                                        js-searchbox_clickable_search__tab bigLi" style="display: none">
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="悉尼, 新南威尔士, 澳大利亚">
+                                                悉尼
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="墨尔本, 维多利亚, 澳大利亚">
+                                                墨尔本
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="皇后镇, 奥塔哥大区, 新西兰">
+                                                皇后镇
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="奥克兰, 奥克兰大区, 新西兰">
+                                                奥克兰
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="黄金海岸, 昆士兰, 澳大利亚">
+                                                黄金海岸
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="基督城, 坎特伯雷大区, 新西兰">
+                                                基督城
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="特卡波湖, 坎特伯雷大区, 新西兰">
+                                                特卡波湖
+                                            </a>
+
+
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="凯恩斯, 昆士兰, 澳大利亚">
+                                                凯恩斯
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="布里斯班, 昆士兰, 澳大利亚">
+                                                布里斯班
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="瓦纳卡, 奥塔哥大区, 新西兰">
+                                                瓦纳卡
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="埃尔利海滩, 昆士兰, 澳大利亚">
+                                                埃尔利海滩
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="但尼丁, 奥塔哥大区, 新西兰">
+                                                但尼丁
+                                            </a>
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="罗托鲁阿, 丰盛湾大区, 新西兰">
+                                                罗托鲁阿
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="阿波罗湾, 维多利亚, 澳大利亚">
+                                                阿波罗湾
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="帕劳群岛">
+                                                帕劳群岛
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="珀斯, 西澳大利亚, 澳大利亚">
+                                                珀斯
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="凯库拉, 坎特伯雷大区, 新西兰">
+                                                凯库拉
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="坎贝尔港, 维多利亚, 澳大利亚">
+                                                坎贝尔港
+                                            </a>
+                                        </div>
+                                        <div id="6" class="searchbox_clickable_search__tab
+                                        js-searchbox_clickable_search__tab bigli2 " style="display: none">
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="悉尼, 新南威尔士, 澳大利亚">
+                                                开罗
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="开普敦, 西开普省, 南非">
+                                                开普敦
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="弗利康弗拉克, 毛里求斯西部海岸, 毛里求斯">
+                                                弗利康弗拉克
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="贝尔马尔, 毛里求斯东海岸, 毛里求斯">
+                                                贝尔马尔
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="约翰内斯堡, 豪登省, 南非">
+                                                约翰内斯堡
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="基督城, 坎特伯雷大区, 新西兰">
+                                                内罗毕
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="内罗毕, 内罗毕, 肯尼亚">
+                                                特卡波湖
+                                            </a>
+
+
+                                            <a href="JavaScript:void(0)" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="马拉喀什, 坦西夫特, 摩洛哥">
+                                                马拉喀什
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="赫尔格达, 红海省, 埃及">
+                                                赫尔格达
+                                            </a>
+                                            <a href="#" class="searchbox_clickable_search__tab__link
+                                            js-searchbox_clickable_search__tab__link" name="格兰贝伊, 毛里求斯北部海岸, 毛里求斯">
+                                                格兰贝伊
+                                            </a>
+                                        </div>
+                                        <div class="searchbox_clickable_search__help">
+                                            <span> <img src="img/位置.png"
+                                                        alt="">点击选择您想去的目的地，或直接在搜索框输入目的地/酒店名称开始搜索哦</span>
+                                        </div>
+                                        <script src="js/hotle2.js"></script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sb-searchbox__row u-clearfix">
+                                <div class="sb-dates js--sb--detes -wide">
+
+                                    <div class="sb-dates__grid u-clearfix">
+                                        <div class="sb-dates__col">
+                                            <div class="sb-searchbox__label">入住日期</div>
+                                            <div class="sb-searchbox-input__warp">
+                                                <i class="sb-searchbox-input__icon1"><p class="pp">+</p></i>
+                                                <input type="text" class="sb-searchbox-input__text" id="from"
+                                                       name="from" placeholder="入住日期">
+                                                <i class="sb-searchbox-input__icon2 font"><img src="img/展开按钮.png"
+                                                                                               alt=""></i>
+                                            </div>
+                                        </div>
+                                        <div class="sb-dates__col">
+                                            <div class="sb-searchbox__label " style="position: relative;left:2px;">
+                                                退房日期
+                                            </div>
+                                            <div class="sb-searchbox-input__warp move" style='margin-left: 0px'>
+                                                <i class="sb-searchbox-input__icon1"><p class="pp">+</p></i>
+                                                <input type="text" class="sb-searchbox-input__text" id="to" name="to"
+                                                       placeholder="退房日期">
+                                                <i class="sb-searchbox-input__icon2 font"><img src="img/展开按钮.png"
+                                                                                               alt=""></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="js/hotle2.js"></script>
+                        </form>
+                        <div class='days'>
+                            <!--<div class="days-text">入住5晚</div>-->
+                            <div class="sb-searchbox__row u-clearfix"
+                                 style="position: relative;left: -5px; margin-top: 5px">
+                                <div class="Tour-type b-form-group b-form__booker-type   b-form__booker-type--index   ">
+                                    <div class="b-form-group__content border-r1">
+                                        <strong>出行类别：</strong>
+                                        <label><input type="radio" name="typeOf"><span>出差</span></label>
+                                        <label><input type="radio" name="typeOf"><span>自由行</span></label>
+                                        <i title="根据出行类别，快速锁定最适合你的酒店"><img src="img/帮助.png"></i>
+                                    </div>
+                                    <div class="b-form-group__content2">
+                                        <div class="border-div"></div>
+                                    </div>
+                                    <div class="b-form-group__content border-r2">
+                                        <strong style="margin-right: 70px">搜索：</strong>
+                                        <label><input type="radio" name="typeOf1"><span>所有住宿类型</span></label>
+                                        <label><input type="radio" name="typeOf1"><span>酒店</span></label>
+                                        <label><input type="radio" name="typeOf1"><span>公寓、民宿和度假屋</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sb-searchbox__row u-clearfix">
+                                <div class="u-clearfix">
+                                    <div class="sb-group__field">
+                                        <lable class="sb-searchbox__label sb-group__field__label -inline -small"
+                                               for="no-room">客房
+                                        </lable>
+                                        <select name="no-room" id="no-room">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="sb-group__field">
+                                        <label class="sb-searchbox__label sb-group__field__label -inline -small"
+                                               for="group_adults">成人
+                                        </label>
+                                        <select name="group_adults" id="group_adults">
+                                            <option value="1">1</option>
+                                            <option value="2" selected="selected">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                    <div class="sb-group__field">
+                                        <label class="sb-searchbox__label sb-group__field__label -inline -small"
+                                               for="group_children">儿童
+                                        </label>
+                                        <select name="group_children" id="group_children">
+                                            <option value="0" selected="selected">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sb-searchbox__row u-clearfix sb-searchbox__footer -last">
+                                <button class="sb-searchbox__button   b-button b-button_primary b-searchbox-button b-searchbox-button_legacy">
+                                    <span class="b-button__text">搜索</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sb-searchbox__spacing" style="height: 2px"></div>
+                    <!--优惠栏-->
+                    <div class="oneusp usp_tick2 top" style="margin-top: 18px">
+                        <i class="b-sprite b-sprite-left usp-tick2-small"></i>
+                        <p>每天都有新优惠
+                            <br>
+                            <span>多数客房可免费取消</span>
+                        </p>
+                    </div>
+                    <div class="activity_stream">
+                        <h2>新预定</h2>
+                        <ul id="activity_item">
+                            <li class="reservation"></li>
+                        </ul>
+                    </div>
+                    <div class="usp_container">
+                        <div id="uspsbox" class="boxx readable-sub-pargraph">
+                            <div id="usp_rates" class="oneusp usp_tick2 usphome badge_clearfix">
+                                <div class="lp-index-usp-iconfont">
+                                    <i class="usp-icon1 iconcolor1">
+                                        <span class="icon-img"><img src="img/优惠券.png" alt=""></span></i>
+                                </div>
+                                <h3>每天都有新优惠</h3>
+                                <p>预定不收手续费&nbsp;·&nbsp;我们的网站帮你省钱&nbsp;·&nbsp;<a class="a-tit">价格更放心</a></p>
+                                <div class="tit-wap">
+                                    <i class="sanjiao"></i>
+                                    <div class="jiaGe-tit">
+                                        <div class="tit-content">
+                                            <div class="tit-content-h">价格更放心</div>
+                                            <div class="tit-content-con">
+                                                <i class="tit-img"><img src="img/tit-img.png" alt=""></i>
+                                                <p>低廉的价格 •不收取预订手续费 •别处找<br>到了更便宜的价格？差价核实后将予以<br>补偿！
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="usp_choice" class="oneusp usp_tick2 usphome badge_clearfix">
+                                <div class="lp-index-usp-iconfont">
+                                    <i class="usp-icon1 iconcolor2">
+                                        <span class="icon-img"><img src="img/地球.png" alt=""></span></i>
+                                </div>
+                                <h3>1,046,667家住宿遍全球</h3>
+                                <p>96,308个目的地 227个国家及地区</p>
+                            </div>
+                            <div id="usp_review" class="oneusp usp_tick2 usphome badge_clearfix">
+                                <div class="lp-index-usp-iconfont">
+                                    <i class="usp-icon1 iconcolor3">
+                                        <span class="icon-img"><img src="img/打钩.png" alt=""></span></i>
+                                </div>
+                                <h3>106,420,000份点评</h3>
+                                <p>96,308个目的地 227个国家及地区<a
+                                        href="http://hotels.chuguoqu.com/reviews.zh-cn.html?sid=3eba851f5e88bcff898092ed053bd37f">向虚假点评say
+                                    NO！</a></p>
+                            </div>
+                            <div id="usp_languages" class="oneusp usp_tick2 usphome badge_clearfix">
+                                <div class="lp-index-usp-iconfont">
+                                    <i class="usp-icon1 iconcolor4">
+                                        <span class="icon-img"><img src="img/点评.png" alt=""></span></i>
+                                </div>
+                                <h3>随时随地，在你身边</h3>
+                                <p>遇到问题？想改订单？;<a
+                                        href="https://secure.booking.com/content/cs.zh-cn.html?sid=3eba851f5e88bcff898092ed053bd37f&_ga=1.164933439.1262468196.1476064946">帮助中心</a>为你排忧解难
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rilt-right">
+                    <div class="specialsblock tracked" id="home_featured_destination">
+                        <h3 class="lp-section-header">这里会有你的下一站吗？</h3>
+                        <div class="unified-postcard unified-postcard--no--description-padding">
+                            <div class="unified-postcard_content"
+                                 style="background: url(http://r-cc.bstatic.com/images/city/600x200/137/137724.jpg) no-repeat">
+                                <div class="unified-postcard_overlay">
+                                    <div class="unified-postcard-header">
+                                        <a href="http://hotels.chuguoqu.com/searchresults.zh-cn.html?sid=3eba851f5e88bcff898092ed053bd37f;checkin=2016-10-15;checkout=2016-10-16;city=-1904815&;ilp=1;d_dcp=1">
+                                            恩施
+                                            <img src="http://r-cc.bstatic.com/static/img/flags/24/cn/b50a28ad0218953c0c5daed6a7efa724475c3ec3.png "
+                                                 alt='中国' valign="middle">
+                                        </a>
+                                        <p>70家住宿</p>
+                                    </div>
+                                    <a href="" title="9位来自中国的客人给恩施添加了自然风光的标签"
+                                       class="difcon-circle yellow jp_toopltip endorsement-container">
+                                        <b><img src="img/叶.png"></b>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="unified-postcard__description">
+                                <p class="destmore right_hotels" style="text-align: left">
+                                    恩施的住宿价格自昨日以来已有所下降。立即预订，锁定优惠！
+                                    <a href="http://hotels.chuguoqu.com/searchresults.zh-cn.html?sid=3eba851f5e88bcff898092ed053bd37f;checkin=2016-10-15;checkout=2016-10-16;city=-1904815&;ilp=1;lp_index_textlink2srdaterec=1"
+                                       title="恩施 酒店">
+                                        搜索恩施的住宿>>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="unified-postcard unified-postcard--no--description-padding">
+                            <div class="unified-postcard_content"
+                                 style="background: url(http://q-cc.bstatic.com/images/city/600x200/718/71881.jpg) no-repeat">
+                                <div class="unified-postcard_overlay">
+                                    <div class="unified-postcard-header">
+                                        <a href="http://hotels.chuguoqu.com/searchresults.zh-cn.html?sid=3eba851f5e88bcff898092ed053bd37f;checkin=2016-10-15;checkout=2016-10-16;city=-1904815&;ilp=1;d_dcp=1">
+                                            宜昌
+                                            <img src="http://r-cc.bstatic.com/static/img/flags/24/cn/b50a28ad0218953c0c5daed6a7efa724475c3ec3.png "
+                                                 alt='中国' valign="middle">
+                                        </a>
+                                        <p>63家住宿</p>
+                                    </div>
+                                    <a href="" title="9位来自中国的客人给恩施添加了自然风光的标签"
+                                       class="difcon-circle yellow jp_toopltip endorsement-container">
+                                        <b><img src="img/looksee.png"></b>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="unified-postcard__description">
+                                <p class="destmore right_hotels" style="text-align: left">
+                                    与7天前相比，宜昌的住宿价格在您搜索日期内有所上涨
+                                    <a href="http://hotels.chuguoqu.com/searchresults.zh-cn.html?sid=3eba851f5e88bcff898092ed053bd37f;checkin=2016-10-15;checkout=2016-10-16;city=-1904815&;ilp=1;lp_index_textlink2srdaterec=1"
+                                       title="恩施 酒店">
+                                        搜索宜昌的住宿>>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="unified-postcard unified-postcard--no--description-padding">
+                            <div class="unified-postcard_content"
+                                 style="background: url(http://r-cc.bstatic.com/images/city/600x200/602/60280.jpg) no-repeat">
+                                <div class="unified-postcard_overlay">
+                                    <div class="unified-postcard-header">
+                                        <a href="http://hotels.chuguoqu.com/searchresults.zh-cn.html?sid=3eba851f5e88bcff898092ed053bd37f;checkin=2016-10-15;checkout=2016-10-16;city=-1904815&;ilp=1;d_dcp=1">
+                                            澳门
+                                            <img src="http://r-cc.bstatic.com/static/img/flags/24/mo/546af5ae640f0359f31a6bdf44e5da43bb296684.png "
+                                                 alt='澳门特别行政区' valign="middle">
+                                        </a>
+                                        <p>70家住宿</p>
+                                    </div>
+                                    <a href="" title="1，869位来自中国的游客给澳门添加了赌场标签"
+                                       class="difcon-circle yellow jp_toopltip endorsement-container"
+                                       style="margin-right: 40px">
+                                        <b><img src="img/卡牌.png"></b>
+                                    </a>
+                                    <a href="" title="离澳门最近的的机场：澳门机场"
+                                       class="difcon-circle yellow jp_toopltip endorsement-container">
+                                        <b><img src="img/飞机.png"></b>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="unified-postcard__description">
+                                <p class="destmore right_hotels" style="text-align: left">
+                                    澳门的住宿价格自昨日以来已有所下降。立即预订，锁定优惠！
+                                    <a href="http://hotels.chuguoqu.com/searchresults.zh-cn.html?sid=3eba851f5e88bcff898092ed053bd37f;checkin=2016-10-15;checkout=2016-10-16;city=-1904815&;ilp=1;lp_index_textlink2srdaterec=1"
+                                       title="恩施 酒店">
+                                        搜索澳门的住宿>>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="slinks"></div>
+<!--footer部分-->
+<div class="patertner_footer_wrapper hybrid-footer">
+    <div class="hybrid_affiliates">
+        <footer class="footer other-footer">
+            <div class="wrap yahei relative">
+                <div class="footer-con">
+                    <ul class="footer-site-map clearfix">
+                        <li><a href="">关于出国去</a></li>
+                        <li><a href="">加入我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">法律声明</a></li>
+                        <li><a href="">友情链接</a></li>
+                        <li><a href="">意见反馈</a></li>
+                        <li><a href="">Business Cooperation</a></li>
+                        <li><a href="">网站地图</a></li>
+                        <li><a href="" class="b2b-link">分销合作</a></li>
+                    </ul>
+                    <br>
+                    <p class="mb8">出国去网站独家内容运营商：
+                        厦门寰宇信息咨询有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        唯一指定的境外旅游服务策供商：厦门博游旅行社有限公司</p>
+                    <p class="mb20">Copyright © 2013-2015 出国去chuguoqu.com All rights reserved
+                        厦门博游旅行社有限公司 闽ICP备12023338号-1</p>
+                    <div class="certifications">
+                        <a href="https://ss.knet.cn/verifyseal.dll?sn=e12121235020037608000000" target="_blank">
+                            <img src="http://www.chuguoqu.com/images/certifications/2.gif" alt="">
+                        </a>
+                        <a href="http://pinggu.zx110.org/review_url_chuguoqu.com" target="_blank">
+                            <img src="http://www.chuguoqu.com/images/certifications/3.gif" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!--<div class="sb-searchbox-sticky -with-destination -visible-1 -visible-2">-->
+    <!--<div class="sb-searchbox-sticky__wrapper">-->
+        <!--<div class="sb-searchbox-horizontal -with -destination">-->
+            <!--<div class="sb-searchbox__outer">-->
+                <!--<form class="sb-searchbox sb-searchbox&#45;&#45;painted js&#45;&#45;sb-searchbox-->
+                <!--b-searchbox b-form-subtitle">-->
+                    <!--<div class="sb-searchbox-horizontal__grid u-clearfix">-->
+                        <!--<div class="sb-searchbox-horizontal__col -destination">-->
+                            <!--<label class="sb-searchbox__label" for="ss">目的地、住宿名称或地址：</label>-->
+                            <!--<div class="">-->
+                                <!--<div class="c-autocomplete b-destination">-->
+                                    <!--<input type="search" name="ss" class="c-autocomplete__input-->
+                                    <!--sb-searchbox__input-->
+                                    <!--sb-destination__input" placeholder="世界这么大，总有你还没到过的地方，开始新的旅程吧！">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="sb-searchbox-horizontal__col -dates">-->
+                            <!--<div class="sb-dates__grid u-clearfix">-->
+                                <!--<div class="sb-dates__col">-->
+                                    <!--<div class="sb-searchbox__label">入住日期</div>-->
+                                    <!--<div class="sb-searchbox-input__warp">-->
+                                        <!--<i class="sb-searchbox-input__icon1"><p class="pp">+</p></i>-->
+                                        <!--<input type="text" class="sb-searchbox-input__text" id="from"-->
+                                               <!--name="from" placeholder="入住日期">-->
+                                        <!--<i class="sb-searchbox-input__icon2 font"><img src="img/展开按钮.png"-->
+                                                                                       <!--alt=""></i>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="sb-dates__col">-->
+                                    <!--<div class="sb-searchbox__label " style="position: relative;left:2px;">-->
+                                        <!--退房日期-->
+                                    <!--</div>-->
+                                    <!--<div class="sb-searchbox-input__warp move" style='margin-left: 0px'>-->
+                                        <!--<i class="sb-searchbox-input__icon1"><p class="pp">+</p></i>-->
+                                        <!--<input type="text" class="sb-searchbox-input__text" id="to" name="to"-->
+                                               <!--placeholder="退房日期">-->
+                                        <!--<i class="sb-searchbox-input__icon2 font"><img src="img/展开按钮.png"-->
+                                                                                       <!--alt=""></i>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<script src="js/hotle.js"></script>
+</body>
+</html>

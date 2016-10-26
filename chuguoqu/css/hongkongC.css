@@ -1,0 +1,617 @@
+.header{
+    min-width: 1180px;
+    height: 80px;
+    /*background-color: orange;*/
+    box-shadow: 0 1px 2px #f2f2f2;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 4px solid #dc284b;
+}
+.wrap {
+    width: 1180px;
+    height: 80px;
+    margin: 0 auto;
+    background: #fff;
+
+}
+.yahei {
+    font-family: \5FAE\8F6F\96C5\9ED1;
+}
+
+.logo{
+    display: inline-block;
+}
+.logo img {
+    width: 210px;
+}
+.nav {
+
+    padding-left: 105px;
+
+}
+#navList {
+    width: 550px;
+    height: 30px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+.nav-item {
+    float: left;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.nav-item a {
+    display: block;
+    height: 30px;
+    font-size: 16px;
+    /*color: #666;*/
+    line-height: 30px;
+    font-weight: bold;
+}
+.nav-bar-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 30px;
+    background-color: #dc284b;
+    border-radius: 15px;
+    z-index: 0;
+}
+.header-right {
+    margin-left: 30px;
+    padding-right: 8px;
+}
+
+.login-box {
+    margin-top: 35px;
+}
+.header-search-box {
+    position: relative;
+    width: 155px;
+    height: 32px;
+    margin-top: 25px;
+    overflow: hidden;
+    display: none;
+}
+.header-search-ipt {
+    width: 133px;
+    height: 16px;
+    padding: 7px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    outline: 0;
+    font-family: "Microsoft Yahei";
+    line-height: 16px;
+}
+.head-search-btn {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #dc284b url(http://www.chuguoqu.com/images/icon-common.png) 7px -234px no-repeat;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.country-pop-box {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    padding: 40px 0 50px;
+    border-top: 24px solid transparent;
+    font-family: "Microsoft Yahei";
+    z-index: 9;
+}
+.country-pop-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    opacity: .98;
+    z-index: 0;
+}
+.country-pop-box .wrap {
+    position: relative;
+    z-index: 1;
+}
+.wrap {
+    width: 1180px;
+    margin: 0 auto;
+    background: transparent;
+}
+.destination-box-arrow {
+    position: absolute;
+    top: -68px;
+    left: 466px;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-bottom-color: #ededed;
+}
+.destination-list {
+    margin-right: -95px;
+    /*position: relative;*/
+    /*top: 40px;*/
+}
+.destination-list-item {
+    float: left;
+    margin-right: 80px;
+}
+.destination-list-item strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #666;
+}
+.destination-list-item a {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #666;
+}
+.destination-list-item a:hover{
+    text-decoration: underline;
+}
+
+/*内容*/
+.container{
+    min-width: 1180px;
+    background-color: #fff;
+}
+.beradcrumbs {
+    color: #7c7c7c;
+    padding: 20px 0 14px 0;
+    vertical-align: middle;
+}
+.beradcrumbs li{
+    display: inline-block;
+}
+.beradcrumbs li a{
+    color: #7c7c7c;
+    font-size: 12px;
+}
+.beradcrumbs span{
+    padding-left: 4px;
+}
+.pdp-top{
+    margin-bottom:45px ;
+}
+.pdp-banner-left{
+    width: 700px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.pdp-title-info{
+
+}
+.pdp-name{
+    font-size: 24px;
+    color: #333;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.pdp-sub-info{
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #333;
+}
+.pdp-img-box{
+    position: relative;
+    width: 700px;
+    height: 360px;
+}
+.pdp-option-wrap {
+    width: 375px;
+}
+.pdp-price-box{
+    margin-bottom: 20px;
+    padding-bottom: 5px ;
+    border-bottom: 1px solid #d9d9d9;
+}
+.promotion-price{
+    color: #333;
+    font-size: 14px;
+}
+.promotion-price strong{
+    padding-right: 15px ;
+    font-size: 30px;
+    color: #dc244b;
+    font-weight: normal;;
+}
+.sales-price{
+    font-size: 14px;
+    color: #838282;
+}
+.sales-price span {
+    padding-right: 20px;
+    text-decoration: line-through;
+}
+p{
+    margin: 0;
+}
+.option-item{
+    margin-bottom: 15px;
+}
+.option-item-title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+}
+.select-box {
+    position: relative;
+    width: 373px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    z-index: 1;
+}
+.select-icon {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    width: 22px;
+    height: 22px;
+    background: url(http://www.chuguoqu.com/images/icon-common.png) 0 -300px no-repeat;
+}
+.input-control {
+    float: left;
+    width: 311px;
+    height: 38px;
+    padding-left: 62px;
+    outline: 0;
+    border: 0;
+    font-size: 14px;
+    line-height: 38px;
+    color: #333;
+    font-family: "Microsoft Yahei";
+}
+.select-arrow {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 10px;
+    height: 6px;
+    background: url(http://www.chuguoqu.com/images/icon-common.png) -50px -270px no-repeat;
+}
+.select-pop {
+    position: absolute;
+    top: 38px;
+    left: -1px;
+    width: 373px;
+    height: 160px;
+    padding-bottom: 20px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+.people-option .select-icon {
+    background-position: -40px -300px;
+}
+
+.select-pop-con {
+    padding: 28px 96px 18px;
+    background-color: #fff;
+}
+.select-pop-item {
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.select-pop-item label {
+    margin-right: 20px;
+}
+.select-pop-item a {
+    color: #999;
+    border: 1px solid #aeaeae;
+    float: left;
+    width: 28px;
+    line-height: 28px;
+    height: 28px;
+    overflow: hidden;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.PDP-radius-left {
+    border-radius: 3px 0 0 3px;
+}
+.PDP-radius-right {
+    border-radius: 0 3px 3px 0;
+}
+.PDP-number-input {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    border: 0;
+    border-top: 1px solid #aeaeae;
+    border-bottom: 1px solid #aeaeae;
+    width: 70px;
+    text-align: center;
+    font-size: 14px;
+}
+.num-sure-btn {
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #dc244b;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.option-item{
+    margin-bottom: 15px;
+}
+.property-select-box{
+    height: 40px;
+    padding: 20px 15px;
+    border: 1px solid #e6e6e6;
+}
+.property-select-item{
+
+}
+.property-select-item dt{
+    float: left;
+    width: 65px;
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+}
+.property-select-item dt dd{
+    float: left;
+    width: 275px;
+}
+.property-select-item dd  a{
+    float: left;
+    min-width: 50px;
+    margin: 0 30px 10px 0;
+    padding: 5px 15px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 15px;
+    background-color: #eee;
+    text-align: center;
+}
+.property-select-item dd  a:hover{
+    background-color: #dc284b;
+    color: #fff;
+}
+.btn-box{
+    margin-bottom: 20px;
+}
+.btn-box .add-to-store{
+    background-color: #dc284b;
+    color: #fff;
+    border-color: #dc284b;
+}
+.btn-box .add-to-book{
+    color: #dc284b;
+}
+.btn-box a{
+    width: 142px;
+    height: 42px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #dc284b;
+    line-height: 42px;
+}
+.app-tip{
+    width: 160px;
+    margin-bottom: 10px;
+    padding-left: 28px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    background: url(http://www.chuguoqu.com/images/icon-common.png) 0 -330px no-repeat;
+}
+.app-tip-pop{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 110px;
+    height: 132px;
+    padding: 18px 10px 0;
+    background: url(http://www.chuguoqu.com/images/code-wrap.png) 0 0 no-repeat;
+    opacity: 1;
+}
+.pdp-nav-wrap{
+    position: relative;
+    top: 60px;
+    height: 60px;
+    background-color: #eee;
+    border-bottom: 1px solid #e4e4e4;
+}
+.wrapp{
+    width: 1180px;
+    margin: 0 auto;
+}
+.pdp-nac-wrap li{
+    float: left;
+}
+.pdp-nav-wrap li a {
+    float: left;
+    margin-right: 55px;
+    font-size: 16px;
+    color: #333;
+    line-height: 60px;
+}
+.pdp-nav-wrap li a:hover{
+    color: #dc284b;
+}
+.pdp-part{
+    padding: 70px 0 60px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.pdp-part h2{
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+}
+.pdp-intro-wrap{
+    position: relative;
+    width: 760px;
+    height: 400px;
+    margin: 0 auto 60px;
+}
+.pdp-intro-prev {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    left: -90px;
+    top: 150px;
+    background: url(http://www.chuguoqu.com/images/pdp-arrow.png) 0 -120px no-repeat;
+    z-index: 2;
+}
+.pdp-intro-next {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    right: -90px;
+    top: 150px;
+    background: url(http://www.chuguoqu.com/images/pdp-arrow.png) 0 -180px no-repeat;
+    z-index: 2;
+}
+.pdp-intro-item {
+    float: left;
+    width: 100%;
+    height: 400px;
+}
+.pdp-banner-control-wrap, .pdp-intro-control-wrap {
+    position: relative;
+    bottom: -15px;
+    left: 50%;
+    height: 10px;
+    z-index: 2;
+    float: left;
+}
+.pdp-banner-control, .pdp-intro-control {
+    position: relative;
+    top: 0;
+    left: -50%;
+}
+.pdp-banner-control a, .pdp-intro-control a {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+.pdp-banner-control .selected, .pdp-intro-control .selected {
+    background-color: #dc284b;
+}
+.pdp-descri-item {
+    float: left;
+    font-size: 16px;
+    color: #333;
+}
+.descri-title{
+    margin: 5px 0 8px;
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    text-indent: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.other-footer {
+    padding-bottom: 40px;
+    padding-top:50px;
+    clear: both;
+}
+.other-footer .wrap {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 12px;
+    border-top: 4px solid #dc284b;
+}
+.other-footer .clearfix {
+    height: 20px;
+}
+.yahei {
+    font-family: 微软雅黑;
+}
+.other-footer .relative {
+    position: relative;
+}
+.other-footer .footer-top {
+    margin: 0 0 20px;
+    padding: 0;
+    clear: both;
+}
+.other-footer .footer-top-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.footer-top-wrap p {
+    padding-left: 60px;
+
+}
+.footer-contact {
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+    background: url("http://www.chuguoqu.com/images/icon-common.png") 0 0 no-repeat;
+    line-height: 50px;
+}
+.footer-con {
+    color: #c4c4c4;
+    overflow: hidden;
+}
+.other-footer .footer-site-map {
+    margin-bottom: 8px;
+}
+.footer-site-map {
+    margin-left: -12px;
+}
+.footer-site-map li {
+    float: left;
+    padding: 0 12px;
+    height: 14px;
+    line-height: 14px;
+    border-left: solid 1px #c4c4c4;
+}
+.footer-site-map a {
+    color: #c4c4c4;
+}
+:link, :visited, ins {
+    text-decoration: none;
+}
+.mb8 {
+    margin-bottom: 8px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+._blank{
+    color: red;
+}
+.b2b-link a{
+    color: red;
+}

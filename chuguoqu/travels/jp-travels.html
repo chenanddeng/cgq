@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/p.css">
+    <link rel="stylesheet" href="../css/jp-travels.css">
+    <script src="../lib/jquery.js"></script>
+</head>
+<body>
+<header class="header scroll-to-fixed-fixed"
+        style="z-index: 3;">
+    <div class="wrap yahei clearfix">
+        <div class="logo left">
+            <a href="" title="出国去旅行网">
+                <img src="http://www.chuguoqu.com/images/header-logo.png" alt="">
+            </a>
+        </div>
+        <!--导航栏部分-->
+        <nav class=" nav left">
+            <ul id="navList" class="relative clearfix">
+                <li id="home" class="nav-item selected">
+                    <a href="../home.html" style="color: rgb(102,102,102)">
+                        首页
+                    </a>
+                </li>
+                <li id="destination" class="nav-item">
+                    <a href="../country/Italy.html" style="color: rgb(255,255,255)">
+                        目的地
+                    </a>
+                </li>
+                <li id="hotels" class="nav-item">
+                    <a href="../hotle.html" style="color: rgb(102,102,102)">
+                        酒店
+                    </a>
+                </li>
+                <li id="shop" class="nav-item">
+                    <a href="" style="color: rgb(102,102,102)">
+                        购物车
+                    </a>
+                </li>
+                <li id="appInfo" class="nav-item">
+                    <a href="../app.html" target="_blank" style="color: rgb(102,102,102)">
+                        App下载
+                    </a>
+                </li>
+                <li class="nav-bar-bg" style="left: 110px;"></li>
+            </ul>
+
+        </nav>
+        <div class="header-right right">
+            <p class="login-box">
+                <a href="javascript:;" class="login-btn">登陆</a>
+                <a href="" class="register-btn">注册</a>
+            </p>
+            <div class="login-after relative left" style="display: none">
+                <div class="photo-box left">
+                    <div class="photo-cover"></div>
+                    <img src="http://img.chuguoqu.com/g1/M00/00/27/06B0tVNUyECAaXwPAABYZnxFUPk563.jpg" alt="">
+                </div>
+                <p class="user-name-box left">
+                </p>
+                <div class="user-control-box" style="display:none;">
+                    <i class="user-top-arrow"></i>
+                    <ul class="user-control-list">
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">常用游客</a></li>
+                        <li><a href="">常用联系人</a></li>
+                        <li><a href="">账号设置</a></li>
+                        <li><a id="Sign-out">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="header-search-box right hide">
+            <input id="search" type="text" class="header-search-ipt" value placeholder="搜索">
+            <a onclick="" href="" class="head-search-btn">搜索</a>
+        </div>
+        <div class=""></div>
+    </div>
+</header>
+<!--目的地的显示隐藏部分-->
+<div class="country-pop-box hide "
+     style=" display: none; height: 261px; padding-top: 40px; margin-top: 0px; padding-bottom: 50px; margin-bottom: 0px;">
+    <div class="country-pop-bg  "></div>
+    <div class="wrap ">
+        <i class="destination-box-arrow ha"></i>
+        <ul class="destination-list clearfix">
+            <li class="destination-list-item">
+                <strong>欧洲</strong>
+                <a href="">意大利</a>
+                <a href="">法国</a>
+                <a href="">英国</a>
+                <a href="">葡萄牙</a>
+                <a href="">西班牙</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>中国港澳台</strong>
+                <a href="">中国台湾</a>
+                <a href="">中国澳门</a>
+                <a href="">中国香港</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>大洋洲</strong>
+                <a href="">澳大利亚</a>
+                <a href="">新西兰</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>东亚</strong>
+                <a href="">日本</a>
+                <a href="">韩国</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>东南亚</strong>
+                <a href="">泰国</a>
+                <a href="">新加坡</a>
+                <a href="">巴厘岛</a>
+                <a href="">尼泊尔</a>
+                <a href="">柬埔寨</a>
+                <a href="">马来西亚</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>南亚</strong>
+                <a href="">斯里兰卡</a>
+            </li>
+            <li class="destination-list-item">
+                <strong>北美洲</strong>
+                <a href="">美国</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--内容-->
+<div id="select-tab" class="container yahei">
+<div class="notes-banner">
+    <img src="http://img.chuguoqu.com/g1/M00/02/91/eSl1sVYnIbOAdAm9AAPK0Aap41w690.jpg" alt="">
+    <div class="wrapp relative">
+        <div class="notes-head-title">
+            <h2>日本秋季9日游</h2>
+            <h3>
+                <div>本番行程一气呵成，从东京入境到大阪出境，最合理的赏秋路线。</div>
+                <div>出发地——东京——箱根——富士山——京都——奈良——大阪——目的地</div>
+                <div>此行你可以体验到</div>
+                <div>*亲眼见到那些出现在明信片里满山遍野的枫色日本；</div>
+                <div>*入秋微凉，当然不能错过温泉啦；</div>
+                <div>*那些刷爆朋友圈的奈良的鹿；</div>
+                <div>*东京买买买、漫画里的晴空塔、富士山秋景、旧日京都、吃吃吃大阪，日本啊，此生一次绝对不够。</div>
+            </h3>
+        </div>
+    </div>
+    </div>
+    <div class="wrapp clearfix">
+    <div class="content-wrap">
+        <dl class="user-intro-box clearfix">
+            <dt>
+                <img src="http://img.chuguoqu.com/g1/M00/02/8B/eSl1sVYbYmmAeFHQAACn9g_OfL4930.jpg" alt=""/>
+            <p style="clear: both">sue</p>
+            </dt>
+            <dd>
+                有酒窝
+            </dd>
+        </dl>
+        <div id="day1" class="day-part">
+            <div class="day-top">
+                <span> Day 1</span>
+                搭乘早点的班机飞往东京，还能在夜幕降临前，到达东京塔。观赏壮丽的落日景色~
+            </div>
+            <div class="day-detail">
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        东京塔
+                    </p>
+                    <p class="mb20">
+
+                        东京塔（日语：东京タワー）是东京地标性建筑物，位于东京都港区芝公园，高332.6米。
+                        东京塔的颜色为主要颜色红白相间，是因为航空交通管制规定以利辨识。近年来大众的景观要求提升，铁塔不再有颜色限制，照明时间为日落到午夜0点之间。灯光颜色随季节变化，夏季为白色，春、秋、冬季为橙色。
+                        东京铁塔在150米处设有大瞭望台，249.9米处设有特别瞭望台，可一览东京都内景色，晴朗之日可远眺富士山。东京塔的主要用途是发送电视、广播等各种无线电波、此外还在大地震发生时向东京都市区发送信号、制动地铁列车和新干线列车，兼有航标、风向风速测量、温度测量等功能。
+
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/00/9E/06B0tVPrK-KATERPAAI4POZE--4125.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>日本港区芝公园4-2-8（日本東京都港区芝公園4-2-8）</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    <div>·地铁：</div>
+                                    <div>都营大江户线，在赤羽桥站下，从赤羽桥出站口步行5分钟。</div>
+                                    <div>东京地铁日比谷线，在神谷町站下，从第1出站口步行7分钟。</div>
+                                    <div>都营三田线，在御成门站下，从A1出站口步行6分钟。</div>
+                                    <div>都营浅草线，在大门站下，从A6出站口步行10分钟。</div>
+                                    <div>·JR：乘坐JR，在浜松町站下，从北出站口步行15分钟。</div>
+                                    可乘坐都营大江户路地铁，至赤羽桥站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="stay-recommend">
+                    <p class="intro-title relative">
+                        <i></i>
+                        住宿推荐
+                    </p>
+                    <ul class="stay-list clearfix">
+                        <li class="stay-list-item">
+                            <a href="javascript:;" class="">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/8C/eSl1sVYctrqAfM_8AAEpa8N-hnM473.jpg" alt="">
+                            </a>
+                            <div class="stay-info">
+                                <a href="javascript:;">海岸竹之碧沙酒店</a>
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-half"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                </div>
+                                <p class="tips right">酒店</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="day2" class="day-part" style="clear: both;position:relative;top: 40px">
+            <div class="day-top">
+                <span> Day 2</span>
+                浅草寺>筑地市场>明治神宫>台场东京人气景点排名前10，
+                从东京都内历史最悠久的古刹——东京最佳美食体验地——明治神宫到了秋日的银杏时节，
+                神宫代代木入口处的银杏大道上金灿灿的，非常美丽——从台场可以眺望彩虹桥、东京塔等，
+                绚丽的夜景尤其美丽，喜爱拍摄夜景的旅行者不可错过这里。
+            </div>
+            <div class="day-detail">
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        浅草寺
+                    </p>
+                    <p class="mb20">
+                        东京都内历史最悠久的古刹，创建于628年。据传最初由渔民捕鱼时打捞起一座金观音像而就地建塔供奉，由此成为浅草寺。江户初年，奉德川家康之命重建，扩大成现今规模。
+                        挂着两个巨大灯笼的山门就是浅草寺的入口——雷门，是浅草乃至全日本的象征之一。雷门左右两边各立有一尊凶神恶煞一般威严的塑像，名为雷神与风神，这也是雷门的学名“风雷神门”的由来。
+                        穿过长长的商品街即可看到浅草寺的正殿，因德川家康将此处指定为幕府的祈愿之处而逐渐兴盛，成为浅草地区的文化中心。寺内西南角有高达53米的五重塔，是国家重点保护文物。东北角有建于平安时期的浅草神社，建筑造型古朴典雅，雕刻精美。
+                        浅草最热闹的莫过于每年5月举办的江户三大祭之一的三社祭了。起源于江户年间的三社祭充分展现了江户时代的传统风俗人情，“抬神舆”是祭典中最热闹的重头戏，几十人一组、以旧时造型抬着神舆从各个方向汇集于浅草寺。
+
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/CF/eSl1sVTvvVOAIsKlAAJT3VFcuX8620.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>日本東京都台東区浅草２丁目３−１ </td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    可乘坐Ginza Line、Asakusa Line路地铁，至Asakusa Station站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="traffic-info">
+                    <i></i>
+                    距离5.6公里
+                    <br>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        驻地市场
+                    </p>
+                    <p class="mb20">
+                        筑地市场是东京最大的传统鱼市和蔬菜水果批发市场。
+                        鱼市起源于江户时代，现在仍然是东京生鲜产品的巨大交易地。
+                        筑地分为场内的交易市场和场外的商店街。 场内的中央批发市场有最具日本特色鱼类交易和拍卖，
+                        交易总是清晨开始，上午时就结束了。场外的商店街是面向普通民众市场，集中了各色海鲜店、
+                        蔬果店、杂货店等。提供寿司、生鱼片的日式食肆遍布在场内和场外，专程前来品尝新鲜美味的游客大有人在。
+                        筑地市场里有很多家餐馆，主要经营寿司、生鱼片、海鲜盖饭等生鲜食品。
+                        吃寿司最有名的店铺是“寿司大”和“大和寿司”，不过这两家店经常需要排很长的队才能吃到。
+                        在市场内有许多其他的料理店，所售鱼料理都是最新鲜的，可以走一路吃一路。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/00/F6/06B0tVRi7LaAIDfdAAIiKEO2NCk454.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>日本東京都中央区築地5-2-1（5-2-1, Tsukiji, Chuo, Tokyo, Japan）。</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    可乘坐大江户线（Oedo Line）路地铁，至筑地市场（Tsukijishijo Station）站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="traffic-info">
+                    <i></i>
+                    距离7.6公里
+                    <br>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        明治神宫
+                    </p>
+                    <p class="mb20">
+                        供奉明治天皇和昭宪皇太后灵位，是日本神道教最重要的神社，有着东京都内最大的一片绿地。
+                        明治神宫由入口处耸立的日本最大的鸟居、“升”字型大参道、大殿、宝物殿构成，
+                        大殿由神社名匠大江新一郎提案建造，全部铺设除邪之用的鹅卵石。
+                        明治神宫内苑的植物根据四季更迭呈现出不同景致，
+                        但因最初的造林计划中规定不种植华丽花木，因此神宫内少有日本代表性的樱花。
+                        因昭宪皇太后生前酷爱睡莲，睡莲反而成了神宫内最为重要的植物，在9月盛开。
+                        到了秋日的银杏时节，神宫代代木入口处的银杏大道上金灿灿的，非常美丽。
+                        10月明治天皇生日大祭时会在神宫内举办各种传统艺能演出，
+                        尤以流镝马这一传承了1500年的古典祭神仪式最为特殊，有机会的话不妨前去一睹为快。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/CF/eSl1sVTvvtmAPg92AAKFSOW-0H4755.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>日本东京都涩谷区代々木神園町1−1</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    可乘坐Oedo Line路地铁，至 Yoyogi Station站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        台场
+                    </p>
+                    <p class="mb20">
+                        电车:乘坐临海线(りんかい線) 在东京电讯港站(東京テレポート駅) 下车。乘坐“百合鸥号(ゆりかもめ)”，
+                        在台场海滨公园站(お台場海浜公園駅)、台场站(台場駅)、船科学馆站(船の科学館駅)、电信中心站(テレコムセンター駅)、
+                        青海站(青海駅)下车。 船:乘坐东京都观光汽船(水上バス)，
+                        可选择浅草-台场直通线(浅草·お台場直通ライン)从浅草到达台场海滨公园，
+                        也可以选择台场线(お台場ライン)从日出栈桥(日の出桟橋)到达台场海滨公园。
+                        巴士:台场地区内部有免费乘坐的巡回巴士，方便前往各个站点购物及观光。
+                        巴士名称为東京ベイシャトル(Tokyo Bay Shuttle),每天11:00-20:00运行，间隔时间约15-20分钟。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/90/eSl1sVYl_SKAUdAaAAH1XBLJqdc542.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>东京都港区之下的台场1、2丁目范围</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    电车:乘坐临海线(りんかい線) 在东京电讯港站(東京テレポート駅) 下车。
+                                    乘坐“百合鸥号(ゆりかもめ)”，在台场海滨公园站(お台場海浜公園駅)、台场站(台場駅)、
+                                    船科学馆站(船の科学館駅)、电信中心站(テレコムセンター駅)、青海站(青海駅)下车。<br>
+                                    船:乘坐东京都观光汽船(水上バス)，可选择浅草-台场直通线(浅草·お台場直通ライン)从浅草到达台场海滨公园，
+                                    也可以选择台场线(お台場ライン)从日出栈桥(日の出桟橋)到达台场海滨公园。<br>
+                                    巴士:台场地区内部有免费乘坐的巡回巴士，方便前往各个站点购物及观光。
+                                    巴士名称为東京ヘイシャ(Tokyo Bay Shuttle),每天11:00-20:00运行，间隔时间约15-20分钟。<br>
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="stay-recommend">
+                    <p class="intro-title relative">
+                        <i></i>
+                        住宿推荐
+                    </p>
+                    <ul class="stay-list clearfix">
+                        <li class="stay-list-item">
+                            <a href="javascript:;" class="">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/8C/eSl1sVYctrqAfM_8AAEpa8N-hnM473.jpg" alt="">
+                            </a>
+                            <div class="stay-info">
+                                <a href="javascript:;">海岸竹之碧沙酒店</a>
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-half"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                </div>
+                                <p class="tips right">酒店</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="day3" class="day-part" style="clear: both;position:relative;top: 80px">
+            <div class="day-top">
+                <span> Day 3</span>
+                距离82km，大部分用户选择火车：火车平均用时1.66h，花费¥229巴士平均用时1.93h，
+                花费¥260飞机平均用时1.92h，花费¥506三鹰之森吉普力美术馆>上野公园>秋叶原>箱根传说
+                中又难订票又不让拍照的小小美术馆，宫崎骏的世界——东京观赏枫景的绝妙去处——以秋叶原车站为中心，
+                是动漫迷们必去之地！
+            </div>
+            <div class="day-detail">
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        三鹰之森吉卜力美术馆
+                    </p>
+                    <p class="mb20">
+                        喜爱宫崎骏的人一定会知道在东京的周边三鹰市，有一个很小的美术馆，
+                        这里不仅买票很难，而且还禁止拍照。但是即使条件十分苛刻，每天却依旧有大量的游客前往，
+                        因为这里仿佛拥有魔法一般，没错，这里就是三鹰之森吉卜力美术馆。
+                        吉卜力美术馆和其他美术馆的区别在于，这里更像是一个小小的迷宫，
+                        这里没有任何观光路线，工作人员也不会引导大家的走向，漫步在这里，
+                        每个人都如同孩子一般，在寻找着属于自己的美好。馆内有一个小型放映厅土星座用于放映实验的短片，
+                        有着顶层的花园和守护着这里的巨神兵，有着让小孩子玩耍的龙猫车，还有那一部部的吉卜力动画的原稿。
+                        在这里大家能感受到最好的乐趣，所以，将相机收起来，用心和眼睛来感受这一切吧。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/00/9B/06B0tVPp9wmAaiXTAAJxrbkwdRg101.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>1-1-83 Simorenjaku, Mitaka-shi, Tokyo（東京都三鷹市下連雀1丁目1-83）</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    <div>可乘坐JR中央线，在JR三鹰站下，从JR三鹰站南口往东南方向沿玉川上水步行约15分钟即可到达，
+                                        在玉川上水沿路有吉卜力美术馆的指示牌指引。</div>
+                                    <div>从三鹰站南口也可以乘坐社区巴士（コミュニティバス）到达美术馆，有2条路线，在三鹰之森吉卜力美术馆（三鷹の森ジブリ美術館）下。</div>
+                                    <div>·路线1：三鹰站南口-むらさき橋-文化園西-万助橋-三鷹の森ジブリ美術館-明星学園入口-下連雀-連雀通り
+                                        商店街-南浦-仲町通り-北浦-本町通]り-三鷹駅南口。7:20-8:40时段每20分钟一班
+                                        ，9:00-18:50时段每10分钟一班，19:00-20:00发车时间为19:00、19:10、19:20、19:25、20:00。</div>
+                                    <div>·路线2：三鷹駅南口-むらさき橋-文化園西-万助橋-三鷹の森ジブリ美術館-明星学園入口-厚生園裏-牟礼西町]
+                                        -明星学園前。发车时间7:35-19:40，大约每半小时一班。</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="traffic-info">
+                    <i></i>
+                    距离23.6公里
+                    <br>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        上野公园
+                    </p>
+                    <p class="mb20">
+                        东京的名胜之一，面积广大的公园，里面建有动物园、美术馆、
+                        博物馆等众多设施。园内还有不忍池、竹台喷泉等自然景观，
+                        西乡隆盛的铜像是上野公园的标志。每到春季，公园内樱花盛开，是东京的赏樱名所。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/CF/eSl1sVTvv2eAKav5AAOOc_Hb2TM766.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>東京都台東区池之端三丁目 ‎</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    可乘坐Ginza Line、Hibiya Line路地铁，至Ueno Station站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="traffic-info">
+                    <i></i>
+                    距离1.7公里
+                    <br>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        秋叶原
+                    </p>
+                    <p class="mb20">
+                        以秋叶原车站为中心，是动漫迷们必去之地！这里以大量电子电器卖场、商城与资讯产业企业聚集而闻名的电子商圈 (電気街)为中心，
+                        发散出数百家大大小小的电器商店街。从各类电子产品，到冰箱、电视机等大件，品种相当齐全。
+                        秋叶原站附近有几家大型电器连锁商店，沿街分布着许多中小型电器店，专卖电脑及各种配件的店铺集中在周边的小巷中。
+                        除了电器，秋叶原的餐饮、娱乐也发展起来，现在还以御宅族的胜地而著名，是动漫迷的天堂。在这里，比较大型的店铺有UDX大厦内的东京动漫中心，
+                        在这里，动漫迷们关注的各种商品几乎都能找到。由SEGA GiGO、TAITO STATION等电玩厂商经营的电玩中心不但有最新款的游戏机，
+                        还设置了很有娱乐性的展示区和体验区。此外，秋叶原的女仆咖啡馆和街上随处可见的Cosplay女孩也是一大特色。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/E6/eSl1sVT9WVGAY8EOAAK-ymEwXRg878.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>Akihabara, Taito, Tokyo, Japan‎</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    乘坐JR山手线从东京站到秋叶原站，约5分钟。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="stay-recommend">
+                    <p class="intro-title relative">
+                        <i></i>
+                        住宿推荐
+                    </p>
+                    <ul class="stay-list clearfix">
+                        <li class="stay-list-item">
+                            <a href="javascript:;" class="">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYeAPOASNZfAAEGVPIgmzc940.jpg" alt="">
+                            </a>
+                            <div class="stay-info">
+                                <a href="javascript:;"> 箱根绿色广场哈康酒店</a>
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                </div>
+                                <p class="tips right">酒店</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="day4" class="day-part" style="clear: both;position:relative;top: 120px">
+            <div class="day-top">
+                <span> Day 4</span>
+                箱根玻璃之森美术馆>大涌谷>箱根神社>箱根七汤最令人惊叹的是礼花树「Fontana」喷泉，
+                阳光下熠熠生辉的礼花树是世界上独一无二的礼花树代表作品之一，高8米、由4万5千颗水晶玻璃制成
+                。——从观景点可眺望富士山壮丽绝景。温泉不断涌出，笼罩着白色喷烟如云雾的壮观奇景，不管是谁都会为之惊叹称奇
+                。——祈福胜地——各色温泉聚集地
+            </div>
+            <div class="day-detail">
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        箱根玻璃之森美术馆
+                    </p>
+                    <p class="mb20">
+                        在美术馆里展示着约100件的威尼斯玻璃器皿，是曾经让欧洲贵族为之疯狂的威尼斯玻璃艺术。
+                        还公开展示了很多罗斯柴尔德家族传承下来的钴蓝高脚杯等贵重作品。最令人惊叹的是礼花树「Fontana」喷泉，
+                        阳光下熠熠生辉的礼花树是世界上独一无二的礼花树代表作品之一，高8米、由4万5千颗水晶玻璃制成。馆里还有露天咖啡馆，
+                        可以一边倾听意大利民谣歌曲一边品味茶的芳香。
+
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYeHq-ACfQkAAdGe7q1gSw561.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>日本〒250-0631 神奈川县 Ashigarashimo District, 箱根町 Sengokuhara, 940−48 箱根ガラスの森美術館</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="traffic-info">
+                    <i></i>
+                    距离3.6公里
+                    <br>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        大涌谷
+                    </p>
+                    <p class="mb20">
+                        大涌谷是位于东京近郊的温泉胜地箱根的一个观光景点，是箱根火山喷发后所形成的火山遗址。
+                        仿佛在今天诉说着大约3000年前的火山活动。从观景点可眺望富士山壮丽绝景。温泉不断涌出，
+                        笼罩着白色喷烟如云雾的壮观奇景，不管是谁都会为之惊叹称奇。从空中缆车俯瞰大涌谷，相当具有震撼力，
+                        而赢得“地狱谷”之称。大涌谷里涌上的泉水有毒，所以这里没有成为温泉疗养地，而变成了一个观光区。
+                        名物“温泉黑鸡蛋”是大涌谷的特色，利用高温度的硫磺泉水将鸡蛋煮熟后，鸡蛋壳会因为泉水中的硫磺而变成黑色，
+                        而鸡蛋本身的味道则会变得更加美味。在大涌谷不仅能吃到黑鸡蛋，看到从地上喷发出来的硫磺气，
+                        在天气晴朗的时候还可以看到远处的十分完整的富士山，所以这里也是一个极佳的观景台。
+
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYeITyAS54TAAQjNin5T58003.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>〒250-0631神奈川県足柄下郡箱根町仙石原1251</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    从箱根湯本站搭乘登山铁路电车，前往強羅站，换乘箱根登山缆车(箱根登山ケーブルカー)前往早雲山站，
+                                    在这里继续换乘箱根缆车即可到达大涌谷站，下车即是景点。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="traffic-info">
+                    <i></i>
+                    距离8.3公里
+                    <br>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        箱根神社
+                    </p>
+                    <p class="mb20">
+                        箱根神社建于757年（奈良时代天平宝字符年），在箱根山脚下，位于芦之湖沿岸。
+                        神社的鸟居门位于芦之湖沿岸，游湖时便清晰可见。为了让新船只下水时祈福而建立在水边。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYeIjqAJoMjAAR9M1uQwHM404.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>神奈川县足柄下郡箱根町元箱根80-1</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    乘坐箱根登山巴士Y、H、K线元箱根下车
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="traffic-info">
+                    <i></i>
+                    距离1.7公里
+                    <br>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        箱根七汤
+                    </p>
+                    <p class="mb20">
+                        箱根有著名的“箱根七汤”，就是七个能够浸泡箱根温泉的地方。其实还有很多温泉，
+                        在一些饭店也有自己的小温泉。 在箱根，你能见识到不同风格的各种温泉。随便找一间温泉旅馆，
+                        都能让你静享泡汤之美。箱根的温泉以小巧精致著称，既有用玻璃和墙壁封闭的室内温泉池，也有露天浴池。箱根七汤就是最著名的地方。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYeJWyAbk7PAAILYtrJ0Y0777.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td> 	Hakone, Ashigarashimo District, Kanagawa Prefecture 250-0404</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="stay-recommend">
+                    <p class="intro-title relative">
+                        <i></i>
+                        住宿推荐
+                    </p>
+                    <ul class="stay-list clearfix">
+                        <li class="stay-list-item">
+                            <a href="javascript:;" class="">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYeAPOASNZfAAEGVPIgmzc940.jpg" alt="">
+                            </a>
+                            <div class="stay-info">
+                                <a href="javascript:;"> 箱根绿色广场哈康酒店</a>
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                </div>
+                                <p class="tips right">酒店</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="day5" class="day-part" style="clear: both;position:relative;top: 160px">
+            <div class="day-top">
+                <span> Day 5</span>
+                河口湖>富士山>忍野八海>山中湖>富士山小御岳神社河口湖位于富士山脚下，富士五湖之一，
+                是看富士山的最佳地方——日本最具闻名的景点——忍野八海是日本山梨县山中湖和河口湖之间忍野村的涌泉群，
+                因为错落有致地散布着八个清泉，故得名忍野八海——作为山岳信仰的灵地，这里自古以来就是祈祷场所、有众多的崇拜者、修行者来访。
+            </div>
+            <div class="day-detail">
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        河口湖
+                    </p>
+                    <p class="mb20">
+                        河口湖位于富士山脚下，富士五湖之一，是看富士山的最佳地方。富士五湖（ふじごこ）是指富士山周边位于山梨县境内的五个湖泊的总称，
+                        分别是河口湖、山中湖、西湖、本栖湖、精进湖，它们都是因为富士山喷发而形成的堰塞湖。河口湖处于五湖中心，是富士五湖观光中最主要的景点
+                        ，因为便利的交通和完善的餐饮娱乐设施深受游客欢迎。湖畔有怀旧巴士供游客利用，建有美术馆和疗养地，还是登富士山的出发点，故游客络绎不绝。
+                        此湖有五湖中唯一的岛屿，可以从河口湖大桥欣赏宏伟的景色。此外，这里可以进行多种的娱乐活动：划船、乘游艇、玩帆板、钓鱼、环绕湖岸骑车和洗温泉浴。
+                        从河口湖观赏到的富士山引人入胜的景致为许多艺术家和摄影家提供了理想的素材。春天，从河口湖北面观赏到“倒富士”（指富士山在河口湖中的倒影
+                        ，当地人称“倒富士”）和樱花盛开的胜景是日本美景的象征。总而言之，河口湖是观赏富士山周围美景的最佳地点。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYfD_eAMDSFAAS6yzg8nJw899.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>山梨县南都留郡富士河口湖町</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    搭乘富士急行线在河口湖站下车
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        富士山
+                    </p>
+                    <p class="mb20">
+                        富士山是日本第一高峰，也是世界上最大的活火山之一，海拔3776米，屹立于本州中南部，距东京80公里。
+                        这座被日本人奉为“圣岳”的山峰自1707年最后一次喷发后休眠至今。山顶上的两个火山口形成了两个美丽的火山湖，
+                        山麓处还有火山喷发后留下的千姿百态的山洞，有些仍在不断喷气。富岳风穴内的洞壁上则结满了钟乳石似的冰柱，
+                        被称为“万年雪”。坐落在顶峰上的圣庙──久须志神社和浅间神社则是富士箱根伊豆国立公园的主要风景区。
+                        富士山北麓有富士五湖，湖光山色十分宜人。河口湖中所映的富士山倒影，被称作富士山奇景之一。
+                        湖东南的忍野村则有“忍野八海”，与山中湖相通。南麓则是一片辽阔的高原牧场，绿草如茵，牛羊成群。
+                        这里夏季可露营、游泳、钓鱼等，冬季可滑雪滑冰。据说，在山顶的火山湖中沐浴一下，能消灾免祸。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYfD_eAMDSFAAS6yzg8nJw899.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>日本静冈县富士宫市北山 富士山</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    建议自驾或包车前往。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        忍野八海
+                    </p>
+                    <p class="mb20">
+                        忍野八海是日本山梨县山中湖和河口湖之间忍野村的涌泉群，因为错落有致地散布着八个清泉，
+                        故得名忍野八海。据称忍野八海在1200年前就已存在，是富士山融雪的雪水经过地层过滤后产生的淡水泉。
+                        忍野八海于2013年6月与富士山及周边景点以〝富士山－信仰的象徵与艺术的泉源〞列入联合国世界文化遗产。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYfEZ6Ad4--AAYUodcBucY708.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>日本、〒401-0511 山梨県南都留郡、忍野村忍草</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    富士急行线富士吉田站，内野行方向富士急行巴士役场前下车5分。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        富士山小御岳神社
+                    </p>
+                    <p class="mb20">
+                        小御岳是富士山形成以前就存在的古老的山岳。小御岳和古富士为台基，经过多次火山喷发、形成了如今的富士山。
+                        富士山小御岳神社于公元937年，在山岳信仰的圣地小御岳山顶建立。作为山岳信仰的灵地，这里自古以来就是祈祷场所、
+                        有众多的崇拜者、修行者来访。毎年7月1日为了庆祝富士山开山，这里清晨便开始举办开山祭。
+                        富士山五合目周边被称之为“天狗之庭”，据传被天狗所支配。名为小御岳太郎坊正真的天狗神被作为开道之神供奉于富士山小御岳神社。
+                        在神社有关天狗神的宝物保留众多，放置于中庭的大斧竟然重达375公斤！自古以来，为了比试力气，人们尝试着举起大斧，场面热闹非凡。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYfEw-AbR79AAOPjpeUNhk329.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>富士吉田市上吉田小御岳下5617吉田口登山道</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    乘富士急行线到富士山站后再坐出租车约50分钟
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="stay-recommend">
+                    <p class="intro-title relative">
+                        <i></i>
+                        住宿推荐
+                    </p>
+                    <ul class="stay-list clearfix">
+                        <li class="stay-list-item">
+                            <a href="javascript:;" class="">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYfDr-ADZnRAABxNqHOiVM472.jpg" alt="">
+                            </a>
+                            <div class="stay-info">
+                                <a href="javascript:;"> 唯一酒店</a>
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                </div>
+                                <p class="tips right">酒店</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="day6" class="day-part" style="clear: both;position:relative;top: 200px">
+            <div class="day-top">
+                <span> Day 6</span>
+                清水寺>金阁寺>伏见稻荷大社>花见小路>衹园角世界文化遗产——金阁寺是京都的象征——
+                必去的成百上千座朱红色鸟居构成一条到山顶的通道——表演京都传统艺能的胜地
+            </div>
+            <div class="day-detail">
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        清水寺
+                    </p>
+                    <p class="mb20">寺院的本堂被指定为国宝，同时还拥有仁王门、西门、三重塔、
+                        钟楼等重要文化遗产，1994年，清水寺作为"古都京都文化遗产"之一被列入
+                        联合国教科文组织世界文化遗产名录。 广为人知的"清水舞台"由众多高约12
+                        米的巨型榉木柱并排支撑，采用"悬造式"手法，未使用一钉搭建而成，地板铺有
+                        410多块柏木板，是一座大型木造建筑，其造型仿佛从本堂向断崖突出，在这里眺望京都风景绝佳。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/DB/eSl1sVT2W-CAW9xsAAPH1mGryDU802.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>京都府京都市東山区清水1-294</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    可乘坐206、207路公交车，至五条坂站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        金阁寺
+                    </p>
+                    <p class="mb20">
+                        正式名称是鹿苑寺。金阁寺建于1379年，原为足利义满(あしかが よしみつ)将军的山庄，后改为禅寺。
+                        “金阁寺”一名源于足利义满修禅的舍利殿，因其外以金箔装饰，民众遂以金阁殿称之，寺院也因此被唤作金阁寺。
+                        1950年，金阁寺被蓄意纵火烧毁，现在看到的金色建筑是修复的。对这段历史感兴趣的朋友可以阅读三岛由纪夫的小说《金阁寺》。
+                        金阁寺是3层的楼阁，第一层为法水院；第二层为潮音洞，供奉着观音；第三层是正方形的佛堂，供奉着三尊弥陀佛。
+                        金阁寺的建筑与园林构造相融合，一旁的镜湖池池水清洌，身影华丽的金阁倒映在镜湖池中的景观是京都的代表性景观。
+                        金阁寺的独特之处：游客拿到的不是参观入场门票而是写有祝福话语的朱印。另外，院中的不动堂旁边有中文和韩文的神签可供占卜，
+                        金阁寺内出售的抹茶冰激凌口碑也很不错。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/DC/eSl1sVT2XYeAd-ipAAMqBYgnx_8910.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>京都市北区金閣寺町1</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    可乘坐12、59、特59路公交车，至金阁寺前站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        伏见稻荷神社
+                    </p>
+                    <p class="mb20">
+                        位于京都南部的稻荷山山麓，历史悠久。这里供奉着保佑商业繁荣、五谷丰收的农业之神稻荷，
+                        香客众多。狐狸被视为神明的使者，因此这里有许多各式各样的狐狸石像，还有狐狸脸形状的绘马(祈愿牌)。
+                        伏见稻荷大社除了主建筑物值得一看，还以其后的“千本鸟居”著称。成百上千座朱红色鸟居构成一条到山顶的通道，
+                        全程约4公里，步行到山顶来回大约需要2-3个小时。这段路程是京都代表性的风景之一，
+                        电影《艺伎回忆录》中，也曾出现过以千本鸟居作为背景的场景。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/DB/eSl1sVT2WwaAQqsEAALBmzc4_7A505.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>京都府京都市伏見区深草藪之内町68</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    可乘坐Keihan Main Line火车，至Fushimiinari Station站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        花见小路
+                    </p>
+                    <p class="mb20">
+                        花见小路是位于老茶馆万亭（也叫一力亭）西侧的一条南北走向的街道。而老茶馆万亭（也叫一力亭）
+                        位于四条大街向西走100米的地方。涂有华丽红壳漆的墙壁和由竹子编织而成的栅栏的一力亭的附近，
+                        并排着的都是挡有垂帘的茶屋，街道环境清幽、规划整齐。这个一力，是歌舞伎剧本《假名手本忠臣藏》中，
+                        大星由良之介为了扰乱高师直的视线带其来茶屋玩耍，作为「只园一力之所」而闻名。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/DD/eSl1sVT2ciqAJCBiAAKdIck5OqU845.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>京都市東山区祇園町南側花見小路</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    可乘坐Keihan Main Line火车，到Gion Shijo Station站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        祇园角
+                    </p>
+                    <p class="mb20">
+                        祇园角是表演京都传统艺能的剧场，每场演出一小时左右，内容有京舞、花道、茶道、琴、雅乐、狂言、文乐等，
+                        让游客可以在一场演出内感受到京都的文化。此外，还有舞伎长廊，展示影像资料以及舞伎的花簪等物品。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8E/eSl1sVYfTt-AQAQUAAOPjpeUNhk413.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td> 日本，京都市，东山区祇园町北侧625番地</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    地下铁：阪急京都线，河原町站 <br>
+                                    地下铁：京阪本线，祇园四条站 <br>
+                                    市巴士：100、206路，祇园站 <br>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="stay-recommend">
+                    <p class="intro-title relative">
+                        <i></i>
+                        住宿推荐
+                    </p>
+                    <ul class="stay-list clearfix">
+                        <li class="stay-list-item">
+                            <a href="javascript:;" class="">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYeCpyAVBQZAAEK3SBY1SU419.jpg" alt="">
+                            </a>
+                            <div class="stay-info">
+                                <a href="javascript:;"> 京都格兰爱慕斯酒店</a>
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-half"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                </div>
+                                <p class="tips right">酒店</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="day7" class="day-part" style="clear: both;position:relative;top: 240px">
+            <div class="day-top">
+                <span> Day 7</span>
+                奈良公园>东大寺>春日大社>兴福寺>若草山一年四季无论何时，这里都有吸引人的景观——在东大寺内，随处可见悠然自得，
+                闲庭散步的鹿，这也成了游客们最爱留影的风景之——祈福与秋季的欣赏
+            </div>
+            <div class="day-detail">
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        奈良公园
+                    </p>
+                    <p class="mb20">
+                        奈良公园位于奈良市街的东边，若草山、东大寺、春日大社、国立博物馆等名胜古迹大多在这里，是日本现代公园的先驱之一。
+                        园内有许多嬉戏的鹿群，这些鹿被指定为国家的自然保护动物。春季嫩枝发芽和秋季的满园枫叶，都让人心旷神怡，而在淡季时
+                        则可以悠闲自在地散步。一年四季无论何时，这里都有吸引人的景观。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8E/eSl1sVYfUPOAJtYLAAUF94QsyWY773.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>日本〒630-8211 奈良县奈良市 Zoshicho, 469奈良公园</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    乘坐JR新干线从东京车站至京都车站约2小时15分钟，乘坐近铁京都线快车从京都车站至近铁奈良车站约40分钟。
+                                    乘坐近铁难波·奈良线快车从近铁难波车站至近铁奈良车站约35分钟。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        大东寺
+                    </p>
+                    <p class="mb20">
+                        东大寺＼是日本华严宗大本山，又称大华严寺、金光明四天王护国寺等。东大寺位于平城京(今奈良)东，
+                        是南都七大寺之一，距今约有一千二百余年的历史。 东大寺，1998年作为古奈良的历史遗迹的组成部分被列为世界文化遗产。
+                        东大寺大佛殿，正面宽度57米，深50米，为世界最大的木造建筑。大佛殿内，放置着高15米以上的大佛像——卢舍那佛。
+                        东大寺院内还有南大门、二月堂、三月堂、正仓院等。
+
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8E/eSl1sVYfUi-AZ9q5AAIsbHGA4i4269.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>〒630-8587 奈良市 雑司町406-1</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    于JR、近铁奈良站搭乘市内循环巴士至〝大仏殿春日大社前〞下车步行5分钟，或由奈良站徒步约20分钟可达
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        春日神社
+                    </p>
+                    <p class="mb20">
+                        春日大社（ かすがたいしゃ）是一座位于日本奈良县奈良市奈良公园内的神社。旧称春日神社。建于和铜二年。
+                        社内供奉的神明包括武瓮槌命、经津主命、天儿屋根命和比卖神。神社例祭日为3月13日。建设者为藤原不比等。
+                        作为古都奈良的文化财的一部分而被登入世界文化遗产之列。为二十二社之一。全场1.5公里的参道以一座红色鸟居为起点，
+                        两侧是高耸的杉树及白桦树的原生林。还有2000多个捐赠的大小石灯笼，以及隐身在林间的奈良露。
+
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8E/eSl1sVYfUyaAFDc4AArRlWucMGE559.jpg ">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>〒630-8212 奈良市春日野町160</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        兴福寺
+                    </p>
+                    <p class="mb20">
+                        兴福寺为一座位于日本奈良县奈良市登大路町的寺院，为南都六宗之一的法相宗的大本山。
+                        也是南都七大寺之一。以“古都奈良的文化财”的一部分而登入世界遗产名录之列。最有名的地标为五重塔，塔高50.1米，仅次于京都的东寺
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8E/eSl1sVYfVamAbyL6AARtJBPWOWY248.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>日本〒630-8213 奈良市登大路町48番地</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        若草山
+                    </p>
+                    <p class="mb20">
+                        若草山位于东大寺和春日大社附近，高约350米，春节和秋季的时候游客可以攀登。
+                        攀登上半山腰可以看到奈良的风景。若草山最有名的是名为“若草烧山”的活动，在每年的1月举行的以燃放烟花和火烧山为主的传统活动。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/02/8E/eSl1sVYfVrKAe41tAAgSsNOYlkA000.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>〒630-8211 奈良县奈良市 Zoshicho</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    从东大寺及春日大社步行10至15分钟可到若草山山脚1
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="stay-recommend">
+                    <p class="intro-title relative">
+                        <i></i>
+                        住宿推荐
+                    </p>
+                    <ul class="stay-list clearfix">
+                        <li class="stay-list-item">
+                            <a href="javascript:;" class="">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/8D/eSl1sVYeCpyAVBQZAAEK3SBY1SU419.jpg" alt="">
+                            </a>
+                            <div class="stay-info">
+                                <a href="javascript:;"> 京都格兰爱慕斯酒店</a>
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-half"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                </div>
+                                <p class="tips right">酒店</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="day8" class="day-part" style="clear: both;position:relative;top: 280px">
+            <div class="day-top">
+                <span> Day 8</span>
+                日本环球影城——梅田空中庭院展望台日本环球影城，简称USJ，和东京的迪斯尼乐园一样，
+                都是日本国民和外国旅行者心目中的超人气主题乐园，来关西旅行时绝对不可以错过的游玩场所——这里
+                不仅是日本夕阳百景之一的人气观赏地，夜幕降临后更是欣赏大阪繁华夜景的绝佳场所。
+            </div>
+            <div class="day-detail">
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        日本环球影城
+                    </p>
+                    <p class="mb20">
+                        日本环球影城，简称USJ，和东京的迪斯尼乐园一样，都是日本国民和外国旅行者心目中的超人气主题乐园，
+                        来关西旅行时绝对不可以错过的游玩场所。欣赏够了大阪各处的美好风景后，可以去环球影城感受下别样的兴
+                        奋和快乐，尝试下以好莱坞电影为主题的各种有趣而又刺激的娱乐设施。 在这里，可以观看蜘蛛侠的飞檐走壁，也
+                        有出海遭遇大白鲨之后的各种躲避周旋，在侏罗纪公园里围观四处招摇的恐龙，还能体会生化危机里被丧尸们追赶
+                        的危险，而一天只演出一场的水上世界更是让人身临其境地感受到各种精彩和壮观，还有日本国民偶像团体SMAP众成员亲身体验
+                        过的倒着开的音乐过山车，都是不可错过的精彩体验。园内还有各种有趣的主题餐厅和晚上让人眼花缭乱的花车巡游表演等，
+                        环球影城的精彩和快乐不需要过多去介绍，来亲自感受一番吧，一定不枉此行。 2014年7月开始，新鲜开幕的超人气的哈利
+                        波特主题区，不仅高度还原原作场景，还有大量精美周边商品出售。 因为交通便利，离大阪车站也很近，而且各娱乐项目所
+                        需的排队时间比迪斯尼乐园要少很多，所以去环球影城游玩的话在时间上还是很轻松的。另外每天的开放时间和闭园时间也不
+                        相同，想要看晚上花车巡演的旅行者们一定要记得提前查好官网的时间再订计划。
+
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/F6/eSl1sVULej6AGHV0AAI0uN2eAHk002.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>大阪湾此花区桜島2丁目1−33（日本大阪樱岛二丁目1番33号）</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                    可乘坐淀川左岸线路公交车，至环球影城站下。 可乘坐JR西日本樱岛线路地铁，至环球影城站下。
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="intro-info">
+                    <p class="intro-title relative">
+                        <i></i>
+                        梅田空中庭院展望台
+                    </p>
+                    <p class="mb20">
+                        大阪车站北部的梅田天空大厦是栋地上40层，地下2层的超高型连接式建筑，由TowerEast(东栋)
+                        和TowerWest(西栋)两栋大楼构成，顶部由环形的空中庭院展望台所连接，是日本少数的360度开放式屋
+                        顶展望台。这里不仅是日本夕阳百景之一的人气观赏地，夜幕降临后更是欣赏大阪繁华夜景的绝佳场所。
+                        展望台内设置了很多专门为恋人们准备的特别座位，还供有祈求恋爱成就的空中庭院大明神，而屋顶室外
+                        铺设的荧光石地面，更是让整个庭院笼罩在浪漫而又神秘的氛围之中，不仅深受旅行者的青睐，还是恋人们极其钟爱的人气约会场所。
+                    </p>
+                    <div class="intro-img-list">
+                        <img class="intro-img" src="http://img.chuguoqu.com/g1/M00/01/E8/eSl1sVT-j3KAKoDEAAG5iKB2A0U440.jpg" alt="">
+                    </div>
+                    <div class="prebook-table-box">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="prebook-head-td">地址:</td>
+                                <td>Umeda Sky Building, Osaka, Osaka Prefecture, Japan.</td>
+                            </tr>
+                            <tr>
+                                <td class="prebook-head-td">交通:</td>
+                                <td>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="stay-recommend">
+                    <p class="intro-title relative">
+                        <i></i>
+                        住宿推荐
+                    </p>
+                    <ul class="stay-list clearfix">
+                        <li class="stay-list-item">
+                            <a href="javascript:;" class="">
+                                <img src="http://img.chuguoqu.com/g1/M00/02/8E/eSl1sVYfW_iAEhznAADdxxkKqhE480.jpg" alt="">
+                            </a>
+                            <div class="stay-info">
+                                <a href="javascript:;"> 大和鲁内大阪北滨饭店</a>
+                                <div class="heart-mid-wrapper left">
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-full"></i>
+                                    <i class="heart-mid-half"></i>
+                                    <i class="heart-mid-zero"></i>
+                                    <i class="heart-mid-zero"></i>
+                                </div>
+                                <p class="tips right">酒店</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="sideBar" class="sidebar-box right scroll-to-fixed-fixed"
+     style=" z-index: 10000000;width: 240px;">
+    <div  id="sideBarWrap" class="sidebar-wrap" >
+        <ul class="sidebar-con">
+            <li class="current">
+                <a class="side-day-title" href="#day1">Day 1</a>
+                <div>
+                    <label class="bold">城市:</label>
+                    <p class="city-list">东京</p>
+                </div>
+                <div>
+                    <label class="bold">景点:</label>
+                    <p class="city-list">东京塔</p>
+                </div>
+                <div>
+                    <label class="bold">住宿:</label>
+                    <p class="city-list">东京</p>
+                </div>
+            <li>
+                <a class="side-day-title" href="#day2">Day 2</a>
+                <div>
+                    <label class="bold">城市:</label>
+                    <p class="city-list">东京</p>
+                </div>
+                <div>
+                    <label class="bold">景点:</label>
+                    <p>浅草寺—筑地市场—明治神宫—台场</p>
+                </div>
+                <div>
+                    <label class="bold">住宿:</label>
+                    <p>东京</p>
+                </div>
+            </li>
+            <li>
+                <a class="side-day-title" href="#day3">Day 3</a>
+                <div>
+                    <label class="bold">城市:</label>
+                    <p class="city-list">东京</p>
+                </div>
+                <div>
+                    <label class="bold">景点:</label>
+                    <p>三鹰之森吉卜力美术馆—上野公园—秋叶原</p>
+                </div>
+                <div>
+                    <label class="bold">住宿:</label>
+                    <p>箱根</p>
+                </div>
+            </li>
+            <li>
+                <a class="side-day-title" href="#day4">Day 4</a>
+                <div>
+                    <label class="bold">城市:</label>
+                    <p class="city-list">箱根</p>
+                </div>
+                <div>
+                    <label class="bold">景点:</label>
+                    <p>箱根玻璃之森美术馆—大涌谷—箱根神社—箱根七汤</p>
+                </div>
+                <div>
+                    <label class="bold">住宿:</label>
+                    <p>箱根</p>
+                </div>
+            </li>
+            <li>
+                <a class="side-day-title" href="#day5">Day 5</a>
+                <div>
+                    <label class="bold">城市:</label>
+                    <p class="city-list">富士山 - 东京</p>
+                </div>
+                <div>
+                    <label class="bold">景点:</label>
+                    <p>河口湖—富士山—忍野八海—富士山小御岳神社</p>
+                </div>
+                <div>
+                    <label class="bold">住宿:</label>
+                    <p>富士山</p>
+                </div>
+            </li>
+            <li>
+                <a class="side-day-title" href="#day6">Day 6</a>
+                <div>
+                    <label class="bold">城市:</label>
+                    <p class="city-list">京都</p>
+                </div>
+                <div>
+                    <label class="bold">景点:</label>
+                    <p>清水寺—金阁寺—伏见稻荷大社—花见小路—祇园角</p>
+                </div>
+                <div>
+                    <label class="bold">住宿:</label>
+                    <p>京都</p>
+                </div>
+            </li>
+            <li>
+                <a class="side-day-title" href="#day7">Day 7</a>
+                <div>
+                    <label class="bold">城市:</label>
+                    <p class="city-list">奈良</p>
+                </div>
+                <div>
+                    <label class="bold">景点:</label>
+                    <p>奈良公园—东大寺—春日大社—兴福寺—若草山</p>
+                </div>
+                <div>
+                    <label class="bold">住宿:</label>
+                    <p>京都</p>
+                </div>
+            </li>
+            <li>
+                <a class="side-day-title" href="#day8">Day 8</a>
+                <div>
+                    <label class="bold">城市:</label>
+                    <p class="city-list">大阪</p>
+                </div>
+                <div>
+                    <label class="bold">景点:</label>
+                    <p>日本环球影城—梅田空中庭院展望台</p>
+                </div>
+                <div>
+                    <label class="bold">住宿:</label>
+                    <p>大阪</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a href="javascript:" class="recommend-btn">精选行程产品</a>
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="footer other-footer" style="position: relative;top: 280px;clear: both">
+    <div class="wrap yahei relative">
+        <div class="footer-top">
+            <div class="footer-top-wrap">
+                <p class="footer-contact" style="margin: 0;position: relative;top: 15px;">400-812-5161</p>
+                <p>周一至周日：08:00-23:00 节假日：08:00-20:00</p>
+            </div>
+        </div>
+        <div class="footer-con">
+            <ul class="footer-site-map clearfix">
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/aboutus.html">关于出国去</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/conviction.html">加入我们</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/contactus.html">联系我们</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/help.html">帮助中心</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/declare.html">法律声明</a>
+                </li>
+
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/link.html">友情链接</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/feedback.html">意见反馈</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/business.html">Business Cooperation</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.chuguoqu.com/sitemap.html">网站地图</a>
+                </li>
+                <li class="b2b-link">
+                    <a target="_blank" href="http://www.chuguoqu.com/distributor/apply/view/">分销合作</a>
+                </li>
+            </ul>
+            <p class="mb8">出国去网站独家内容运营商：厦门博游旅行社有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;唯一指定的境外旅游服务策供商：厦门博游旅行社有限公司</p>
+            <p class="mb20">Copyright © 2013-2016 出国去chuguoqu.com All rights reserved 厦门博游旅行社有限公司 闽ICP备12023338号-1</p>
+        </div>
+    </div>
+</footer>
+<script src="../js/jp-travels.js"></script>
+</body>
+
+</html>
